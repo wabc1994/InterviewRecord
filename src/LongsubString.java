@@ -1,3 +1,4 @@
+//求出两个字符串的最大公共子串的长度，采用dynamic programming， 一个
 public class CompareByRight {
     static int longestCommonSubstring(String A,String B)
     {
@@ -42,8 +43,9 @@ public class CompareByRight {
         else return b;
 
     }
-
+//test part 
     public static void main(String[] args) {
         System.out.println(longestCommonSubstring("kkabbed","abcabbed"));
     }
 }
+
