@@ -9,31 +9,30 @@ public class Mincost {
         else
             return(y<z)?y:z;
     }
-    final int R=3;
-   final int C=3;
-// 递归的方法
-    static int MinConst(int cost[][],int m,int n)
+    private static int minCost(int cost[][], int m, int n)
     {
-//该点有三中情况，
-             if(m<0||n<0)
-                 return 0;
-             else if(m==0||n==0)
-             {
+        int i, j;
+        int tc[][]=new int[m+1][n+1];
+        tc[0][0] = cost[0][0];
+        /* Initialize first column of total cost(tc) array */
+        for (i = 1; i <= m; i++)
+            tc[i][0] = tc[i-1][0] + cost[i][0];
 
-                 System.out.println(cost[m][n]);
-                 return cost[m][n];
-             }
-             else
+        /* Initialize first row of tc array */
+        for (j = 1; j <= n; j++)
+            tc[0][j] = tc[0][j-1] + cost[0][j];
 
-                 return cost[m][n]+min(MinConst(cost,m-1,n-1),MinConst(cost,m,n-1),MinConst(cost,m-1,n));
+          /* Construct rest of the tc array */
+        for (i = 1; i <= m; i++)
+            for (j = 1; j <= n; j++)
+                tc[i][j] = min(tc[i-1][j-1],
+                        tc[i-1][j],
+                        tc[i][j-1]) + cost[i][j];//比较周围的三个数的情况
+        return tc[m][n];
     }
-    static int MinConstdp(int cost[][],int m,int n)
-    {
-        
-    }
-
-    public static void main(String[] args) {
+//    第二种写法
+        public static void main(String[] args) {
         int [][]cost={{1,2,3},{4,8,2},{1,5,3}};
-        System.out.println(MinConst(cost,2,2));
+        System.out.println(minCost(cost,2,2));
     }
 }
