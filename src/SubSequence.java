@@ -6,11 +6,11 @@ public  class SubSequence {
     {
         if(A.length()==0||A==null||B==null||B.length()==0)
             return 0;
-       int m=A.length();
-       int n=B.length();
-       int dp[][]=new int[m+1][n+1];
-       for(int i=0;i<=m;i++)
-       {
+        int m=A.length();
+        int n=B.length();
+        int dp[][]=new int[m+1][n+1];
+        for(int i=0;i<=m;i++)
+        {
            for(int j=0;j<=n;j++)
            {
                if(i==0||j==0)
