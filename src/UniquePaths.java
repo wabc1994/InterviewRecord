@@ -56,8 +56,8 @@ public class UniquePaths {
         if(m<1||n<1) return 0;
         int [] dp = new int[m];
         Arrays.fill(dp,1);
-        for(int i=0;i<n;++i){
-            for(int j=0;j<m;++j){
+        for(int i=1;i<n;++i){
+            for(int j=1;j<m;++j){
                 dp[j] += dp[j-1];
             }
         }
