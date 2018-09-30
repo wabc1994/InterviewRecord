@@ -18,12 +18,15 @@ public class ProducerConsumerByWaitNotify {
         private int index;
 
         public Product() {
+            /**
+             * 实现对该变量对逐渐增加一个操作
+             */
             index = autoIndex.getAndIncrement();
 
         }
         @Override
         public String toString() {
-            return "product__" + index + "   " + super.toString();
+            return "product :" +  index ;
         }
     }
 
@@ -44,12 +47,15 @@ public class ProducerConsumerByWaitNotify {
                     {
                         produce();
                     }
+                    //操作好后通知所有的人
                     queue.notifyAll();
                 }
             }
         }
 
         void produce(){
+            //代表生产一个产品
+
             Product p =new Product();
             queue.offer(p);
             System.out.println("produce "+ p.toString());
@@ -57,21 +63,25 @@ public class ProducerConsumerByWaitNotify {
     }
     class Consumer implements  Runnable{
         void consume(){
-            System.out.println("consume"+ queue.remove(0).toString());
+            System.out.println("consume "+ queue.remove(queue.size()-1).toString());
         }
-
         @Override
         public void run() {
             while(true){
                 synchronized (queue){
+                    //判断是否满足一定的条件
                     if(queue.size()<=0){
                         try{
+                            //也可以选择让这个地方的线程进行睡眠
+                            //Thread.sleep(1000),让其满足一定的条件后再进行执行即可
                             queue.wait();
                         }catch (InterruptedException e){
                             e.printStackTrace();
                         }
 
-                    }else{
+                    }
+                    else{
+                        //满足一定的条件，进行一定程度上面的
                         consume();
                     }
                 queue.notifyAll();
@@ -82,7 +92,7 @@ public class ProducerConsumerByWaitNotify {
     }
 
     public static void main(String[] args) {
-        //c        ProducerConsumerByWaitNotify pcbw = new ProducerConsumerByWaitNotify();
+        ProducerConsumerByWaitNotify pcbw = new ProducerConsumerByWaitNotify();
         Producer producer = pcbw.new Producer();
         Consumer consumer = pcbw.new Consumer();
         new Thread(producer).start();
