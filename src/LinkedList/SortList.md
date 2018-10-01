@@ -72,6 +72,11 @@ public ListNode merge(ListNode h1, ListNode h2) {
 
 ##  1. 寻找中间节点情况 ，快满指针
 快慢指针这种情况，类似于链表种找环的情况
+### 注意递归出口
+
+当只有一个节点时或者为空，是递归的出口 
+>链表长度为1，或者为空  if(head.next==null|| head==null)
+
 - [链表是否有环的情况](https://leetcode.com/problems/linked-list-cycle/description/)
 - [链表环的起点问题](https://leetcode.com/problems/linked-list-cycle/description/)
 
@@ -93,8 +98,9 @@ while(fast!=null && fast.next!=null){
 pre,next = null;
 ```
 ## 2.递归对链表的左右部分进行判断
-** 对 head->.... pre 左半部分执行step1**
-**对 slow->..... pre 左半部分执行 step2**
+** 对 head->.... pre 左半部分执行step1 **
+
+** 对 slow->..... pre 左半部分执行 step2**
 
 ```c++
 // step 2. sort each half
