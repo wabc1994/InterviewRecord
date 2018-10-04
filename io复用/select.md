@@ -110,7 +110,7 @@ select的调用过程如下所示：
 6. poll方法返回时会返回一个描述读写操作是否就绪的mask掩码，根据这个mask掩码给fd_set赋值。
 7. 如果遍历完所有的fd，还没有返回一个可读写的mask掩码，则会调用schedule_timeout是调用select的进程（也就是current）进入睡眠。当设备驱动发生自身资源可读写后，会唤醒其等待队列上睡眠的进程。如果超过一定的超时时间（schedule_timeout指定），还是没人唤醒，则调用select的进程会重新被唤醒获得CPU，进而重新遍历fd，判断有没有就绪的fd。
 8. 把fd_set从内核空间拷贝到用户空间。
-
+[代码实现详细解释情况](https://blog.csdn.net/lizhiguo0532/article/details/6568964#comments)
 >上述过程存在的缺点
 1. 把fd_set从内核空间拷贝到用户空间，开销非常大
 2. 需要遍历处理每个集合fd_set，效率非常低下
