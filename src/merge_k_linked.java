@@ -11,7 +11,7 @@ public class merge_k_linked {
     }
     ListNode binary(ListNode[] nums ,int start,int last)
     {
-        if(last==start) return nums[start];
+        if(last==start) {return nums[start];}
         if(start<last)
         {
 
