@@ -26,7 +26,6 @@ public class MaximumSubarray {
         }
         return max ;
     }
-    public int solution_2(int)
 
     public static void main(String[] args) {
         MaximumSubarray test= new MaximumSubarray();
