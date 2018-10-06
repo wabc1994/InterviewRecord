@@ -54,7 +54,7 @@ public class Test {
     }
 }
 ```
-
+输出情况
 ```java
 Static
 Non-static block
