@@ -36,7 +36,7 @@ public class KthLargestElementinanArray {
         public int solution_2(int array[], int k){
            int n = array.length;
 
-           //为何是n-k ，最大k-largest 相对于是数组中n-k+1 smalleset
+           //为何是n-k ，最大k-largest 相对于是数组中n-k+1 smalleset，对应代数组下标就是n-k
            return helper(array, 0,n-1, n-k);
        }
 
@@ -57,8 +57,26 @@ public class KthLargestElementinanArray {
                 return helper(array, low, position - 1, k);
             }
         }
-                 
-        
+     //二分法查找，查找一个下标的情况
+    public int helper2(int[] nums, int left, int right, int k) {
+
+        while (left < right) {
+            int pivotIndex = partation(nums, left, right);
+
+            if (pivotIndex == k) {
+                return nums[pivotIndex];
+            } else if (pivotIndex < k) {
+                //在这里还是不要变k ， 因为是从右变开始算起的， 如果是
+                left = pivotIndex + 1;
+
+            } else {
+                right = pivotIndex - 1;
+
+            }
+        }
+        return nums[left];
+    }
+
        private int partation(int [] array,int low, int high) {
             int pivot = array[low];
             int i = low, j = high;
