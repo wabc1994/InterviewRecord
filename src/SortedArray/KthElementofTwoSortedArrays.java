@@ -3,6 +3,7 @@ package SortedArray;
 /**
  * 两个有序数组中第k小的元素情况,采用分而治之和递归的方法进行解决
  */
+// csdn：
 public class KthElementofTwoSortedArrays {
     public int solution(int A[], int B[], int k) {
         int m = A.length;
@@ -27,6 +28,5 @@ public class KthElementofTwoSortedArrays {
         } else {
             return solution(A, B, k - i);
         }
-
     }
 }
