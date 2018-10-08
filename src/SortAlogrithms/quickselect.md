@@ -5,7 +5,7 @@
   - 如何查找两个有序数组的中位数
 # 如何在两个有序数组中找到第K的元素
 [参考链接情况](https://www.geeksforgeeks.org/k-th-element-two-sorted-arrays/)
-example:
+>example:
 Input : Array 1 - 2 3 6 7 9
         Array 2 - 1 4 8 10
         k = 5
@@ -128,17 +128,13 @@ Output: 4
 ## 代码
 ```Java
 package SortedArray;
-
 import data_struture.PriorityQueueEamople;
-
 import java.util.Comparator;
 import java.util.PriorityQueue;
-
 /**
  * 如何在一个无序数组中查找一个第k大的元素， 数组可能是包含相同的元素情况
  */
 public class KthLargestElementinanArray {
-
     public int solutionn(int [] array, int k){
 //构造大顶堆的情况，
         PriorityQueue<Integer> maxHeap=new PriorityQueue<Integer>(k, new Comparator<Integer>() {
@@ -147,12 +143,10 @@ public class KthLargestElementinanArray {
                 return o2-o1;
             }
         });
-
         for(int i=0;i<array.length;i++) {
             if(!maxHeap.contains(array[i]))
                  {maxHeap.offer(array[i]);}
         }
-
         for (int j = 0; j < k - 1; j++) {
                 maxHeap.poll();
             }
@@ -179,9 +173,8 @@ class Solution {
         }
          return select(nums, 0, nums.length - 1, nums.length - k);
     }
-
     public int select(int[] nums, int left, int right, int k) {
-        if(left==right) return nums[left];
+        if(left==right) {return nums[left];}
         int pivotIndex = partition(nums, left, right);
         if (pivotIndex == k) {
             return nums[pivotIndex];
@@ -193,11 +186,34 @@ class Solution {
         }
             
     }
+    /**
+    * 
+* @param array 要查找的数组情况
+* @param low
+* @param high
+* @param k 要查找的元素情况
+* @return 
+*/
+    //上述写法可以搞成非递归方法形式情况,在这里完全就是二分查找的过程步骤，这里的k就是要查找的元素 
+    public int select_non_recurive(int array, int low, int high, int k){
+        while(low<high){
+            int position = partition(array, low,left);
+            if(position=k){
+                return array[position];
+            }
+            else if(position<k){
+                low = position+1;
+            }
+            else 
+                {
+                    high  = position-1;
+                }
+        }
+    }
+    //查询结果情况
     public int partition(int[] nums, int left, int right) {
-
         // Init pivot, better to be random
         int pivot = nums[left];
-
         // Begin partition
         while (left < right) {
             while (left < right && nums[right] >= pivot) { // skip nums[i] that equals pivot
@@ -226,14 +242,14 @@ class Solution {
 采用快速排序中的选择排序算法，partation
 代码如下所示：
 ```java
-
- public int solution_2(int array[], int k){
+public  class ktheElement {
+public int solution_2(int array[], int k){
            int n = array.length;
            return helper(array, 0,n-1, k);
        }
  private int helper(int []array, int low, int high, int k) {
           //递归的出口函数，只要满足这样的条件才能进行如下的递归调用情况, 此时 
-           if (low ==high） return array[low]
+           if (low ==high） {return array[low];}
              int position = partation(array, low, high);
                 //最终会满足这一步的条件情况
                 if (position == k -1) {
@@ -263,4 +279,5 @@ class Solution {
             //the position
             return i;
         }
+}
 ```
