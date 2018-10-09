@@ -209,6 +209,8 @@ class Solution {
                     high  = position-1;
                 }
         }
+        //最后会得到一个情况 k = low = left, 二分不断二分，最终只会得到一个数据 最后low = high = k 都会相等的情况
+        return array[low]; //或者array[left], array[right], 
     }
     //查询结果情况
     public int partition(int[] nums, int left, int right) {
