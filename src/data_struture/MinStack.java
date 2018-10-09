@@ -1,8 +1,5 @@
 package data_struture;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Stack;
 
 /**
@@ -16,6 +13,7 @@ import java.util.Stack;
  */
 public class MinStack {
     //构造函数情况
+    //编码实现该中情况
 
     private int min;
     private Stack<Integer> stack;
@@ -25,6 +23,7 @@ public class MinStack {
     }
 
     //压入stack
+
     public void push(int x) {
         if (stack.isEmpty()) {
             min = x;
@@ -40,6 +39,7 @@ public class MinStack {
     }
 
     //弹出stack顶部的元素，删除
+
     public void pop() {
         if (stack.isEmpty()) {
             System.out.println("Stack is empty");
@@ -57,6 +57,7 @@ public class MinStack {
     }
 
     //返回stack顶部的元素情况，不删除
+
     public int top() {
         if (stack.isEmpty()) {
             System.out.println("Stack is empty ");

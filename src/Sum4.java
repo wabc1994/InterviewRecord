@@ -45,9 +45,6 @@ public class Sum4 {
     }
 
 
-    public List<List<Integer>> solution_2(int []nums, int target)
-    {
 
-    }
 
 }

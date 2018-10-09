@@ -24,7 +24,7 @@ public class removesortedduplicates {    //第一种解法
 
    public  static  int[] removeDuplicates(int []A)
      {
-         if (A.length < 2)
+         if(A.length < 2)
              return A;
          int i = 0, j = 1;
          while (i < A.length&& j<A.length) {

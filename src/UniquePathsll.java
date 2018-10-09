@@ -5,12 +5,13 @@ public class UniquePathsll {
      */
     public int solution_1(int[][] obstacleGrid){
         if(obstacleGrid==null||obstacleGrid.length==0)
-            return 0;
+
+          { return 0;}
 
         int m = obstacleGrid.length;
         int n = obstacleGrid[0].length;
         if(obstacleGrid[0][0]==1||obstacleGrid[m-1][n-1]==1)
-            return 0;
+            {return 0;}
         int[][] dp = new int[m][n];
         dp[0][0]=1;
 
@@ -48,10 +49,10 @@ public class UniquePathsll {
     //空间复杂度没有优化的
     public int solution_2(int [][]obstracleGrid){
         if(obstracleGrid.length==0||obstracleGrid[0].length==0||obstracleGrid[0][0]==1)
-            return 0;
+        { return 0;}
         int [] dp = new int[obstracleGrid[0].length];
         //第一行的路径不一定就是1，如果是obstracleGrid[0][j] =1||obstracleGrid[i][0] =1
-        dp[0] = 1;//
+        dp[0] = 1;
         for(int i=1;i<obstracleGrid[0].length;++i){
             //等于上面的那个状态
             dp[i] = obstracleGrid[0][i]==1?0:dp[i-1];
