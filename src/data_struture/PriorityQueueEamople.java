@@ -21,6 +21,7 @@ public class PriorityQueueEamople {
         // 自定义的比较器，可以让我们自由定义比较的顺序 Comparator<Integer> cmp;
 
         Comparator<Integer> cmp = new Comparator<Integer>() {
+            @Override
             public int compare(Integer e1, Integer e2) {
                 return e2 - e1;
             }
