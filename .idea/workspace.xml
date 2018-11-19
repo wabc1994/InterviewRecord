@@ -1,13 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cf9666f-d4a9-4c54-bba7-4f84a283f5a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Backpack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="1cf9666f-d4a9-4c54-bba7-4f84a283f5a0" name="Default" comment="redis 中的sentinel机制">
+      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/CLH锁.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/Future.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/ThreadLocal.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/countdownlatch.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/reentrantlock.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/线程池.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/并发编程.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JVM/Minor_Majo_Full.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java基础/Screen Shot 2018-11-16 at 7.37.29 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kakfa/kafka基本情况.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kakfa/messagemodel.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kakfa/消息队列设计精要.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Linux/Memory/分段分页.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Linux/Process/scheduling.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Linux/Process/slab分配器.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Linux/Process/调度.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Linux/shell/Linux下Java内存排查.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Linux/shell/lsof.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Linux/shell/sed和gred.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Linux/shell/top和ps.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Linux/vmalloc和kmalloc.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Linux/总的参考链接.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NIO/nio.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Redis_learning/Redis.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Redis_learning/jedis.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Redis_learning/reactorio.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Redis_learning/高可用.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_struct/rbtree_avl.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/AddBinary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Backpack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Combination_Sum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Combination_Sum2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Combinations.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Double_Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Dymaticprogramming/BestTimetoBuyandSellStock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Dymaticprogramming/DecodeWays.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Dymaticprogramming/HouseRobberII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Dymaticprogramming/SellStock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Dymaticprogramming/UglyNumberII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Editdistance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/FindDuplcatesArrays.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/HouseRobber.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/LFUCache.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/LRU.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/LinkedList/LinkedListCycle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/LinkedList/ListNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/LinkedList/PalindromeLinkedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/LinkedList/SortList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/LinkedList/SortList.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/ListNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Lock/ReadWriteLis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Lock/Reader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Lock/Writer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/LongestIncreasingSubsequence.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/LongestSubstringWithoutRepeating.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/MaximumProductSubarray.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/MaximumSubarray.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/MedianOfTwoSortedArrays.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/MinimumPathSum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/N_Queues.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/NextPermutation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Permutations11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/ProductofArrayExceptSelf.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/RemoveDuplicatesfromSortedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/RemoveDuplicatesfromSortedList11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/ReverseNodesinKGroup.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/SearchinRotatedSortedArray.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Solution.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/SortAlogrithms/quickselect.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/SortColors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/SortedArray/ContainerWithMostWater.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/SortedArray/KthElementofTwoSortedArrays.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/SortedArray/KthLargestElementinanArray$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/SortedArray/KthLargestElementinanArray.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/SortedArray/MajorityElement.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/SortedArray/RotateImage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/String/ImplementstrStr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/String/LongestPalindromicSubstring.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/String/PalindromeNumber.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/SubSequence.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Sum3Closest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Sum4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/TopKFrequentElements.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/BalanceTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/BinaryTreeInorderTraversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/BinaryTreeLevelOrderTraversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/BinaryTreeMaximumPathSum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/BinaryTreePreorderTraversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/ConstructBinaryTreefromPreorderandInorderTraversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/HouseRobber111.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/KthSmallestElementinaBST.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/LowestCommonAncestor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/MaximumDepthofBinaryTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/Pair.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/PostOrderTraverse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/SameTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/SubtreeofAnotherTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/SymmetricTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/TopKFrequentWords$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/TopKFrequentWords$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/TopKFrequentWords.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/TreeNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Tree/UniqueBinarySearchTrees.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/Triangle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/UniquePaths.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/UniquePathsll.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/ValidSudoku.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/WildcardMatching.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/WordSearch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/climb_staris.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/com/coderlau/greedy/JumpGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/concurrency/Clerk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/concurrency/Consumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/concurrency/Producer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/concurrency/ProducerAndConsumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/concurrency/ProducerConsumerByWaitNotify$Consumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/concurrency/ProducerConsumerByWaitNotify$Producer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/concurrency/ProducerConsumerByWaitNotify$Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/concurrency/ProducerConsumerByWaitNotify.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/concurrency/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/data_struture/ImplementQueueusingStacks.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/data_struture/MinStack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/data_struture/PriorityQueueEamople$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/data_struture/PriorityQueueEamople.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/data_struture/TOP_k$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/data_struture/TOP_k$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/data_struture/TOP_k.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/data_struture/testmap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/design_pattern/Holder_Sinleton$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/design_pattern/Holder_Sinleton$Holder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/design_pattern/Holder_Sinleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/design_pattern/SIngleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/design_pattern/Singleton_threadsafe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/design_pattern/TimeHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/design_pattern/dynamci/Car.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/design_pattern/dynamci/Moveable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/design_pattern/动态代理机制.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/design_pattern/动态代理模式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/design_pattern/单例模式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/first_missing_positive.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/merge_k_linked.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/mini_coin_change.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/permutation1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/remove_N_node$Solution.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/remove_N_node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/removesortedduplicates.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/search_2D.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/subset1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/sum3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode2/word_break.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/spring如何读取配置.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/PalindromeLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/RemoveLinkedListElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/ImplementTrie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zookeeper/掌握要求.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/写代码中的基础思想/数组.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/AQS.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/AQS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/CAS锁.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/CAS锁.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/ThreadLocal内幕.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode2/参考的资料.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/线程之间的通信.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/线程之间的通信.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JVM/垃圾收集器.md" beforeDir="false" afterPath="$PROJECT_DIR$/JVM/垃圾收集器.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java基础/关键字/volatile关键字.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java基础/关键字/volatile关键字.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java基础/关键字/指令重排序.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java基础/关键字/指令重排序.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java基础/参看链接.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java基础/参看链接.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java基础/集合类情况简介/ArrayList.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java基础/集合类情况简介/ArrayList.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java基础/集合类情况简介/ConcurrentHashMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java基础/集合类情况简介/ConcurrentHashMap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java基础/集合类情况简介/HashMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java基础/集合类情况简介/HashMap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Linux/linux问题排查.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/linux问题排查.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Linux/共享内存.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/共享内存.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Linux/内核内存管理.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/内核内存管理.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NIO/javaNIO.md" beforeDir="false" afterPath="$PROJECT_DIR$/NIO/javaNIO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Redis_learning/SDS.md" beforeDir="false" afterPath="$PROJECT_DIR$/Redis_learning/SDS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Redis_learning/picture/io.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Redis_learning/redis缓存的问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/Redis_learning/redis缓存的问题.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Redis_learning/为何Redis这么快.md" beforeDir="false" afterPath="$PROJECT_DIR$/Redis_learning/为何Redis这么快.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Redis_learning/内存淘汰策略.md" beforeDir="false" afterPath="$PROJECT_DIR$/Redis_learning/内存淘汰策略.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Redis_learning/过期策略.md" beforeDir="false" afterPath="$PROJECT_DIR$/Redis_learning/过期策略.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io复用/select和poll和epoll.md" beforeDir="false" afterPath="$PROJECT_DIR$/io复用/select和poll和epoll.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io复用/水平触发和边缘触发.md" beforeDir="false" afterPath="$PROJECT_DIR$/io复用/水平触发和边缘触发.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io复用/设计模式/Reactor模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/io复用/设计模式/Reactor模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Leetcode/Twosum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode2/Twosum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Leetcode/removesortedduplicates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springboot.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springboot.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/总揽情况.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring/总揽情况.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FindDuplcatesArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindDuplcatesArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/String/LongestPalindromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/LongestPalindromicSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/BinaryTreePreorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BinaryTreePreorderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/FlattenBinaryTreetoLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/FlattenBinaryTreetoLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/MaximumDepthofBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/MaximumDepthofBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/coderlau/greedy/JumpGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/coderlau/greedy/JumpGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_pattern/TimeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design_pattern/TimeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_pattern/dynamci/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design_pattern/dynamci/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_pattern/dynamci/Moveable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design_pattern/dynamci/Moveable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_pattern/动态代理模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/design_pattern/动态代理模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/PAXOS.md" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/PAXOS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/Hashmap.md" beforeDir="false" afterPath="$PROJECT_DIR$/写代码中的基础思想/Hashmap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/二分查找的思路.md" beforeDir="false" afterPath="$PROJECT_DIR$/写代码中的基础思想/二分查找的思路.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/快速排序算法综合利用.md" beforeDir="false" afterPath="$PROJECT_DIR$/写代码中的基础思想/快速排序算法综合利用.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/链表.md" beforeDir="false" afterPath="$PROJECT_DIR$/写代码中的基础思想/链表.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,88 +218,188 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="194114429">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="4" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="LongCommonSubstring" value="1" />
+          <entry key="class" value="4" />
+          <entry key="iml" value="3" />
+          <entry key="java" value="190" />
+          <entry key="jpeg" value="2" />
+          <entry key="jpg" value="8" />
+          <entry key="md" value="436" />
+          <entry key="png" value="15" />
+          <entry key="webp" value="1" />
+          <entry key="xml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="4" />
+          <entry key="IDEA_MODULE" value="3" />
+          <entry key="Image" value="26" />
+          <entry key="JAVA" value="190" />
+          <entry key="Markdown" value="436" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="25584" />
+          <entry key="md" value="45246" />
+          <entry key="txt" value="2222" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="25744" />
+          <entry key="Markdown" value="45086" />
+          <entry key="PLAIN_TEXT" value="2222" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Leetcode2" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LongsubString.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LongsubString.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#1889#0" expanded="false" />
-              </folding>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/CLH锁.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Twosum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Twosum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/线程池.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="8126">
+                <caret line="478" column="15" selection-start-line="478" selection-start-column="15" selection-end-line="478" selection-end-column="15" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubSequence.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SubSequence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <element signature="e#1601#1602#0" expanded="false" />
-                <element signature="e#1631#1632#0" expanded="false" />
-              </folding>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/reentrantlock.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="289">
+                <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Editdistance.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Editdistance.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Linux/内核内存管理.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="5542">
+                <caret line="326" column="16" selection-start-line="326" selection-start-column="16" selection-end-line="326" selection-end-column="16" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mincost.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Mincost.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-              <folding />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Linux/Process/slab分配器.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="119">
+                <caret line="7" selection-start-line="7" selection-end-line="7" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Backpack.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Backpack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-544">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="docComment;class#Backpack#0" expanded="false" />
-                <element signature="e#243#244#0" expanded="true" />
-                <element signature="e#281#282#0" expanded="true" />
-              </folding>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Linux/shell/sed和gred.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="17">
+                <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="removesortedduplicates.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/removesortedduplicates.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Linux/shell/top和ps.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="85">
+                <caret line="5" selection-start-line="5" selection-end-line="5" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Linux/shell/lsof.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="136">
+                <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Linux/shell/Linux下Java内存排查.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="187">
+                <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Linux/vmalloc和kmalloc.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1224">
+                <caret line="74" column="67" selection-start-line="74" selection-start-column="67" selection-end-line="74" selection-end-column="67" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -111,22 +413,68 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>redis</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LongsubString.java" />
-        <option value="$PROJECT_DIR$/src/SubSequence.java" />
-        <option value="$PROJECT_DIR$/src/Editdistance.java" />
-        <option value="$PROJECT_DIR$/src/Mincost.java" />
-        <option value="$PROJECT_DIR$/src/Backpack.java" />
+        <option value="$PROJECT_DIR$/Linux/共享内存.md" />
+        <option value="$PROJECT_DIR$/src/design_pattern/动态代理模式.md" />
+        <option value="$PROJECT_DIR$/src/LinkedList/PalindromeLinkedList.java" />
+        <option value="$PROJECT_DIR$/写代码中的基础思想/一维动态规划题目.md" />
+        <option value="$PROJECT_DIR$/JVM/调优/参数设置.md" />
+        <option value="$PROJECT_DIR$/git的基本使用/多人协作.md" />
+        <option value="$PROJECT_DIR$/git的基本使用/基本概念.md" />
+        <option value="$PROJECT_DIR$/写代码中的基础思想/topk系列情况.md" />
+        <option value="$PROJECT_DIR$/src/Solution.java" />
+        <option value="$PROJECT_DIR$/src/Tree/TopKFrequentWords.java" />
+        <option value="$PROJECT_DIR$/Redis_learning/SDS.md" />
+        <option value="$PROJECT_DIR$/src/TopKFrequentElements.java" />
+        <option value="$PROJECT_DIR$/src/TopKFrequentWords.java" />
+        <option value="$PROJECT_DIR$/src/Tree/BinaryTreePreorderTraversal.java" />
+        <option value="$PROJECT_DIR$/JVM/gc.md" />
+        <option value="$PROJECT_DIR$/写代码中的基础思想/堆和优先级队列.md" />
+        <option value="$PROJECT_DIR$/Redis_learning/jedis.md" />
+        <option value="$PROJECT_DIR$/Redis_learning/高可用.md" />
+        <option value="$PROJECT_DIR$/Linux/Linux_OS/Command.md" />
+        <option value="$PROJECT_DIR$/zookeeper/掌握要求.md" />
+        <option value="$PROJECT_DIR$/Concurrency/多线程的基础知识/Future.md" />
+        <option value="$PROJECT_DIR$/src/LinkedList/RemoveLinkedListElements.java" />
+        <option value="$PROJECT_DIR$/写代码中的基础思想/快速排序算法综合利用.md" />
+        <option value="$PROJECT_DIR$/src/SortedArray/SearchinRotatedSortedArrayII.java" />
+        <option value="$PROJECT_DIR$/NIO/javaNIO.md" />
+        <option value="$PROJECT_DIR$/src/SortedArray/SearchinRotatedSortedArray.java" />
+        <option value="$PROJECT_DIR$/src/FindDuplcatesArrays.java" />
+        <option value="$PROJECT_DIR$/写代码中的基础思想/链表.md" />
+        <option value="$PROJECT_DIR$/src/SortedArray/FindtheDuplicateNumber.java" />
+        <option value="$PROJECT_DIR$/写代码中的基础思想/数组.md" />
+        <option value="$PROJECT_DIR$/写代码中的基础思想/Hashmap.md" />
+        <option value="$PROJECT_DIR$/写代码中的基础思想/二分查找的思路.md" />
+        <option value="$PROJECT_DIR$/JVM/垃圾收集器.md" />
+        <option value="$PROJECT_DIR$/Linux/Memory/分段分页.md" />
+        <option value="$PROJECT_DIR$/src/Tree/FlattenBinaryTreetoLinkedList.java" />
+        <option value="$PROJECT_DIR$/Java基础/集合类情况简介/ArrayList.md" />
+        <option value="$PROJECT_DIR$/Java基础/集合类情况简介/HashMap.md" />
+        <option value="$PROJECT_DIR$/io复用/水平触发和边缘触发.md" />
+        <option value="$PROJECT_DIR$/Linux/Process/调度.md" />
+        <option value="$PROJECT_DIR$/Linux/总的参考链接.md" />
+        <option value="$PROJECT_DIR$/Kakfa/消息队列设计精要.md" />
+        <option value="$PROJECT_DIR$/spring/spring如何读取配置.md" />
+        <option value="$PROJECT_DIR$/Concurrency/多线程的基础知识/ThreadLocal.md" />
+        <option value="$PROJECT_DIR$/Concurrency/多线程的基础知识/reentrantlock.md" />
+        <option value="$PROJECT_DIR$/Linux/vmalloc和kmalloc.md" />
+        <option value="$PROJECT_DIR$/Linux/内核内存管理.md" />
+        <option value="$PROJECT_DIR$/Linux/Process/slab分配器.md" />
+        <option value="$PROJECT_DIR$/Linux/shell/sed和gred.md" />
+        <option value="$PROJECT_DIR$/Linux/shell/top和ps.md" />
+        <option value="$PROJECT_DIR$/Linux/shell/lsof.md" />
+        <option value="$PROJECT_DIR$/Linux/shell/Linux下Java内存排查.md" />
       </list>
     </option>
   </component>
@@ -137,10 +485,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="y" value="23" />
+    <option name="width" value="1975" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -190,65 +537,90 @@
     </entry>
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leetcode2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leetcode2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leetcode2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leetcode2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leetcode2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leetcode2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="out" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="production" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="Concurrency" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="Concurrency" type="462c0819:PsiDirectoryNode" />
+              <item name="多线程的基础知识" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="data_struct" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="Linux" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="Linux" type="462c0819:PsiDirectoryNode" />
+              <item name="Linux_OS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="Linux" type="462c0819:PsiDirectoryNode" />
+              <item name="Memory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="Linux" type="462c0819:PsiDirectoryNode" />
+              <item name="picture" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="Linux" type="462c0819:PsiDirectoryNode" />
+              <item name="Process" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="Linux" type="462c0819:PsiDirectoryNode" />
+              <item name="shell" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="分布式系统学习" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="分布式系统学习" type="462c0819:PsiDirectoryNode" />
+              <item name="Duddo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -256,10 +628,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542642492407" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="Settings.Markdown" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Reflect" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -273,95 +652,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Backpack">
-    <configuration default="false" name="Editdistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Editdistance" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="leetcode2" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="SubSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="SubSequence" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="leetcode2" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Mincost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Mincost" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="leetcode2" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Backpack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Backpack" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="leetcode2" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.TopKFrequentWords">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -389,94 +680,80 @@
       </Profilers>
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
+    <configuration name="KthLargestElementinanArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SortedArray.KthLargestElementinanArray" />
+      <module name="leetcode2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.coderlau.greedy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
+    <configuration name="MinStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="data_struture.MinStack" />
+      <module name="leetcode2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data_struture.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PalindromeLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedList.PalindromeLinkedList" />
+      <module name="leetcode2" />
+      <option name="VM_PARAMETERS" value="-XX:+PrintGCDetails" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedList.SortList" />
+      <module name="leetcode2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TopKFrequentWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tree.TopKFrequentWords" />
+      <module name="leetcode2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SCRATCH_FILE_ID" value="0" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="leetcode2" />
-      <envs />
-      <method />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="filePath" />
       <option name="vmParameters" />
       <option name="alternativeJrePath" />
@@ -484,30 +761,59 @@
       <option name="passParentEnvs" value="true" />
       <option name="workingDirectory" />
       <option name="isAlternativeJrePathEnabled" value="false" />
-      <envs />
-      <method />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Application.Editdistance" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SubSequence" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Mincost" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Backpack" />
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SortList" />
+      <item itemvalue="Application.MinStack" />
+      <item itemvalue="Application.KthLargestElementinanArray" />
+      <item itemvalue="Application.PalindromeLinkedList" />
+      <item itemvalue="Application.TopKFrequentWords" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.Backpack" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Mincost" />
+      <list>
+        <item itemvalue="Application.TopKFrequentWords" />
+        <item itemvalue="Application.PalindromeLinkedList" />
+        <item itemvalue="Application.KthLargestElementinanArray" />
+        <item itemvalue="Application.MinStack" />
+        <item itemvalue="Application.SortList" />
       </list>
     </recent_temporary>
-    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-    </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -516,50 +822,474 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491810179585</updated>
+      <workItem from="1537792268340" duration="31454000" />
+      <workItem from="1538201641210" duration="14857000" />
+      <workItem from="1538286772653" duration="13399000" />
+      <workItem from="1538360848062" duration="11038000" />
+      <workItem from="1538449529504" duration="95065000" />
+      <workItem from="1539074030280" duration="57349000" />
+      <workItem from="1539736101979" duration="50678000" />
+      <workItem from="1540126556453" duration="1611000" />
+      <workItem from="1540173549511" duration="68111000" />
+      <workItem from="1541295350843" duration="1581000" />
+      <workItem from="1541319444648" duration="74475000" />
+      <workItem from="1542527258049" duration="10818000" />
+      <workItem from="1542626031738" duration="3469000" />
     </task>
+    <task id="LOCAL-00062" summary="伙伴关系说明">
+      <created>1539173499610</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1539173499610</updated>
+    </task>
+    <task id="LOCAL-00063" summary="伙伴关系对内存的划分情况">
+      <created>1539173971349</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1539173971350</updated>
+    </task>
+    <task id="LOCAL-00064" summary="进程地址空间布局">
+      <created>1539174341432</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1539174341433</updated>
+    </task>
+    <task id="LOCAL-00065" summary="进程空间">
+      <created>1539175250063</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1539175250063</updated>
+    </task>
+    <task id="LOCAL-00066" summary="堆stack堆区别">
+      <created>1539175294193</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1539175294193</updated>
+    </task>
+    <task id="LOCAL-00067" summary="使用redis实现一个锁">
+      <created>1539245170723</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1539245170723</updated>
+    </task>
+    <task id="LOCAL-00068" summary="epoll机制">
+      <created>1539245220984</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1539245220984</updated>
+    </task>
+    <task id="LOCAL-00069" summary="synchronized 锁的基本机制、底层实现 、 优化、缺点">
+      <created>1539245332922</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1539245332922</updated>
+    </task>
+    <task id="LOCAL-00070" summary="使用快速排序算法进行不断逼近两个数组">
+      <created>1539262010713</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1539262010713</updated>
+    </task>
+    <task id="LOCAL-00071" summary="线程池中的图片">
+      <created>1539351895120</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1539351895120</updated>
+    </task>
+    <task id="LOCAL-00072" summary="修改">
+      <created>1539445684230</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1539445684230</updated>
+    </task>
+    <task id="LOCAL-00073" summary="修改">
+      <created>1539445745388</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1539445745388</updated>
+    </task>
+    <task id="LOCAL-00074" summary="旋转图像图像情况">
+      <created>1539521362275</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1539521362275</updated>
+    </task>
+    <task id="LOCAL-00075" summary="slab内存管理">
+      <created>1539690005771</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1539690005771</updated>
+    </task>
+    <task id="LOCAL-00076" summary="slab分类器">
+      <created>1539690571896</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1539690571896</updated>
+    </task>
+    <task id="LOCAL-00077" summary="slab缓存">
+      <created>1539692015613</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1539692015619</updated>
+    </task>
+    <task id="LOCAL-00078" summary="cache、slab、 object">
+      <created>1539693055706</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1539693055706</updated>
+    </task>
+    <task id="LOCAL-00079" summary="进行修改情况">
+      <created>1539770151260</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1539770151261</updated>
+    </task>
+    <task id="LOCAL-00080" summary="二叉搜索树中的k小数">
+      <created>1539780593278</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1539780593278</updated>
+    </task>
+    <task id="LOCAL-00081" summary="重新设计Readme.md文件">
+      <created>1539782180572</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1539782180572</updated>
+    </task>
+    <task id="LOCAL-00082" summary="客户端的请求">
+      <created>1539844044436</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1539844044437</updated>
+    </task>
+    <task id="LOCAL-00083" summary="reactor架构">
+      <created>1539848067450</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1539848067450</updated>
+    </task>
+    <task id="LOCAL-00084" summary="reactor模式">
+      <created>1539848510107</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1539848510107</updated>
+    </task>
+    <task id="LOCAL-00085" summary="redis i/o">
+      <created>1539848967062</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1539848967062</updated>
+    </task>
+    <task id="LOCAL-00086" summary="reactor的架构">
+      <created>1539850645621</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1539850645621</updated>
+    </task>
+    <task id="LOCAL-00087" summary="写代码中的基本思想">
+      <created>1539877398824</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1539877398824</updated>
+    </task>
+    <task id="LOCAL-00088" summary="自定义线程池的工作机制">
+      <created>1539913852435</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1539913852436</updated>
+    </task>
+    <task id="LOCAL-00089" summary="线程池的四种构造方法">
+      <created>1539921295418</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1539921295419</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Linux面试题总结">
+      <created>1540005840978</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1540005840978</updated>
+    </task>
+    <task id="LOCAL-00091" summary="内存映射机制">
+      <created>1540036765368</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1540036765368</updated>
+    </task>
+    <task id="LOCAL-00092" summary="pdf">
+      <created>1540129219368</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1540129219369</updated>
+    </task>
+    <task id="LOCAL-00093" summary="动态代理机制">
+      <created>1540129316245</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1540129316245</updated>
+    </task>
+    <task id="LOCAL-00094" summary="leetcode中的top k系列问题">
+      <created>1541071372557</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1541071372561</updated>
+    </task>
+    <task id="LOCAL-00095" summary="tok问题进行修改">
+      <created>1541166280678</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1541166280678</updated>
+    </task>
+    <task id="LOCAL-00096" summary="git的基本使用情况">
+      <created>1541166360474</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1541166360474</updated>
+    </task>
+    <task id="LOCAL-00097" summary="最大堆解决top k 频率问题">
+      <created>1541167075784</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1541167075784</updated>
+    </task>
+    <task id="LOCAL-00098" summary="top_k element">
+      <created>1541211440867</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1541211440868</updated>
+    </task>
+    <task id="LOCAL-00099" summary="求一个树的子树">
+      <created>1541211493561</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1541211493561</updated>
+    </task>
+    <task id="LOCAL-00100" summary="jvm中">
+      <created>1541245222489</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1541245222489</updated>
+    </task>
+    <task id="LOCAL-00101" summary="jvm">
+      <created>1541245385550</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1541245385550</updated>
+    </task>
+    <task id="LOCAL-00102" summary="写代码中的思想进行更新处理">
+      <created>1541319653590</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1541319653591</updated>
+    </task>
+    <task id="LOCAL-00103" summary="jvm虚拟机的yuanla">
+      <created>1541339604541</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1541339604541</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Redis replication">
+      <created>1541340234311</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1541340234311</updated>
+    </task>
+    <task id="LOCAL-00105" summary="如何在一个打乱的数组中进行查找的情况">
+      <created>1541731614087</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1541731614087</updated>
+    </task>
+    <task id="LOCAL-00106" summary="增加一种具有相同元素的情况">
+      <created>1541731635482</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1541731635482</updated>
+    </task>
+    <task id="LOCAL-00107" summary="修改">
+      <created>1541732352232</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1541732352232</updated>
+    </task>
+    <task id="LOCAL-00108" summary="G1和CMS垃圾器收集器基本区别">
+      <created>1541766496956</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1541766496956</updated>
+    </task>
+    <task id="LOCAL-00109" summary="如何查找一个数组中出现次数是2的数，其他的出现均是1">
+      <created>1542359425374</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1542359425375</updated>
+    </task>
+    <task id="LOCAL-00110" summary="hashmap 中的形式">
+      <created>1542368893359</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1542368893359</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="433905000" />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1975" height="877" extended-state="0" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13586098" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17935579" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968404" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49859154" visible="true" weight="0.14071392" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.50140846" side_tool="true" weight="0.13559322" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Nl-Palette" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4985694" weight="0.32961586" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49284694" weight="0.24287485" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49427754" weight="0.267658" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4995015" weight="0.3295562" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49427754" weight="0.29739776" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50572246" side_tool="true" visible="true" weight="0.17979002" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49642345" weight="0.42503098" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49427754" weight="0.3135068" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.3290938" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Properties" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="reactor的架构" />
+    <MESSAGE value="写代码中的基本思想" />
+    <MESSAGE value="自定义线程池的工作机制" />
+    <MESSAGE value="线程池的四种构造方法" />
+    <MESSAGE value="Linux面试题总结" />
+    <MESSAGE value="内存映射机制" />
+    <MESSAGE value="pdf" />
+    <MESSAGE value="动态代理机制" />
+    <MESSAGE value="leetcode中的top k系列问题" />
+    <MESSAGE value="tok问题进行修改" />
+    <MESSAGE value="git的基本使用情况" />
+    <MESSAGE value="最大堆解决top k 频率问题" />
+    <MESSAGE value="top_k element" />
+    <MESSAGE value="求一个树的子树" />
+    <MESSAGE value="jvm中" />
+    <MESSAGE value="jvm" />
+    <MESSAGE value="写代码中的思想进行更新处理" />
+    <MESSAGE value="jvm虚拟机的yuanla" />
+    <MESSAGE value="Redis replication" />
+    <MESSAGE value="如何在一个打乱的数组中进行查找的情况" />
+    <MESSAGE value="增加一种具有相同元素的情况" />
+    <MESSAGE value="修改" />
+    <MESSAGE value="G1和CMS垃圾器收集器基本区别" />
+    <MESSAGE value="如何查找一个数组中出现次数是2的数，其他的出现均是1" />
+    <MESSAGE value="hashmap 中的形式" />
+    <option name="LAST_COMMIT_MESSAGE" value="hashmap 中的形式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -569,343 +1299,457 @@
           <line>8</line>
           <properties />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SortedArray/MajorityElement.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LongsubString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#1889#0" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/写代码中的基础思想/二维动态规划的题目.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Twosum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/写代码中的基础思想/topk系列情况.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-322">
+            <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SubSequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#1601#1602#0" expanded="false" />
-            <element signature="e#1631#1632#0" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/写代码中的基础思想/Hashmap.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="354">
+            <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="51" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Editdistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/写代码中的基础思想/二分查找的思路.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/removesortedduplicates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/JVM/gc.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="13" selection-start-column="13" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mincost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/JVM/G1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-15013" />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LongsubString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#1889#0" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/JVM/字节码.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Twosum.java">
+    <entry file="file://$USER_HOME$/Desktop/project/data/phs000289.v1.p1/pheno_variable_summaries/phs000289.v1.pht001883.v1.p1.Venous_Thrombosis_Subject.var_report_2010_09_13.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="-7" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/project/data/phs000289.v2.p1/GapExchange_phs000289.v2.p1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/project/data/phs000289.v1.p1/documents/phs000289.v1-Documents/phd003194.1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JVM/垃圾收集器.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1275">
+            <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SubSequence.java">
+    <entry file="file://$PROJECT_DIR$/src/Tree/BinaryTreePreorderTraversal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#1601#1602#0" expanded="false" />
-            <element signature="e#1631#1632#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Editdistance.java">
+    <entry file="file://$PROJECT_DIR$/src/Tree/FlattenBinaryTreetoLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="94">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/removesortedduplicates.java">
+    <entry file="file://$PROJECT_DIR$/src/Tree/ImplementTrie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mincost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/Java基础/集合类情况简介/ConcurrentHashMap.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LongsubString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#1889#0" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Java基础/集合类情况简介/ArrayList.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="204">
+            <caret line="12" selection-start-line="12" selection-end-line="12" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Twosum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Java基础/关键字/synchronized.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SubSequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#1601#1602#0" expanded="false" />
-            <element signature="e#1631#1632#0" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Java基础/关键字/this.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/removesortedduplicates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Java基础/关键字/原子性问题.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Editdistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/Java基础/参看链接.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LongsubString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#1889#0" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/io复用/水平触发和边缘触发.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="117">
+            <caret line="46" column="63" lean-forward="true" selection-start-line="46" selection-start-column="63" selection-end-line="46" selection-end-column="63" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Twosum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Linux/共享内存.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-322" />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SubSequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#1601#1602#0" expanded="false" />
-            <element signature="e#1631#1632#0" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Linux/linux问题排查.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-143" />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Editdistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/Linux/Memory/分段分页.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/removesortedduplicates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Linux/Linux_OS/IO_Model.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LongsubString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#1889#0" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Linux/Linux_OS/Others.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Twosum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Linux/Linux_OS/MemoryManage.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="543">
+            <caret line="91" selection-start-line="91" selection-end-line="91" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SubSequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#1601#1602#0" expanded="false" />
-            <element signature="e#1631#1632#0" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Linux/Linux_OS/StackHeap.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/removesortedduplicates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Linux/Linux_OS/ThreadPools.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="459">
+            <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Editdistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/Linux/Process/调度.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="731">
+            <caret line="43" selection-start-line="43" selection-end-line="43" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Twosum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Linux/总的参考链接.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="63" selection-start-column="63" selection-end-column="63" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/removesortedduplicates.java">
+    <entry file="file://$PROJECT_DIR$/src/SortedArray/KthElementofTwoSortedArrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SubSequence.java">
+    <entry file="file://$PROJECT_DIR$/src/SortedArray/FindtheDuplicateNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#1601#1602#0" expanded="false" />
-            <element signature="e#1631#1632#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="1173">
+          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LongsubString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#1889#0" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Java基础/图片/hashmap.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java基础/集合类情况简介/HashMap.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1751">
+            <caret line="103" column="29" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Editdistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/Kakfa/消息队列设计精要.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="34">
+            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mincost.java">
+    <entry file="file://$PROJECT_DIR$/src/SortedArray/ContainerWithMostWater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Backpack#0" expanded="false" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="394">
+          <caret line="339" column="5" selection-start-line="339" selection-start-column="5" selection-end-line="339" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring/spring如何读取配置.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="108" selection-start-line="5" selection-start-column="108" selection-end-line="5" selection-end-column="108" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/ThreadLocal.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="272">
+            <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/countdownlatch.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/CLH锁.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/线程池.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="8126">
+            <caret line="478" column="15" selection-start-line="478" selection-start-column="15" selection-end-line="478" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/reentrantlock.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="289">
+            <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/内核内存管理.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="5542">
+            <caret line="326" column="16" selection-start-line="326" selection-start-column="16" selection-end-line="326" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/Process/slab分配器.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="119">
+            <caret line="7" selection-start-line="7" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/shell/sed和gred.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/shell/top和ps.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" selection-start-line="5" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/vmalloc和kmalloc.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1224">
+            <caret line="74" column="67" selection-start-line="74" selection-start-column="67" selection-end-line="74" selection-end-column="67" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/shell/lsof.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/shell/Linux下Java内存排查.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="187">
+            <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
