@@ -1,0 +1,6 @@
+# 要解决的问题
+它的问题描述大概是这样的：
+在一个分布式系统中，有一组的Process(进程)，它们需要确定一个Value。于是每个Process都提出了一个Value，consensus就是指只有其中的一个Value能够被选中作为最后确定的值，并且当这个值被选出来以后，所有的Process都需要被通知到。
+# 常规场景
+表面上看，这个问题很容易解决。比如设置一个server，所有的process都向这个server提交一个Value，这个server可以通过一个简单的规则来挑选出一个Value(例如最先到达的Value被选中)，然后由这个 server通知所有的Process。但是在分布式系统中，就会有各种的问题发生，例如，这个server崩溃了怎么办，所以我们可能需要有几台 server共同决定。还有，Process提交Value的时间都不一样，网络传输过程中由于延迟这些Value到达server的顺序也都没有保证。
+为 了解决这个问题，有很多人提出了各种各样的Protocol，这些Protocol可以看做是一组需要遵循的规则，按照这些规则，这些Process就能 够选举出一个唯一的Value。其中，最有名的一个Protocol就是Paxos算法。还有之前的两段锁协议和三段锁协议

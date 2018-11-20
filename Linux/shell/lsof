@@ -1,0 +1,9 @@
+
+
+
+查看某个端口被哪一个进程占用即可
+
+lsof -i: 端口号 
+    - lsof -i：80
+    
+[参看链接](http://www.cnblogs.com/peida/archive/2013/02/26/2932972.htmlnetnet)

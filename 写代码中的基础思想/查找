@@ -1,0 +1,42 @@
+# 查找
+查看
+
+二分查找时间为olog(n)(最好的情况)，如何是线性查找时间复杂度为0(n),二分查找的使用条件是有序的，有些题目可以对这个有序条件进行变形
+比如 下面的 81 和33，分为两个部分，两个部分分别是有序的，整体是没有，其中81是包含重复元素，问题的关键是查找一个有序数组
+中间元素mid将整体不是有序数组的数组，分开，导致其中必有一部分是有序的，对于有序的部分就可以使用二分排序，对于其他的情况在执行同样的操作即可
+
+如果中间的数小于最右边的数，则右半段是有序的，若中间数大于最右边数，则左半段是有序的。
+
+
+[81. Search in Rotated Sorted Array II]()
+
+33不包含重复元素
+
+[33. Search in Rotated Sorted Array](https://leetcode.com/submissions/detail/166830221/)
+
+二分查找的情况
+
+[287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/discuss/72844/two-solutions-with-explanation-onlogn-and-on-time-o1-space-without-changing-the-input-array/75434?page=5)
+# 排序
+
+
+## 桶排序
+将元素归为，按照大小和序号进行归为处理即可, When we find 5, then swap it with A[4].对于符合条件的才进行交换
+```java
+class solution{
+    public int firstMissingPositive(int A[],int n){
+        for(int i=0;i<n;i++){
+            while(A[i]>=0 && A[i]<=n && A[A[i]-1]!=A[i]){
+                //执行交换代码， 如果是正常的归为 A[A[I]-1]==A[i] 这样才符合要求的情况
+            }
+        }
+    }
+}
+```
+题目应用案例
+
+first_missing_positive
+[41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/discuss/17071/My-short-c++-solution-O(1)-space-and-O(n)-time)
+
+
+## 快速排序

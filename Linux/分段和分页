@@ -1,0 +1,6 @@
+# 分段和分页的关系
+都是内存管理的一部分，就类似于内存分配关系中的伙伴关系和slab算法,一样，slab分类器是在伙伴系统的关系进行的
+
+分页是在分段的基础上进行的东西一样。
+
+[内存管理](https://www.ibm.com/developerworks/cn/linux/l-memmod/index.html)

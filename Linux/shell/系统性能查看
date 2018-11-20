@@ -1,0 +1,13 @@
+Linux内存，CPU ,网络等性能分析
+
+# top,ps,free 
+# ps
+ps aux 是其中常用的命令行参数
+
+[ps详解](https://blog.csdn.net/du_minchao/article/details/51697704)
+1. a 代表所有的
+# /proc/pid/status
+# /proc/meminfo
+# 参考链接
+
+[Linux下查看内存使用情况方法总结](https://9iphp.com/linux/1247.html)

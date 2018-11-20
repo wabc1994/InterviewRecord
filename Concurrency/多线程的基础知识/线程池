@@ -1,0 +1,508 @@
+[TOC]
+
+
+
+# 传统做法
+
+继续Thread 类，或者实现Runnable接口（Runnable 也叫做一个任务）
+
+比如下面做法
+
+```java
+new Thread(new Runnable(){
+    @override
+    public void run(){
+        //todo
+        
+    }
+}
+```
+
+## New Thread的弊端
+
+- 每次new Thread 新建对象性能很差
+- 线程缺乏统一管理，可能无限制创建线程、互相竞争，及可能占用过多的系统资源导致司机
+- 缺乏更过功能，如定时执行、定期执行、线程中断
+- 一个任务一个线程
+
+>有时候，系统需要处理非常多的执行时间很短的请求，如果每一个请求都开启一个新线程的话，系统就要不断的进行线程的创建和销毁，有时花在创建和销毁线程上的时间会比线程真正执行的时间还长。而且当线程数量太多时，系统不一定能受得了。
+
+## 线程池的好处
+
+- 重用存在的线程、减少对象创建、消亡的开销，性能佳。
+- 可有效控制最大并发线程数，提高系统资源的使用率，同时避免过多资源竞争，避免堵塞。
+- 提供定时执行、定期执行、单线程、并发数控制等功能。
+
+>“在线程池中执行任务“”比“为每个线程分配一个任务”优势更多。
+>
+>- 通过重用现有的线程而不是创建线程，可以在处理多个请求时分摊在线程创建和销毁过程中产生的巨大开销。
+>- 另一个额外的好处是，当请求到达时，工作线程通常已经存在，因此不会由于等待创建线程而延迟任务的执行，从而提高了响应性。
+>- 通过适当的调整线程池的大小，可以创建足够的线程以便使处理器保持忙碌状态，同时还可以防止过多线程相互竞争资源而使应用程序耗尽内存或失败。
+
+# 线程池
+
+## 定义
+有两种线程池，一种是jdk自动的，另一种是自动的ThreadPoolExecutor(最常用，重点)
+
+线程池，从字面含义来看，是指管理一组同构工作线程的资源池。线程池是与工作队列密切相关的，其中在工作队列中保存了所有等待执行的任务。工作者线程的任务很简单：从工作队列中获取一个任务，执行任务，然后返回线程池并等待下一个任务。
+
+## 执行过程
+
+1. 默认情况下，创建完线程池后并不会立即创建线程, 而是等到有任务提交时才会创建线程来进行处理。
+2. 当线程数小于核心线程数时，每提交一个任务就创建一个线程来执行，即使当前有线程处于空闲状态，直到当前线程数达到核心线程数。
+3. 当前线程数达到核心线程数时，如果这个时候还提交任务，这些任务会被放到队列里，等到线程处理完了手头的任务后，会来队列中取任务处理
+4. 当前线程数达到核心线程数并且队列也满了，如果这个时候还提交任务，则会继续创建线程来处理，直到线程数达到最大线程数。
+5. 当前线程数达到最大线程数并且队列也满了，如果这个时候还提交任务，则会触发饱和策略。 
+6. 如果某个线程的控线时间超过了keepAliveTime，那么将被标记为可回收的，并且当前线程池的当前大小超过了核心线程数时，这个线程将被终止。
+
+# Executor(接口)
+
+![总体概览图](https://github.com/wabc1994/Leetcode2/blob/master/Concurrency/picture/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%85%B3%E7%B3%BB%E5%9B%BE.png)
+
+
+
+## execute(方法)
+
+Executor 接口中之定义了一个方法 execute（Runnable command），该方法接收一个 Runable 实例，它用来执行一个任务，任务即一个实现了 Runnable 接口的类。
+
+## ExecutorService 接口
+
+xecutorService 接口继承自 Executor 接口，它提供了更丰富的实现多线程的方法，比如，ExecutorService 提供了关闭自己的方法，以及可为跟踪一个或多个异步任务执行状况而生成 Future 的方法。 可以调用 ExecutorService 的 shutdown（）方法来平滑地关闭 ExecutorService，调用该方法后，将导致 ExecutorService 停止接受任何新的任务且等待已经提交的任务执行完成(已经提交的任务会分两类：一类是已经在执行的，另一类是还没有开始执行的)，当所有已经提交的任务执行完毕后将会关闭 ExecutorService。
+
+> 因此我们一般用该接口来实现和管理多线程。
+
+
+
+## ExectorService 详解
+
+ExecutorService 的生命周期包括三种状态：运行、关闭、终止。创建后便进入运行状态，当调用了 shutdown（）方法时，便进入关闭状态，此时意味着 ExecutorService 不再接受新的任务，但它还在执行已经提交了的任务，当素有已经提交了的任务执行完后，便到达终止状态。如果不调用 shutdown（）方法，ExecutorService 会一直处在运行状态，不断接收新的任务，执行新的任务，服务器端一般不需要关闭它，保持一直运行即可。
+
+## 工厂方法(创建线程)
+
+Executors 提供了一系列工厂方法用于创先线程池，返回的线程池都实现了 ExecutorService 接口。
+
+1. public static ExecutorService newFixedThreadPool(int nThreads)
+   创建固定数目线程的线程池。
+
+2. public static ExecutorService newCachedThreadPool()
+   创建一个可缓存的线程池，调用execute将重用以前构造的线程（如果线程可用）。如果现有线程没有可用的，则创建一个新线 程并添加到池中。终止并从缓存中移除那些已有 60 秒钟未被使用的线程。
+
+3. public static ExecutorService newSingleThreadExecutor()
+   创建一个单线程化的Executor。
+
+4. public static ScheduledExecutorService newScheduledThreadPool(int corePoolSize)
+   创建一个支持定时及周期性的任务执行的线程池，多数情况下可用来替代Timer类
+
+
+
+   > 这四种方法都是用的 Executors 中的 ThreadFactory 建立的线程，下面就以上四个方法做个比较：都是静态方法
+
+
+
+#四种方法比较
+
+## newCachedThreadPool()
+
+1. 缓存型池子，先查看池中有没有以前建立的线程，如果有，就 reuse 如果没有，就建一个新的线程加入池中
+
+2. 缓存型池子通常用于执行一些生存期很短的异步型任务 因此在一些面向连接的 daemon 型 SERVER 中用得不多。但对于生存期短的异步任务，它是 Executor 的首选。
+
+3. 能 reuse 的线程，必须是 timeout IDLE 内的池中线程，缺省 timeout 是 60s,超过这个 IDLE 时长，线程实例将被终止及移出池。
+
+   > 注意，放入 CachedThreadPool 的线程不必担心其结束，超过 TIMEOUT 不活动，其会自动被终止。
+
+## **newFixedThreadPool(int)**
+
+- newFixedThreadPool 与 cacheThreadPool 差不多，也是能 reuse 就用，但不能随时建新的线程。
+- 其独特之处:任意时间点，最多只能有固定数目的活动线程存在，此时如果有新的线程要建立，只能放在另外的队列中等待，直到当前的线程中某个线程终止直接被移出池子。
+- 和 cacheThreadPool 不同，FixedThreadPool 没有 IDLE 机制（可能也有，但既然文档没提，肯定非常长，类似依赖上层的 TCP 或 UDP IDLE 机制之类的），所以 FixedThreadPool 多数针对一些很稳定很固定的正规并发线程，多用于服务器。
+- 从方法的源代码看，cache池和fixed 池调用的是同一个底层 池，只不过参数不同:
+  - fixed 池线程数固定，并且是0秒IDLE（无IDLE）。
+  - cache 池线程数支持 0-Integer.MAX_VALUE(显然完全没考虑主机的资源承受能力），60 秒 IDLE 。
+
+## newScheduledThreadPool(int)
+
+- 调度型线程池
+- 这个池子里的线程可以按 schedule 依次 delay 执行，或周期执行
+
+
+
+## SingleThreadExecutor()
+
+- 单例线程，任意时间池中只能有一个线程
+- 用的是和 cache 池和 fixed 池相同的底层池，但线程数目是 1-1,0 秒 IDLE（无 IDLE）
+
+>一般来说，CachedTheadPool 在程序执行过程中通常会创建与所需数量相同的线程，然后在它回收旧线程时停止创建新线程，因此它是合理的 Executor 的首选，只有当这种方式会引发问题时（比如需要大量长时间面向连接的线程时），才需要考虑用 FixedThreadPool。（该段话摘自《Thinking in Java》第四版）
+
+
+
+## 使用
+
+通过 Executors 的以上四个静态工厂方法获得 ExecutorService 实例，而后调用该实例的 execute（Runnable command）方法即可。一旦 Runnable 任务传递到 execute（）方法，该方法便会自动在一个线程上执行。下面是 Executor 执行 Runnable 任务的示例代码
+
+```java
+import java.util.concurrent.ExecutorService;   
+import java.util.concurrent.Executors;   
+
+public class TestCachedThreadPool{   
+    public static void main(String[] args){   
+        ExecutorService executorService = Executors.newCachedThreadPool();   
+//      ExecutorService executorService = Executors.newFixedThreadPool(5);  
+//      ExecutorService executorService = Executors.newSingleThreadExecutor();  
+        for (int i = 0; i < 5; i++){   
+            executorService.execute(new TestRunnable());   
+            System.out.println("************* a" + i + " *************");   
+        }   
+        executorService.shutdown();   
+    }   
+}   
+
+class TestRunnable implements Runnable{   
+    public void run(){   
+        System.out.println(Thread.currentThread().getName() + "线程被调用了。");   
+    }   
+}  
+```
+
+# 自定义线程池
+
+一定要看下面的情况
+
+ThreadPoolExecutor是线程池的真正实现
+
+- [线程池的使用与执行流程](https://blog.csdn.net/u011240877/article/details/73440993)
+- [线程池ThreadPoolExecutor构造方法和规则](https://blog.csdn.net/qq_25806863/article/details/71126867)
+
+自定义线程池，可以用 ThreadPoolExecutor 类创建，它有多个构造方法来创建线程池，用该类很容易实现自定义的线程池，这里先贴上示例程序：
+
+```java
+import java.util.concurrent.ArrayBlockingQueue;   
+import java.util.concurrent.BlockingQueue;   
+import java.util.concurrent.ThreadPoolExecutor;   
+import java.util.concurrent.TimeUnit;   
+
+public class ThreadPoolTest{   
+    public static void main(String[] args){   
+        //创建等待队列   
+        BlockingQueue<Runnable> bqueue = new ArrayBlockingQueue<Runnable>(20);   
+        //创建线程池，池中保存的线程数为3，允许的最大线程数为5  
+        ThreadPoolExecutor pool = new ThreadPoolExecutor(3,5,50,TimeUnit.MILLISECONDS,bqueue);   
+        //创建七个任务   
+        Runnable t1 = new MyThread();   
+        Runnable t2 = new MyThread();   
+        Runnable t3 = new MyThread();   
+        Runnable t4 = new MyThread();   
+        Runnable t5 = new MyThread();   
+        Runnable t6 = new MyThread();   
+        Runnable t7 = new MyThread();   
+        //每个任务会在一个线程上执行  
+        pool.execute(t1);   
+        pool.execute(t2);   
+        pool.execute(t3);   
+        pool.execute(t4);   
+        pool.execute(t5);   
+        pool.execute(t6);   
+        pool.execute(t7);   
+        //关闭线程池   
+        pool.shutdown();   
+    }   
+}   
+
+class MyThread implements Runnable{   
+    @Override   
+    public void run(){   
+        System.out.println(Thread.currentThread().getName() + "正在执行。。。");   
+        try{   
+            Thread.sleep(100);   
+        }catch(InterruptedException e){   
+            e.printStackTrace();   
+        }   
+    }   
+    
+    
+}  
+```
+
+### 构造函数
+
+ThreadPoolExecutor有四种构造方法
+![线程池的四种构造方法](https://github.com/wabc1994/InterviewRecord/blob/master/Concurrency/picture/contro_thread.png)
+
+```java
+public ThreadPoolExecutor (int corePoolSize, int maximumPoolSize, long keepAliveTime, TimeUnit unit,BlockingQueue<Runnable> workQueue,ThreadFactory threadFactory, RejectedExecutionHandler handler)
+
+```
+
+- corePoolSize：线程池中所保存的核心线程数，包括空闲线程。
+- maximumPoolSize：池中允许的最大线程数。
+- keepAliveTime：核心池以外的线程存活时间，即没有任务的外包的存活时间(核心线程数，默认情况下核心线程会一直存活，即使处于闲置状态也不会受存keepAliveTime限制)
+- unit：持续时间的单位。
+- workQueue：任务执行前保存任务的队列，仅保存由 execute 方法提交的 Runnable 任务。BlockingQueue 是总的队列接口
+
+(**当线程数量小于核心线程数时，使不会将任务加入任务队列的，可以直接创建线程进行不执行，不用放进队列中等待**)
+
+- threadFactory :创建新线程使用的工厂
+- handler 当任务无法执行时的处理器
+
+上面的构造函数关系图如下：
+![线程池内部工作机制](https://github.com/wabc1994/InterviewRecord/blob/master/Concurrency/picture/WechatIMG59.jpeg)
+## 保存待执行任务的阻塞队列
+**线程池的线程执行规则跟任务队列有很大的关系。**
+
+当线程池中的核心线程数已满时，任务就要保存到队列中了。
+
+如果新请求的到达速率超过了线程池的处理速率，那么新到来的请求将累积起来。在线程池中，这些请求会在一个由Executor管理的Runnable队列中等待，而不会像**线程那样去竞争CPU资源**。常见的工作队列有以下几种，前三种用的最多。
+
+线程池中使用的队列是 BlockingQueue 接口，常用的实现有如下几种：
+1. ArrayBlockingQueue：基于数组、有界，按 FIFO（先进先出）原则对元素进行排序
+
+2. LinkedBlockingQueue：基于链表，按FIFO （先进先出） 排序元素 
+ - 吞吐量通常要高于 ArrayBlockingQueue
+ - Executors.newFixedThreadPool() 使用了这个队列
+
+3. SynchronousQueue：SynchronousQueue不是一个真正的队列，而是一种在线程之间移交的机制。要将一个元素放入SynchronousQueue中, 必须有另一个线程正在等待接受这个元素. 如果没有线程等待，并且线程池的当前大小小于最大值，那么ThreadPoolExecutor将创建 一个线程, 否则根据饱和策略，这个任务将被拒绝。使用直接移交将更高效，因为任务会直接移交 给执行它的线程，而不是被首先放在队列中, 然后由工作者线程从队列中提取任务. 只有当线程池是无解的或者可以拒绝任务时，SynchronousQueue才有实际价值.
+
+4. PriorityBlockingQueue：优先级队列，有界队列，根据优先级来安排任务，任务的优先级是通过自然顺序或Comparator（如果任务实现了Comparator）来定义的。
+5. DelayedWorkQueue：延迟的工作队列，无界队列。
+
+## 线程的执行规则
+线程池的线程执行规则跟阻塞任务队列有很大的关系。主要有两点要注意：
+ - 有没有阻塞队列大小限制
+ - 选择的阻塞队列的类型
+
+- 下面都假设任务队列没有大小限制：
+    - 如果线程数量<=核心线程数量，那么直接启动一个核心线程来执行任务，不会放入队列中。
+    - 如果线程数量>核心线程数，但<=最大线程数，并且任务队列是LinkedBlockingDeque的时候，超过核心线程数量的任务会放在任务队列中排队。
+    - 如果线程数量>核心线程数，并且>最大线程数，当任务队列是LinkedBlockingDeque，会将超过核心线程的任务放在任务队列中排队。也就是当任务队列是LinkedBlockingDeque并且没有大小限制时，线程池的最大线程数设置是无效的，他的线程数最多不会超过核心线程数。
+    - 如果线程数量>核心线程数，并且>最大线程数，当任务队列是SynchronousQueue的时候，会因为线程池拒绝添加任务而抛出异常。
+- 任务队列大小有限时
+    - 当LinkedBlockingDeque塞满时，新增的任务会直接创建新线程来执行，当创建的线程数量超过最大线程数量时会抛异常。
+    - SynchronousQueue没有数量限制。因为他根本不保持这些任务，而是直接交给线程池去执行。当任务数量超过最大线程数时会直接抛异常。
+    
+## 具体执行
+要了解这额参数左右着什么，就需要了解线程池具体的执行方法 ThreadPoolExecutor.execute:
+```java
+public void execute(Runnable command){
+    if(command==null){
+        throw new NullPointerException();
+        int  c= ctl.get();
+        //1.当前池中线程比核心数要少，新建一个线程执行任务(不用将任务放入BlockingQueue)
+        if(workerCount(c)<corePoolSize)
+            {
+                if(addWorker(command,true))
+                    return;
+                c =ctl.get();
+                
+            }
+            //2.核心池已满，但任务队列未满，添加到队列中
+                if (isRunning(c) && workQueue.offer(command)) {   
+                    int recheck = ctl.get();
+                    if (! isRunning(recheck) && remove(command))    //如果这时被关闭了，拒绝任务
+                        reject(command);
+                    else if (workerCountOf(recheck) == 0)    //如果之前的线程已被销毁完，新建一个线程
+                        addWorker(null, false);
+                }
+                
+                //3.核心池已满，队列已满，试着创建一个新线程
+                    else if (!addWorker(command, false))
+                        reject(command);    //如果创建新线程失败了，说明线程池被关闭或者线程池完全满了，拒绝任务
+          
+    }
+}
+```
+
+可以看到，线程池处理一个任务主要分三步处理，代码注释里已经介绍了，我再用通俗易懂的例子解释一下：
+
+
+
+## 创建自己的线程池注意的问题
+### 定义线程池的几个参数
+核心数、最大线程池数和存活时间
+
+- 设置核心池的数量为 CPU 数的两倍，一般是 4、8，好点的 16 个线程
+- 最大线程数设置为 64
+- 空闲线程的存活时间设置为 1 秒
+
+###  然后根据处理的任务类型选择不同的阻塞队列
+
+- 如果是要求高吞吐量的，可以使用 `SynchronousQueue` 队列；
+
+- 如果对执行顺序有要求，可以使用 `PriorityBlockingQueue`；
+
+- 如果最大积攒的待做任务有上限，可以使用 LinkedBlockingQueue`。
+
+  ```java
+  private final BlockingQueue<Runnable> mWorkQueue = new LinkedBlockingQueue<>(128);
+  
+  ```
+
+
+
+### 然后创建自己的ThreadFactory
+
+```java
+private final ThreadFactory DEFAULT_THREAD_FACTORY = new ThreadFactory() {
+    private final AtomicInteger mCount = new AtomicInteger(1);
+    public Thread newThread(Runnable r) {
+        Thread thread = new Thread(r, TAG + " #" + mCount.getAndIncrement());
+        thread.setPriority(Thread.NORM_PRIORITY);
+        return thread;
+ }
+};
+```
+
+
+
+### 然后就可以创建线程池了
+
+## 三种排队策略
+
+- 直接提交。
+
+  - 工作队列的默认选项是SynchronousQueue，它将任务直接提交给线程而不保持它们。
+  - 在此，如果不存在可用于立即运行任务的线程，则试图把任务加入队列将失败，因此会构造一个新的线程。此策略可以避免在处理可能具有内部依赖性的请求集时出现锁。直接提交通常要求无界maximumPoolSizes 以避免拒绝新提交的任务。当命令以超过队列所能处理的平均数连续到达时，此策略允许无界线程具有增长的可能性。
+
+- 无界队列。
+
+  - 使用无界队列（例如，不具有预定义容量的 LinkedBlockingQueue）将导致在所有 corePoolSize线程都忙时新任务在队列中等待。这样，创建的线程就不会超过 corePoolSize。
+  - （因此，maximumPoolSize的值也就无效了。）当每个任务完全独立于其他任务，即任务执行互不影响时，适合于使用无界队列；例如，在 Web页服务器中。这种排队可用于处理瞬态突发请求，当命令以超过队列所能处理的平均数连续到达时，此策略允许无界线程具有增长的可能性。
+
+- 有界队列。
+
+  - 当使用有限的 maximumPoolSizes 时，有界队列（如ArrayBlockingQueue）有助于防止资源耗尽，但是可能较难调整和控制。
+
+  - 队列大小和最大池大小可能需要相互折衷：使用大型队列和小型池可以最大限度地降低CPU 使用率、操作系统资源和上下文切换开销，但是可能导致人工降低吞吐量。如果任务频繁阻塞（例如，如果它们是 I/O边界），则系统可能为超过您许可的更多线程安排时间。使用小型队列通常要求较大的池大小，CPU使用率较高，但是可能遇到不可接受的调度开销，这样也会降低吞吐量。
+
+     
+
+
+## ThreadPoolExecutor源码（JDK 1.8）
+
+[源码学习链接](https://blog.csdn.net/v123411739/article/details/79124193)
+
+# ThreadLocal
+
+ThreadLocal存放的值是线程内共享的，线程间互斥的，主要用于线程内共享一些数据，避免通过参数来传递，这样处理后，能够优雅的解决一些实际问题。
+
+**什么是ThreadLocal变量**
+
+
+
+```Java
+public class ConnectionManager {  
+
+    /** 线程内共享Connection，ThreadLocal通常是全局的，支持泛型 */  
+    private static ThreadLocal<Connection> threadLocal = new ThreadLocal<Connection>();  
+
+    public static Connection getCurrConnection() {  
+        // 获取当前线程内共享的Connection  
+        Connection conn = threadLocal.get();  
+        try {  
+            // 判断连接是否可用  
+            if(conn == null || conn.isClosed()) {  
+                // 创建新的Connection赋值给conn(略)  
+                // 保存Connection  
+                threadLocal.set(conn);  
+            }  
+        } catch (SQLException e) {  
+            // 异常处理  
+        }  
+        return conn;  
+    }  
+
+    /** 
+     * 关闭当前数据库连接 
+     */  
+    public static void close() {  
+        // 获取当前线程内共享的Connection  
+        Connection conn = threadLocal.get();  
+        try {  
+            // 判断是否已经关闭  
+            if(conn != null && !conn.isClosed()) {  
+                // 关闭资源  
+                conn.close();  
+                // 移除Connection  
+                threadLocal.remove();  
+                conn = null;  
+            }  
+        } catch (SQLException e) {  
+            // 异常处理  
+        }  
+    }  
+} 
+```
+
+## 使用好处
+
+1. 统一管理Connection
+2. 不需要显示传参数Connection, 代码更优雅
+3. 降低耦合性。
+
+## ThreadLocal实现原理
+
+首先 ThreadLocal 是一个泛型类，保证可以接受任何类型的对象。因为一个线程内可以存在多个 ThreadLocal 对象，所以其实是 ThreadLocal 内部维护了一个 Map ，这个 Map 不是直接使用的 HashMap ，而是 ThreadLocal 实现的一个叫做 ThreadLocalMap 的静态内部类。而我们使用的 get()、set() 方法其实都是调用了这个ThreadLocalMap类对应的 get()、set() 方法。
+
+## ### public T get()
+
+返回此线程局部变量的当前线程副本中的值。如果这是线程第一次调用该方法，则创建并初始化此副本。 
+返回： 
+此线程局部变量的当前线程的值
+
+```java
+ public T get() {   
+        Thread t = Thread.currentThread();   
+        ThreadLocalMap map = getMap(t);   
+        if (map != null)   
+            return (T)map.get(this);   
+  
+        // Maps are constructed lazily.  if the map for this thread   
+        // doesn't exist, create it, with this ThreadLocal and its   
+        // initial value as its only entry.   
+        T value = initialValue();   
+        createMap(t, value);   
+        return value;   
+    }   
+```
+
+createMap()原理如下所
+
+```java
+void createMap(Thread t, T firstValue) {   
+        t.threadLocals = new ThreadLocalMap(this, firstValue);   
+    } 
+```
+
+ThreadLocalMap是个静态的内部类：
+
+```java
+static class ThreadLocalMap {   
+    ........   
+    }  
+```
+
+最终的变量是放在了当前线程的 `ThreadLocalMap` 中，并不是存在 ThreadLocal 上，ThreadLocal 可以理解为只是ThreadLocalMap的封装，传递了变量值。
+
+### public T set(T value)
+
+将此线程局部变量的当前线程副本中的值设置为指定值。许多应用程序不需要这项功能，它们只依赖于 initialValue() 方法来设置线程局部变量的值。 
+参数： 
+value - 存储在此线程局部变量的当前线程副本中的值。
+
+```java
+public void set(T value) {
+        Thread t = Thread.currentThread();
+        ThreadLocalMap map = getMap(t);
+        if (map != null)
+            map.set(this, value);
+        else
+            createMap(t, value);
+    }
+```
+
+### public void remove()
+
+移除此线程局部变量的值。这可能有助于减少线程局部变量的存储需求。
+
+## ThreadLocal实现原理
+
+首先 ThreadLocal 是一个泛型类，保证可以接受任何类型的对象。

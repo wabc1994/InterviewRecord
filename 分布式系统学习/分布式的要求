@@ -1,0 +1,17 @@
+分布式架构：（了解原理就行，如果真的有实践经验更好）
+
+      CAP原理和BASE理论。           
+
+      Nosql与KV存储（redis，hbase，mongodb，memcached等）           
+
+      服务化理论（包括服务发现、治理等，zookeeper、etcd、springcloud微服务、）           
+
+      负载均衡（原理、cdn、一致性hash）           
+
+      RPC框架（包括整体的一些框架理论，通信的netty，序列化协议thrift，protobuff等）           
+
+      消息队列（原理、kafka，activeMQ，rocketMQ）           
+
+      分布式存储系统（GFS、HDFS、fastDFS）、存储模型（skipList、LSM等）           
+
+      分布式事务、分布式锁等

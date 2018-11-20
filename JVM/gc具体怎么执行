@@ -1,0 +1,96 @@
+[TOC]
+
+# 参考链接情况
+
+[官方文件Garbage collection](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html)
+
+
+
+[中文版](https://blog.csdn.net/ligeforrent/article/details/76619057)
+
+
+
+# 几种GC类型的判断
+
+gc的评价指标就是两个latency 和throughout 
+
+这三个概念中比较只有Minor gc 是比较清楚明确的，Major gc 和Full gc有点重合
+
+这三这之间是怎么被触发的要了解
+
+
+
+老年代和新生代对象之间的相互之间关系是怎样？
+
+- 经过一次minor gc 还存活着的对象 Age 就增加一次的情况，为年龄设置一定的限制，超过了这个限制对象就会从新生代移动到老年代中去
+
+# Minor gc
+
+## 什么条件下才会触发一次Minor gc ?
+
+Minor GC触发条件：当Eden区满时，触发Minor GC。
+
+## 具体是如何工作的？
+
+
+
+Minor gc 是针对YOUNG generation，eden 、s0和s1 三个区域 
+
+- young GC：当young gen中的eden区分配满的时候触发。注意young GC中有部分存活对象会晋升到old gen，所以young GC后old gen的占用量通常会有所升高。
+
+# Major gc
+
+针对 tenured 老年代的情况
+
+## 什么条件下才会触发一次Major gc ?
+
+# Full gc
+
+Full gc 是针对老年代和新生代的gc
+
+## 什么条件下才会触发一次Full  gc ?
+
+主要是有下面节点情况可能触发Full Gc
+
+1. 系统执行System.gc();系统建议进行垃圾收集，但不是必须的情况
+
+2. 老年代本身的空间不足
+
+3. 通过minor gc 后新生代(新生代达到进入老年代的限制的对象)要移动进入老年代的大小大于老年代的内存空间（需要的空间大于剩余的内存空间）
+
+   关于第三条可以总结如下的情况
+
+   >jvm 在执行minor会进行一系列的检查
+   >
+   >执行Minor GC的时候，JVM会检查老年代中最大连续可用空间是否大于了当前新生代所有对象的总大小。
+   >
+   >1. 如果大于，则直接执行Minor GC（这个时候执行是没有风险的）。
+   >2. 如果小于了，JVM会检查是否开启了空间分配担保机制，如果没有开启则直接改为执行Full GC。
+   >3. 如果开启了，则JVM会检查老年代中最大连续可用空间是否大于了历次晋升到老年代中的平均大小，如果小于则执行改为执行Full GC。
+   >4. 如果大于则会执行Minor GC，如果Minor GC执行失败则会执行Full GC4
+
+
+
+   4. 由Eden区、From Space区向To Space区复制时，对象大小大于To Space可用内存，则把该对象转存到老年代，且老年代的可用内存小于
+   5. 堆中分配很大的对象
+
+    所谓大对象，是指需要大量连续内存空间的java对象，例如很长的数组，此种对象会直接进入老年代，而老年代虽然有很大的剩余空间，但是无法找到足够大的连续空间来分配给当前对象，此种情况就会触发JVM进行Full GC。
+
+
+
+参考的链接
+
+[什么条件下触发Full GC](https://blog.csdn.net/chenleixing/article/details/46706039)
+
+
+
+
+
+## 如何避免频繁地进行Full GC ?
+
+如何进行jvm排查的情况
+
+
+
+[频繁gc条件](https://blog.csdn.net/wilsonpeng3/article/details/70064336)
+
