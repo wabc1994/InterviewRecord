@@ -77,6 +77,9 @@ kill -9 PID
  # ps
  ps aux 是其中常用的命令行参数
  
+ 通过cpu和内存使用来过滤进程
+ 也许你希望把结果按照 CPU 或者内存用量来筛选，这样你就找到哪个进程占用了你的资源。要做到这一点，我们可以使用 aux 参数，来显示全面的信息
+ 
  [ps详解](https://blog.csdn.net/du_minchao/article/details/51697704)
  1. a 代表所有的
  # /proc/pid/status

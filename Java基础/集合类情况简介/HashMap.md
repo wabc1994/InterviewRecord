@@ -1,30 +1,3 @@
-# 基础数据结构
-
-# jdk1.7 与jdk 1.8的区别
-
-## 新增红黑树
-## 简化hash 函数
-
-这里面也叫做扰动函数
-
-减少位移动运算和异或运算
-
-#  扩容机制是如何工作的？
-
-# 与Hashtable的区别
-
-
-## 扩容机制
-## 是否可以put null
-
-# 与LinkedHashtable的区别
-
-# 进一步改进 ConcurrentHashtable的区别
-
-# 与Hashset的区别
-
-
-
 [TOC]
 
 
@@ -36,8 +9,6 @@
 
 
 >想一想HashMap设计的初衷，想用key通过时间复杂度O（1）内拿到对应的Value，对吧，那现实中是会有hash冲突的，那有冲突咱们必须解决啊，所以链表就形成了，对吧？为什么要设计链表，知道了吧？因为要解决冲突，那链表的出现带来了一个问题，HashMap设计的初衷，想用key通过时间复杂度O（1）内拿到对应的Value，但是链表变长是不是就对时间复杂度O（1）相违背了呢（因为定位到一个数组之后，还需要遍历一下链表才能通过key拿到value）？于是乎有了链表长度达到8之后 会进行转红黑树，对吧？所以转红黑树这个事情其实 服务于HashMap设计初衷：用key通过时间复杂度O（1）内拿到对应的Value。这些东西可能需要看一下源码，你才能理解得更清楚。
-
-
 
 #  什么叫hash？
 
@@ -593,5 +564,35 @@ HashMap的直接子类LinkedHashMap 继承了HashMap的所用特性，并且还�
 
 
 
+ # 如何记忆(面试过程中增加记忆)
+
+1. 基础数据结构
+2. jdk1.7 与jdk 1.8的区别
+3. 新增红黑树
+4. 简化hash 函数，这里面也叫做扰动函数
+5. 减少位移动运算和异或运算
+6. 扩容机制是如何工作的？
+
+## 与Hashtable的区别
+
+## 扩容机制
+
+## 是否可以put null
+
+# 与LinkedHashtable的区别
+
+# 进一步改进 ConcurrentHashtable的区别
+
+# 与Hashset的区别
+底层实现其实就是hashMap，直接定义了一个map对象，
+
+```java
+private transient HashMap<E,Object> map;
+public HashSet() {
+        map = new HashMap<>();
+    }
+```
+
+然后各种方法基本都是直接调用Hashmap, 各种基本方法吧，基本全是HashMap的情况
 
 
