@@ -1,89 +1,72 @@
 package SortedArray;
 
+import java.util.Arrays;
+
 public class ReversePair {
     public  int solution(int []num) {
         if (num == null || num.length == 0) {
             return 0;
         }
-        return getCount(num, 0, num.length - 1);
+        return reverse(num, 0, num.length - 1);
     }
+    private  static int reverse(int [] nums, int left, int right){
+     if(left>=right) {return 0;}
+    int mid = (left+right)/2;
+    int leftcount = reverse(nums, left, mid);
+    int rightcout =  reverse(nums, mid+1,right);
+    int count =  merger(nums, left, mid, mid+1,right);
+        return leftcount + rightcout + count;
+}
 
-    private int getCount(int[] num, int start, int end){
+    private static  int merger(int [] nums, int lstart, int lend ,int rstart, int rend){
+        int mark_start_1 = lstart;
+        int mark_start_2  =rstart;
+        int [] tmp = new int[nums.length];
+        int r=lstart;
+        int count =0;
 
-        if(start>=end) {return 0;}
-        int mid = (start+end)/2;
-          //这是左边的结果，得到的结果是有序的情况
-        int left = getCount(num, start,mid);
-        //这是右边的结果情况，也是有序的情况
-
-        int right =  getCount(num, mid+1,end);
-
-
-        //计算两边的结果情况，进行查看进一步的情况
-        int count = merger(num, start,mid, mid+1,end);
-
-        return  right + left+count;
-
-
-
-
-    }
-    //在归并排序中，我们假设ls 到le， rs 到 re的元素都是有序的情况
-
-    private int merger(int [] num, int ls,int le, int rs, int re){
-        //都是已有的元素情况
-        int mark_start_1 = ls;
-        int len = re-ls+1;
-        //标记开始初始的值
-        int mark_start_2 =  rs;
-         int count=0;
-         int r = 0;
-         int [] tmp  = new int [len];
-         //这边都是有序的情况，n
-
-
-        //如果是符合题意的情况， tmp 是有序数组的情况
-         if(num[ls]>num[rs]>>1){
-             //不单单只是有一次而已的情况发生，如果ls 比rs大的话，其实是比mark 到rs的值都大，都比前面的要大的情况
-             count+= rs-mark_start_2+1;
-            tmp[r++]=num[rs++];
-
-         }
-         //不满足题意情况
-         else {
-             tmp[r++] = num[rs++];
-         }
-
-         while(ls<=le && rs<=re){
-             if(num[ls]<num[rs]){
-                 tmp[r++] = num[ls++];
-             }
-             else {
-                 tmp[r++] = num[rs++];
-             }
-         }
-         //防止两边还有剩余的情况,有时候并不是都是2的整数，需要防止不是2的情况
-        while(ls<=le){
-            tmp[r++] = num[ls++];
+        while(lstart<=lend && rstart<=rend){
+            if(nums[lstart] > nums[rstart]){
+                tmp[r++] = nums[rstart++];
+                count += mark_start_2-lstart;
+            }
+            else{
+                tmp[r++] = nums[lstart++];
+            }
         }
 
-        while(rs<=re){
-            tmp[r++] = num[rs++];
+        while(lstart<=lend){
+            tmp[r++]=nums[lstart++];
+
         }
 
-        //将元素,在这里的情况是ls值已近改变了，需要重新标记下情况
+        while(rstart<=rend){
+            tmp[r++]=nums[rstart++];
+        }
 
-         for(int i= 0;i<len;){
-             num[i+mark_start_1]=tmp[i];
-         }
-         return count;
-
-
+        for(int i=mark_start_1;i<=rend;i++){
+            nums[i] = tmp[i];
+        }
+        return count;
     }
-    private void swap(int a, int b){
-        int tmp = a;
-        a = b;
-        b =a;
-      
+
+
+
+
+    public  int solution_2(int []nums){
+        return mergeSort(nums, 0, nums.length-1);
+    }
+    private int mergeSort(int[] nums, int s, int e){
+        if(s>=e) {return 0;}
+        int mid = s + (e-s)/2;
+        //int mid = (s+e)/2 也可以
+        int cnt = mergeSort(nums, s, mid) + mergeSort(nums, mid+1, e);
+        for(int i = s, j = mid+1; i<=mid; i++){
+            //为何要转化为2.0的形式，主要是为了以防止溢出
+            while(j<=e && nums[i]/2.0 > nums[j]) {j++;}
+            cnt += j-(mid+1);
+        }
+        Arrays.sort(nums, s, e+1);
+        return cnt;
     }
 }
