@@ -8,6 +8,10 @@ class Double_Node{
     Double_Node prev;
     public Double_Node() {
     }
+
+    // 空的带头节，不存储任何数据，只是为了方便获取数据即可，  map存储的是都是封装过后的数据类型情
+
+
     public Double_Node(int key, int value)
     {
         this.key = key;
@@ -15,11 +19,23 @@ class Double_Node{
     }
 }
 //不要使用map.size()==
+
+
+
+/**
+ * 添加和删除操作
+ * 各个函数之前的关系， get(key)--- movetofisrt(node)先从原来的位置删除--- addfirst(node) 将movefirst 保存的节点进行移动
+
+                             set()---判断是否存在,如果存在，更新value, 否则 ---freespace() map.put() ------addfist(node)
+ */
+
 public class LRU {
     private int capacity ;
     private int numbers = 0;
     Map<Integer, Double_Node> map = null;
+
     //map 中记录的是无顺序的，跟插入顺序是无关的。
+
     Double_Node head = null;
 
 
@@ -28,7 +44,8 @@ public class LRU {
         this.capacity = capacity;
         map = new HashMap<>();
         //创建一个空的头结点，key 和value 均为空，其中
-        head = new Double_Node(); //head ==null 与new Double_Node()
+        head = new Double_Node();
+        //head ==null 与new Double_Node()
         //不给初始值是一样的,双向循环链表
         head.next = head.prev=head;
 
@@ -36,7 +53,7 @@ public class LRU {
 
     public int get(int key) {
         if (!map.containsKey(key))
-            return -1;
+        {return -1;}
         //对某个元素进行访问的话，need to do two things one is return the value;
         //the other is to get the value to the doublelinkedlist  the first node;
         moveToFront(map.get(key));
@@ -61,6 +78,7 @@ public class LRU {
             // insure the map has the needing space;
             freespace();
             Double_Node node = new Double_Node(key, value);
+            //统计链表的节点个数问题
             ++this.numbers;
             map.put(key, node);
             add_to_first(node);
@@ -70,7 +88,8 @@ public class LRU {
 
     private void freespace() {
         //delete the final Double_Node, head.prev.prev 代表到数第二个元素，
-        //head.prev 代表到数第一结点，也是要删除的结点
+        //head.prev
+        //在这个过程当中，删除的话要删除两个地方
         if (this.numbers == capacity) {
             map.remove(head.prev.key);
             Double_Node tail = head.prev.prev;
@@ -110,10 +129,13 @@ public class LRU {
         LRU cache = new LRU(2);
         cache.put(1, 1);
         cache.put(2, 2);
-        System.out.println(cache.get(1));      // returns 1
-        cache.put(3, 3);    // evicts key 2
+        System.out.println(cache.get(1));
+        // returns 1
+        cache.put(3, 3);
+        // evicts key 2
         System.out.println(cache.get(2));
-        cache.put(4, 4);    // evicts key 1
+        cache.put(4, 4);
+        // evicts key 1
         Set<Integer>is = cache.map.keySet();
         System.out.println(is);
         System.out.println(cache.get(1));

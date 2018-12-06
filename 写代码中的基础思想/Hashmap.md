@@ -24,3 +24,14 @@ for(int i:nums){
          frequencyMap.put(i,1);
         }
 ```
+
+
+## 实现O(1)的时间复杂度
+
+只有题目中说明了O(1)的取键值对， 都是采用这种办法进行, Map<key,<key,value>>, key 对应Integer, <key,value> 在真实的代码中我们可以进行一系列的封装， 比如封装成为一个节点
+
+
+有时候需要同链表进行结合使用,像这种情况删除和添加操作需要同时更新链表和hashmap中的操作，数据情况
+
+[LRU](https://leetcode.com/problems/lru-cache/discuss/45922/JAVA-Easy-Version-To-Understand!!!!)
+       

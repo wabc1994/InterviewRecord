@@ -6,13 +6,15 @@
 
 ## 红黑树的一个案列
 
+最后在这里面最好是要有一个案例，如何画出一个红黑树，在面试的过程中去思考
+
 ![Screen Shot 2018-11-14 at 11.37.02 AM](/Users/coderlau/Desktop/Screen Shot 2018-11-14 at 11.37.02 AM.png)
 
-1. Root is always black.（根结点是黑的。）
-2. All NULL leaves are black, both children of red node are black and vice-versa.（每一个叶子节点，NIL都是黑色）
-3. Every simple path from a given node to any of its descendant leaves contains the same number of black
-   nodes.（对于每一个节点，从该节点到叶子节点路径上面的黑节点数目是一样的）
-4. Path form root to farthest leaf is no more than twice as long as path from root to nearest leaf.
+1. 每个节点非红即黑
+2. 根节点为黑色
+3. 每个叶子节点为黑色。叶子节点为NIL节点，即空节点**(与一般树中的叶子节点进行一个区别情况)**
+4. 如果一个节点为红色，那么它的子节点一定是黑色
+5. 从一个节点到该节点的子孙节点的所有路径包含相同个数的黑色节点
 
 每一个NIL是黑色的，使用矩形表示，非叶子节点采用圆形表示
 
@@ -60,6 +62,10 @@ a
 
 1. 如果插入一个node引起了不满足树的性质，比如改变了红黑树的性质，或者破坏了AVL树的平衡性质，AVL和RB-Tree 都是最多只需要两次2次旋转操作，即两者都是O(1), 但在删除节点的时候，最坏情况下，AVL树需要维护从被删除NODE到root 这条路径上面所有NODE的平衡性，因此平衡性为O(logN), 而RB-Tree 做多只需要三次旋转，只需要0(1) 的复杂度。
 2. 其次，AVL的结构相对于RB-TREE来说更为平衡，在插入和删除的时候更加容易引起树的unbalanace，因此在大量数据需要插入或者删除时，AVL需要rebalance的频率会更高。因此，RB-Tree在需要大量插入和删除node的场景下，效率更高。自然，由于AVL高度平衡，因此AVL的search效率更高。 
+
+# 红黑树的旋转知识
+
+当对红黑树进行插入和删除操作时可能会破坏红黑树的特性。为了继续保持红黑树的性质，则需要通过对红黑树进行旋转和重新着色处理，其中旋转包括左旋、右旋， 还有需要进行重新着色(每一个节点的颜色不是固定的)
 
 ### 红黑树的应用领域
 

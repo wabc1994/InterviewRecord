@@ -5,25 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cf9666f-d4a9-4c54-bba7-4f84a283f5a0" name="Default" comment="redis 中的sentinel机制">
-      <change afterPath="$PROJECT_DIR$/Linux/shell/sed.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_struct/B+树和B树.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/git的基本使用/几大疑问.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SortedArray/FindFirstandLastPositionofElementinSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/megertwotree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/写代码中的基础思想/二分查找.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/写代码中的基础思想/快慢指针.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LRU2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/String/FirstUniqueCharacterinaString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/InvertBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/写代码中的基础思想/桶排序的思想.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/分布式系统学习/kafka学习/kafka.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/分布式系统学习/kafka学习/如何保证消息不丢失.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/分布式系统学习/kafka学习/如何保证消息不被重复消费.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/分布式系统学习/kafka学习/消息队列.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linux/shell/sed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/io复用/epoll().md" beforeDir="false" afterPath="$PROJECT_DIR$/io复用/epoll().md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SortedArray/ReversePair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortedArray/ReversePair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java基础/图片/HashMap结构" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java基础/集合类情况简介/ConcurrentHashMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java基础/集合类情况简介/ConcurrentHashMap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java基础/集合类情况简介/HashMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java基础/集合类情况简介/HashMap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_struct/redblack.md" beforeDir="false" afterPath="$PROJECT_DIR$/data_struct/redblack.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/git的基本使用/几大疑问.md" beforeDir="false" afterPath="$PROJECT_DIR$/git的基本使用/几大疑问.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LRU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LRU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/Hashmap.md" beforeDir="false" afterPath="$PROJECT_DIR$/写代码中的基础思想/Hashmap.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/写代码中的基础思想/while循环的应用.md" beforeDir="false" afterPath="$PROJECT_DIR$/写代码中的基础思想/while循环的应用.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/二分查找" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/二分查找的思路.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/堆和优先级队列.md" beforeDir="false" afterPath="$PROJECT_DIR$/写代码中的基础思想/堆和优先级队列.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/归并思想.md" beforeDir="false" afterPath="$PROJECT_DIR$/写代码中的基础思想/归并思想.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/快慢指针" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/快速排序" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/快速排序算法综合利用.md" beforeDir="false" afterPath="$PROJECT_DIR$/写代码中的基础思想/快速排序算法综合利用.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/二分查找.md" beforeDir="false" afterPath="$PROJECT_DIR$/写代码中的基础思想/二分查找.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/分布式系统学习/kafka学习/kafka" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/分布式系统学习/kafka学习/消息队列" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/分布式系统学习/kafka学习/美团消息队列" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +42,7 @@
     <session id="194114429">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="4" />
@@ -49,9 +52,14 @@
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -70,14 +78,15 @@
           <entry key="class" value="4" />
           <entry key="deadlock" value="2" />
           <entry key="iml" value="3" />
-          <entry key="java" value="200" />
+          <entry key="java" value="205" />
           <entry key="java内存泄漏" value="1" />
           <entry key="java注解" value="2" />
           <entry key="jpeg" value="2" />
           <entry key="jpg" value="8" />
+          <entry key="kafka" value="1" />
           <entry key="lsof" value="2" />
-          <entry key="md" value="557" />
-          <entry key="png" value="18" />
+          <entry key="md" value="572" />
+          <entry key="png" value="19" />
           <entry key="redblacktree" value="1" />
           <entry key="redisI:O" value="1" />
           <entry key="redis字符串" value="1" />
@@ -85,18 +94,21 @@
           <entry key="redis过期策略" value="2" />
           <entry key="redis高可用" value="2" />
           <entry key="sed" value="3" />
+          <entry key="txt" value="1" />
           <entry key="volatile" value="2" />
           <entry key="webp" value="1" />
-          <entry key="xml" value="5" />
+          <entry key="xml" value="8" />
           <entry key="二分查找" value="2" />
           <entry key="分布式系统的提出" value="1" />
-          <entry key="分段和分页" value="2" />
+          <entry key="分段和分页" value="3" />
           <entry key="垃圾收集" value="1" />
           <entry key="快慢指针" value="2" />
           <entry key="快速排序" value="2" />
+          <entry key="消息队列" value="1" />
           <entry key="系统性能查看" value="3" />
           <entry key="线程池" value="1" />
           <entry key="线程的实现方式" value="1" />
+          <entry key="美团消息队列" value="1" />
           <entry key="进程调度" value="2" />
         </counts>
       </usages-collector>
@@ -104,29 +116,29 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="Image" value="29" />
-          <entry key="JAVA" value="201" />
-          <entry key="Markdown" value="557" />
-          <entry key="PLAIN_TEXT" value="50" />
-          <entry key="XML" value="5" />
+          <entry key="Image" value="30" />
+          <entry key="JAVA" value="206" />
+          <entry key="Markdown" value="572" />
+          <entry key="PLAIN_TEXT" value="55" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="35252" />
-          <entry key="md" value="52571" />
+          <entry key="java" value="37867" />
+          <entry key="md" value="54869" />
           <entry key="redblacktree" value="1" />
           <entry key="sed" value="6" />
-          <entry key="txt" value="2344" />
+          <entry key="txt" value="2430" />
           <entry key="二分查找" value="1" />
           <entry key="进程调度" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="35447" />
-          <entry key="Markdown" value="52376" />
-          <entry key="PLAIN_TEXT" value="2418" />
+          <entry key="JAVA" value="38064" />
+          <entry key="Markdown" value="54672" />
+          <entry key="PLAIN_TEXT" value="2504" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -141,11 +153,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/写代码中的基础思想/二分查找.md">
+        <entry file="file://$PROJECT_DIR$/分布式系统学习/kafka学习/如何保证消息不丢失.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="172">
-                <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="21" />
+              <first_editor relative-caret-position="17">
+                <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
               </first_editor>
               <second_editor />
             </state>
@@ -153,11 +165,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Linux/shell/sed.md">
+        <entry file="file://$PROJECT_DIR$/分布式系统学习/kafka学习/如何保证消息不被重复消费.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="68">
-                <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+              <first_editor>
+                <caret column="15" selection-start-column="15" selection-end-column="15" />
               </first_editor>
               <second_editor />
             </state>
@@ -165,28 +177,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/git的基本使用/git仓库.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="565">
-                <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/String/FirstUniqueCharacterinaString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="754">
+              <caret line="116" selection-start-line="116" selection-end-line="116" />
+              <folding>
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#420#421#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#609#610#0" expanded="true" />
+                <element signature="e#790#807#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/git的基本使用/picture/Git.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/git的基本使用/几大疑问.md">
+        <entry file="file://$PROJECT_DIR$/src/Tree/InvertBinaryTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/分布式系统学习/kafka学习/kafka.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="677">
-                <caret line="47" column="93" selection-start-line="47" selection-start-column="93" selection-end-line="47" selection-end-column="93" />
+              <first_editor relative-caret-position="737">
+                <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
               </first_editor>
               <second_editor />
             </state>
@@ -194,31 +221,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/git的基本使用/多人协作.md">
+        <entry file="file://$PROJECT_DIR$/分布式系统学习/kafka学习/消息队列.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/git的基本使用/基本概念.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/git的基本使用/push和commit的区别.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="136">
-                <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+              <first_editor relative-caret-position="204">
+                <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -226,11 +233,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/写代码中的基础思想/快慢指针.md">
+        <entry file="file://$PROJECT_DIR$/写代码中的基础思想/Hashmap.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="667">
-                <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+              <first_editor relative-caret-position="204">
+                <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -238,15 +245,29 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/写代码中的基础思想/快速排序算法综合利用.md">
+        <entry file="file://$PROJECT_DIR$/src/LRU2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/写代码中的基础思想/桶排序的思想.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="221">
-                <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+              <first_editor relative-caret-position="17">
+                <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Linux/分段和分页">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -269,16 +290,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Linux/shell/lsof.md" />
-        <option value="$PROJECT_DIR$/Linux/shell/Linux下Java内存排查.md" />
-        <option value="$PROJECT_DIR$/Concurrency/多线程的基础知识/AQS.md" />
-        <option value="$PROJECT_DIR$/Concurrency/多线程的基础知识/CAS锁.md" />
-        <option value="$PROJECT_DIR$/Concurrency/多线程的基础知识/ThreadLocal内幕.md" />
-        <option value="$PROJECT_DIR$/Redis_learning/redis字符串.md" />
-        <option value="$PROJECT_DIR$/Redis_learning/IO服用模型.md" />
-        <option value="$PROJECT_DIR$/Redis_learning/过期策略.md" />
-        <option value="$PROJECT_DIR$/Redis_learning/redis分布式锁.md" />
-        <option value="$PROJECT_DIR$/Redis_learning/redis缓存的问题.md" />
         <option value="$PROJECT_DIR$/Linux/进程调度" />
         <option value="$PROJECT_DIR$/Linux/进程调度算法.md" />
         <option value="$PROJECT_DIR$/Linux/Linux内存结构.md" />
@@ -298,7 +309,6 @@
         <option value="$PROJECT_DIR$/Linux/Linux中的锁机制.md" />
         <option value="$PROJECT_DIR$/计算机系统基本概念/并行和并发.md" />
         <option value="$PROJECT_DIR$/Linux/进程的种类.md" />
-        <option value="$PROJECT_DIR$/Java基础/集合类情况简介/HashMap.md" />
         <option value="$PROJECT_DIR$/Java基础/集合类情况简介/ArrayList.md" />
         <option value="$PROJECT_DIR$/Linux/linux问题排查.md" />
         <option value="$PROJECT_DIR$/src/Tree/MaximumDepthofBinaryTree.java" />
@@ -320,6 +330,17 @@
         <option value="$PROJECT_DIR$/git的基本使用/push和commit的区别.md" />
         <option value="$PROJECT_DIR$/git的基本使用/git仓库.md" />
         <option value="$PROJECT_DIR$/git的基本使用/几大疑问.md" />
+        <option value="$PROJECT_DIR$/Java基础/集合类情况简介/HashMap.md" />
+        <option value="$PROJECT_DIR$/分布式系统学习/kafka学习/kafka.md" />
+        <option value="$PROJECT_DIR$/分布式系统学习/kafka学习/如何保证消息不丢失.md" />
+        <option value="$PROJECT_DIR$/src/LRU2.java" />
+        <option value="$PROJECT_DIR$/src/LRU.java" />
+        <option value="$PROJECT_DIR$/写代码中的基础思想/Hashmap.md" />
+        <option value="$PROJECT_DIR$/分布式系统学习/kafka学习/消息队列.md" />
+        <option value="$PROJECT_DIR$/分布式系统学习/kafka学习/如何保证消息不被重复消费.md" />
+        <option value="$PROJECT_DIR$/写代码中的基础思想/桶排序的思想.md" />
+        <option value="$PROJECT_DIR$/src/String/FirstUniqueCharacterinaString.java" />
+        <option value="$PROJECT_DIR$/src/Tree/InvertBinaryTree.java" />
       </list>
     </option>
   </component>
@@ -330,10 +351,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="86" />
-    <option name="y" value="79" />
-    <option name="width" value="1981" />
-    <option name="height" value="1129" />
+    <option name="width" value="2048" />
+    <option name="height" value="1152" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -387,13 +406,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
@@ -409,18 +433,68 @@
             <path>
               <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
-              <item name="Linux" type="462c0819:PsiDirectoryNode" />
+              <item name="Java基础" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="Java基础" type="462c0819:PsiDirectoryNode" />
+              <item name="关键字" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="Java基础" type="462c0819:PsiDirectoryNode" />
+              <item name="图片" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="Java基础" type="462c0819:PsiDirectoryNode" />
+              <item name="集合类情况简介" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
               <item name="Linux" type="462c0819:PsiDirectoryNode" />
-              <item name="shell" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="String" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Tree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
               <item name="写代码中的基础思想" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="分布式系统学习" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="分布式系统学习" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka学习" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="秒杀系统设计" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
@@ -435,16 +509,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Reactor&#9;FILE&#9;file:///Users/coderlau/IdeaProjects/Leetcode2/io复用/设计模式/Reactor模式.md&#10;Con&#9;FILE&#9;file:///Users/coderlau/IdeaProjects/Leetcode2/Java基础/集合类情况简介/ConcurrentHashMap.md" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543232155776" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544085412827" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Tree" />
     <property name="settings.editor.selected.configurable" value="Settings.Markdown" />
   </component>
   <component name="RecentsManager">
@@ -648,21 +722,12 @@
       <workItem from="1541319444648" duration="74475000" />
       <workItem from="1542527258049" duration="10818000" />
       <workItem from="1542626031738" duration="61382000" />
-      <workItem from="1543120485310" duration="12951000" />
-    </task>
-    <task id="LOCAL-00066" summary="堆stack堆区别">
-      <created>1539175294193</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1539175294193</updated>
-    </task>
-    <task id="LOCAL-00067" summary="使用redis实现一个锁">
-      <created>1539245170723</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1539245170723</updated>
+      <workItem from="1543120485310" duration="15390000" />
+      <workItem from="1543279743076" duration="7680000" />
+      <workItem from="1543463778332" duration="639000" />
+      <workItem from="1543592924956" duration="4012000" />
+      <workItem from="1543771054752" duration="8427000" />
+      <workItem from="1544012256708" duration="5986000" />
     </task>
     <task id="LOCAL-00068" summary="epoll机制">
       <created>1539245220984</created>
@@ -993,11 +1058,25 @@
       <option name="project" value="LOCAL" />
       <updated>1543229102012</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="几大疑问">
+      <created>1543232911100</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1543232911100</updated>
+    </task>
+    <task id="LOCAL-00116" summary="jdk1.7中concurrenthashmap 实现小粒度锁的原理情况">
+      <created>1543372788120</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1543372788121</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="504769000" />
+    <option name="totallyTimeSpent" value="533952000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1011,7 +1090,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49859154" visible="true" weight="0.15254237" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49859154" visible="true" weight="0.1674975" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1026,8 +1105,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4995015" weight="0.3295562" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49302095" visible="true" weight="0.21340887" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50697905" side_tool="true" visible="true" weight="0.21340887" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4900299" visible="true" weight="0.2115203" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50997007" side_tool="true" visible="true" weight="0.2115203" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49601197" weight="0.26628897" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49302095" weight="0.31161472" />
       <window_info anchor="bottom" id="Python Console" order="11" />
@@ -1078,8 +1157,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Linux面试题总结" />
-    <MESSAGE value="内存映射机制" />
     <MESSAGE value="pdf" />
     <MESSAGE value="动态代理机制" />
     <MESSAGE value="leetcode中的top k系列问题" />
@@ -1103,7 +1180,9 @@
     <MESSAGE value="hashmap关键字" />
     <MESSAGE value="使用stack 判断括号符是否匹配的情况" />
     <MESSAGE value="git 中的基本使用情况" />
-    <option name="LAST_COMMIT_MESSAGE" value="git 中的基本使用情况" />
+    <MESSAGE value="几大疑问" />
+    <MESSAGE value="jdk1.7中concurrenthashmap 实现小粒度锁的原理情况" />
+    <option name="LAST_COMMIT_MESSAGE" value="jdk1.7中concurrenthashmap 实现小粒度锁的原理情况" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1130,227 +1209,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Java基础/集合类情况简介/ConcurrentHashMap.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="221">
-            <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/秒杀系统设计/消息中间件.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="255">
-            <caret line="15" column="85" selection-start-line="15" selection-start-column="85" selection-end-line="15" selection-end-column="85" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/秒杀系统设计/为何redis能支持高并发.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="238">
-            <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_struct/bitmap.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_struct/redblacktree" />
-    <entry file="file://$PROJECT_DIR$/database/MySQL主从复制.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="17">
-            <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Redis_learning/高可用.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-59">
-            <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/秒杀系统设计/总体链接.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/io复用/设计模式/Reactor模式.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="187">
-            <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java基础/关键字/lock和synchronized的区别.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_struct/redblack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="655">
-            <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Linux/Linux中的锁机制.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="304">
-            <caret line="24" selection-start-line="24" selection-end-line="25" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/计算机系统基本概念/并行和并发.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="17">
-            <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_struct/Bloomfilter.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Linux/进程的种类.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="221">
-            <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Hashtable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/HashSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3716">
-          <caret line="95" column="43" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java基础/集合类情况简介/HashMap.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="540">
-            <caret line="594" selection-start-line="594" selection-end-line="594" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java基础/集合类情况简介/ArrayList.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="272">
-            <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/project/i2b2数据集/2014-deid/training-PHI-Gold-Set1/222-03.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-724" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/project/i2b2数据集/2014-deid/training-PHI-Gold-Set1/220-05.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2167" />
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1385">
-          <caret line="379" column="28" lean-forward="true" selection-start-line="379" selection-start-column="15" selection-end-line="379" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tree/MaximumDepthofBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/io复用/epoll().md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="69">
-            <caret line="102" column="75" selection-start-line="102" selection-start-column="75" selection-end-line="102" selection-end-column="75" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/io复用/epoll(二).md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-720" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Linux/linux问题排查.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="514">
-            <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tree/SymmetricTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -1390,9 +1248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1445">
           <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1434,9 +1289,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="268">
             <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-            <folding>
-              <element signature="e#0#309#0" expanded="true" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -1472,9 +1324,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Linux/shell/sed">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/shell/sed" />
     <entry file="file://$PROJECT_DIR$/Linux/shell/sed.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1485,13 +1335,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/git的基本使用/基本概念.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/git的基本使用/多人协作.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -1501,11 +1352,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/Linux内存结构.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git的基本使用/几大疑问.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1639">
+            <caret line="115" column="40" selection-start-line="115" selection-start-column="40" selection-end-line="115" selection-end-column="40" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/git的基本使用/push和commit的区别.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="136">
-            <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+            <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
@@ -1514,8 +1383,18 @@
     <entry file="file://$PROJECT_DIR$/git的基本使用/git仓库.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="565">
-            <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <first_editor relative-caret-position="680">
+            <caret line="40" selection-start-line="40" selection-end-line="40" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java基础/集合类情况简介/ConcurrentHashMap.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="357">
+            <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
@@ -1524,13 +1403,185 @@
     <entry file="file://$PROJECT_DIR$/git的基本使用/picture/Git.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/git的基本使用/几大疑问.md">
+    <entry file="file://$PROJECT_DIR$/git的基本使用/基本概念.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="677">
-            <caret line="47" column="93" selection-start-line="47" selection-start-column="93" selection-end-line="47" selection-end-column="93" />
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/Linux中的锁机制.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="408">
+            <caret line="24" selection-start-line="24" selection-end-line="25" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/vmalloc和kmalloc.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/class/MapReduce/数据文件Readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分布式系统学习/kafka学习/美团消息队列" />
+    <entry file="file://$PROJECT_DIR$/分布式系统学习/kafka学习/kafka" />
+    <entry file="file://$PROJECT_DIR$/分布式系统学习/kafka学习/消息队列" />
+    <entry file="file://$PROJECT_DIR$/Java基础/集合类情况简介/HashMap.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="11152">
+            <caret line="656" column="34" selection-start-line="656" selection-start-column="34" selection-end-line="656" selection-end-column="34" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/已经成功的代码情况/WordCount/src/main/java/com/coderlau/hadoop/wordfrequency/WordFrequency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="842">
+          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LRU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/linux问题排查.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1343">
+            <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/内核内存管理.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/分段和分页">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/写代码中的基础思想/Hashmap.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="204">
+            <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分布式系统学习/kafka学习/kafka.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="737">
+            <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分布式系统学习/kafka学习/消息队列.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="204">
+            <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分布式系统学习/kafka学习/如何保证消息不丢失.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分布式系统学习/kafka学习/如何保证消息不被重复消费.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="15" selection-start-column="15" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LRU2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/写代码中的基础思想/桶排序的思想.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/String/FirstUniqueCharacterinaString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+          <folding>
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#790#807#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tree/InvertBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
