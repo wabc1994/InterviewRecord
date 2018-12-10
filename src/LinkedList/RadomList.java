@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.HashMap;
+
 /**
  * @ClassName RadomList
  * @Description TODO
@@ -65,9 +67,42 @@ public class RadomList {
         }
         return null;
     }
-
-
     //针对上述代码的一个优化方案情况
 
+    public RandomListNode copyRandomList_2(RandomListNode head){
+        RandomListNode cur = head;
+        while(cur!=null)
+        {
+            RandomListNode temp = new RandomListNode(cur.label);
+            temp.next = cur.next;
+            cur.next = temp;
+            cur = temp.next;
+        }
+
+        // copy random pointer
+        cur = head;
+        while(cur != null)
+        {
+            RandomListNode temp = cur.next;
+            if(cur.random != null)
+                temp.random = cur.random.next;
+            cur = temp.next;
+        }
+
+        //decouple two links
+        // 将中间节点
+        cur = head;
+        RandomListNode dup = head == null? null:head.next;
+        while(cur != null)
+        {
+            RandomListNode  temp = cur.next;
+            cur.next = temp.next;
+            if(temp.next!=null)
+                temp.next = temp.next.next;
+            cur = cur.next;
+        }
+
+        return dup;
+    }
 }
 
