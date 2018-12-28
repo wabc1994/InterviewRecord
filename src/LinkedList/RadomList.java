@@ -10,6 +10,7 @@ import java.util.HashMap;
  * @Version 1.0
  **/
 
+
 class RandomListNode {
       int label;
      RandomListNode next, random;
@@ -85,7 +86,7 @@ public class RadomList {
         {
             RandomListNode temp = cur.next;
             if(cur.random != null)
-                temp.random = cur.random.next;
+            { temp.random = cur.random.next;}
             cur = temp.next;
         }
 
@@ -98,7 +99,7 @@ public class RadomList {
             RandomListNode  temp = cur.next;
             cur.next = temp.next;
             if(temp.next!=null)
-                temp.next = temp.next.next;
+            {  temp.next = temp.next.next;}
             cur = cur.next;
         }
 

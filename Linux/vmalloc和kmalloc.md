@@ -1,5 +1,6 @@
 [TOC]
 
+
 # kmalloc,malloc和vmalloc
 
 首先是malloc和其他两个的区别：kmalloc和vmalloc主要是内核内存分配管理，malloc主要是用户内存分配

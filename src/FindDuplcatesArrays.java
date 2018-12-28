@@ -6,7 +6,7 @@ public class FindDuplcatesArrays {
      */
     public static void printDuplicates(int arr[], int n) {
         for (int i = 0; i < n; ++i) {
-            //  当 >=0时，表示是第一次访问该元素
+            //  当 >=0时，表示 是第一次访问该元素
             if (arr[Math.abs(arr[i])] >= 0)
                 arr[Math.abs(arr[i])] = -arr[Math.abs(arr[i])];
             else
@@ -20,18 +20,23 @@ public class FindDuplcatesArrays {
         int len = arr.length;
         //arr[i]!=arr[arr[i]]表示正确的位置上还没有，
         for(int i=0;i<len;i++){
-            if(arr[i]>=len) return;
-            while(arr[i]!=arr[arr[i]])  //主要的改变点，将arr[i]!=1 改成arr[arr[i]]!=arr[i],
-            {
+            if(arr[i]>=len) {return;}
+            while(arr[i]!=arr[arr[i]])
+
+            //主要的改变点，将arr[i]!=1 改成arr[arr[i]]!=arr[i],
+
+                {
                 int temp =arr[arr[i]];
                 arr[arr[i]] = arr[i];
                 arr[i] =temp;
-            }
+
+                }
         }
 
-        for(int i=0;i<len;++i){
-            if(arr[i]!=i)
-                System.out.println(arr[i]);
+                       for(int i=0;i<len;++i){
+                    if(arr[i]!=i)
+
+            {System.out.println(arr[i]);}
         }
     }
 
