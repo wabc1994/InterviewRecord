@@ -10,6 +10,8 @@ import java.util.List;
  * @Date 2018/12/26 9:25 PM
  * @Version 1.0
  **/
+
+
 public class spiralOrder54 {
     public List<Integer> twoDprint(int[][] matrix){
         List<Integer> result =new LinkedList<>();
@@ -21,7 +23,8 @@ public class spiralOrder54 {
         int column_last= matrix.length-1;
         int row_last = matrix[0].length-1;
         int row_first = 0;
-        while(row_first<=row_last && column_first<=column_last)
+
+       while(row_first<=row_last && column_first<=column_last)
         {
             // 从左到右的情况，
             for(int j=row_first;j<=row_last;j++){
@@ -44,8 +47,6 @@ public class spiralOrder54 {
             if(column_last>=column_first){
                 for(int i=column_last;i>=column_first;i--)
                 { result.add(matrix[i][row_first]);}
-
-
             }
             row_first++;
         }

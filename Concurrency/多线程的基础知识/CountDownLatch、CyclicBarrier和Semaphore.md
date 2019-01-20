@@ -35,7 +35,10 @@ public class Test {
     // 主函数
     public static void main(String[] args) {
         int N = 4;
+        
+        // N 其实就是AQS 当中的int state 变量的值
         CyclicBarrier barrier  = new CyclicBarrier(N);
+        
         for(int i=0;i<N;i++)
             // 所有的线程都是使用同一个东西，这个变量也类似于共享变量吧， 大家都知道这个类的存在
             new Writer(barrier).start();
