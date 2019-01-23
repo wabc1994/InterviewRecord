@@ -5,34 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cf9666f-d4a9-4c54-bba7-4f84a283f5a0" name="Default" comment="并发编程当中的一些模板">
-      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/ReadWriteLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/goodblog.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/locks .md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/多线程实现死锁.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/死锁的解法方案.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/线程池与阻塞队列.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/阻塞队列.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/限流.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Linux/进程的的地址空间.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Redis_learning/cluster.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Redis_learning/pipeline.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/拒绝策略.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/AQS.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/AQS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/CAS锁.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/CAS锁.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/CLH锁" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/CountDownLatch、CyclicBarrier和Semaphore.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/CountDownLatch、CyclicBarrier和Semaphore.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concurrency/死锁.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/死锁.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java代码编写习惯.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java代码编写习惯.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linux/进程调度算法.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/进程调度算法.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Redis_learning/MySQL主从复制实现.md" beforeDir="false" afterPath="$PROJECT_DIR$/Redis_learning/MySQL主从复制实现.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Redis_learning/Redis_memcache.md" beforeDir="false" afterPath="$PROJECT_DIR$/Redis_learning/Redis_memcache.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Redis_learning/in_use project.md" beforeDir="false" afterPath="$PROJECT_DIR$/Redis_learning/in_use project.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Redis_learning/项目当中的Redis.md" beforeDir="false" afterPath="$PROJECT_DIR$/Redis_learning/项目当中的Redis.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Redis_learning/高可用.md" beforeDir="false" afterPath="$PROJECT_DIR$/Redis_learning/高可用.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_struct/Bloomfilter.md" beforeDir="false" afterPath="$PROJECT_DIR$/data_struct/Bloomfilter.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_struct/bitmap.md" beforeDir="false" afterPath="$PROJECT_DIR$/data_struct/bitmap.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SortedArray/spiralOrder54.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortedArray/spiralOrder54.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/coderlau/greedy/JumpGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/coderlau/greedy/JumpGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/goodblog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/goodblog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/多线程实现死锁.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/多线程实现死锁.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,14 +69,14 @@
           <entry key="class" value="4" />
           <entry key="deadlock" value="2" />
           <entry key="iml" value="3" />
-          <entry key="java" value="216" />
+          <entry key="java" value="224" />
           <entry key="java内存泄漏" value="1" />
           <entry key="java注解" value="2" />
           <entry key="jpeg" value="5" />
           <entry key="jpg" value="11" />
           <entry key="kafka" value="1" />
           <entry key="lsof" value="2" />
-          <entry key="md" value="651" />
+          <entry key="md" value="654" />
           <entry key="png" value="31" />
           <entry key="redblacktree" value="1" />
           <entry key="redisI:O" value="1" />
@@ -132,8 +108,8 @@
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="3" />
           <entry key="Image" value="48" />
-          <entry key="JAVA" value="217" />
-          <entry key="Markdown" value="651" />
+          <entry key="JAVA" value="225" />
+          <entry key="Markdown" value="654" />
           <entry key="PLAIN_TEXT" value="58" />
           <entry key="XML" value="8" />
         </counts>
@@ -141,20 +117,20 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="CLH锁" value="3" />
-          <entry key="java" value="40632" />
-          <entry key="md" value="64057" />
+          <entry key="java" value="41100" />
+          <entry key="md" value="67324" />
           <entry key="redblacktree" value="1" />
           <entry key="sed" value="6" />
-          <entry key="txt" value="2980" />
+          <entry key="txt" value="3045" />
           <entry key="二分查找" value="1" />
           <entry key="进程调度" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="40876" />
-          <entry key="Markdown" value="63813" />
-          <entry key="PLAIN_TEXT" value="3057" />
+          <entry key="JAVA" value="41375" />
+          <entry key="Markdown" value="67049" />
+          <entry key="PLAIN_TEXT" value="3122" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -169,90 +145,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/CHL.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="493">
-                <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/AQS.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/template/consumer_producer.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="286">
-                <caret line="34" selection-start-line="34" selection-end-line="34" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/goodblog.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="85">
-                <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/限流.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/locks .md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="17">
-                <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/ReadWriteLock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-271">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/多线程实现死锁.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="859">
-                <caret line="211" column="16" lean-forward="true" selection-start-line="211" selection-start-column="16" selection-end-line="211" selection-end-column="16" />
+              <first_editor relative-caret-position="592">
+                <caret line="157" column="6" selection-start-line="157" selection-start-column="6" selection-end-line="157" selection-end-column="6" />
                 <folding>
                   <element signature="e#167#168#0" expanded="true" />
                   <element signature="e#212#213#0" expanded="true" />
@@ -263,12 +160,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Concurrency/死锁.md">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/拒绝策略.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="374">
-                <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <first_editor relative-caret-position="-2093">
+                <caret line="5" selection-start-line="5" selection-end-line="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -276,13 +173,85 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/CountDownLatch、CyclicBarrier和Semaphore.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="646">
-                <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/SortedArray/maxSlidingWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SortedArray/ReversePair.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="490">
+              <caret line="61" column="8" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SortedArray/RotateImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SortedArray/MajorityElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SortedArray/KthLargestElementinanArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SortedArray/KthElementofTwoSortedArrays.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SortedArray/FindtheDuplicateNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SortedArray/MyStackQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#609#610#0" expanded="true" />
+                <element signature="e#629#630#0" expanded="true" />
+                <element signature="e#661#662#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#719#720#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -314,9 +283,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/写代码中的基础思想/快速排序算法综合利用.md" />
-        <option value="$PROJECT_DIR$/Linux/shell/sed" />
-        <option value="$PROJECT_DIR$/Linux/shell/sed.md" />
         <option value="$PROJECT_DIR$/git的基本使用/push和commit的区别.md" />
         <option value="$PROJECT_DIR$/git的基本使用/git仓库.md" />
         <option value="$PROJECT_DIR$/git的基本使用/几大疑问.md" />
@@ -363,8 +329,11 @@
         <option value="$PROJECT_DIR$/Redis_learning/cluster.md" />
         <option value="$PROJECT_DIR$/Concurrency/多线程的基础知识/死锁的解法方案.md" />
         <option value="$PROJECT_DIR$/Concurrency/死锁.md" />
-        <option value="$PROJECT_DIR$/Concurrency/多线程的基础知识/多线程实现死锁.md" />
         <option value="$PROJECT_DIR$/Concurrency/多线程的基础知识/goodblog.md" />
+        <option value="$PROJECT_DIR$/Concurrency/多线程的基础知识/多线程实现死锁.md" />
+        <option value="$PROJECT_DIR$/src/SortedArray/maxSlidingWindow.java" />
+        <option value="$PROJECT_DIR$/src/SortedArray/MyStackQueue.java" />
+        <option value="$PROJECT_DIR$/Concurrency/多线程的基础知识/拒绝策略.md" />
       </list>
     </option>
   </component>
@@ -375,8 +344,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="2048" />
-    <option name="height" value="1152" />
+    <option name="x" value="127" />
+    <option name="y" value="69" />
+    <option name="width" value="1351" />
+    <option name="height" value="853" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -496,7 +467,13 @@
               <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="greedy" type="462c0819:PsiDirectoryNode" />
+              <item name="data_struture" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SortedArray" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
@@ -535,7 +512,7 @@
     <property name="SearchEverywhereHistoryKey" value="Reactor&#9;FILE&#9;file:///Users/coderlau/IdeaProjects/Leetcode2/io复用/设计模式/Reactor模式.md&#10;Con&#9;FILE&#9;file:///Users/coderlau/IdeaProjects/Leetcode2/Java基础/集合类情况简介/ConcurrentHashMap.md" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547989001667" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548224237122" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Tree" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -764,21 +741,7 @@
       <workItem from="1546909768582" duration="457000" />
       <workItem from="1546944271282" duration="1484000" />
       <workItem from="1547691495314" duration="14995000" />
-      <workItem from="1547982023515" duration="5374000" />
-    </task>
-    <task id="LOCAL-00081" summary="重新设计Readme.md文件">
-      <created>1539782180572</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1539782180572</updated>
-    </task>
-    <task id="LOCAL-00082" summary="客户端的请求">
-      <created>1539844044436</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1539844044437</updated>
+      <workItem from="1547982023515" duration="19919000" />
     </task>
     <task id="LOCAL-00083" summary="reactor架构">
       <created>1539848067450</created>
@@ -1109,11 +1072,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547899110890</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="最小窗口问题">
+      <created>1548047893918</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1548047893919</updated>
+    </task>
+    <task id="LOCAL-00131" summary="使用一个队列来模拟stack,每次加入一个元素的情景就是逆转">
+      <created>1548076419759</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1548076419760</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="619980000" />
+    <option name="totallyTimeSpent" value="634525000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1128,7 +1105,7 @@
     <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49859154" visible="true" weight="0.12412762" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49859154" visible="true" weight="0.10418744" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1143,10 +1120,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4995015" weight="0.3295562" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.48404786" weight="0.22001888" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.48404786" visible="true" weight="0.22001888" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.51595217" side_tool="true" weight="0.22001888" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49601197" weight="0.26628897" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4888393" weight="0.16976456" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4888393" weight="0.16902739" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.3290938" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -1229,8 +1206,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="如何在一个打乱的数组中进行查找的情况" />
-    <MESSAGE value="增加一种具有相同元素的情况" />
     <MESSAGE value="修改" />
     <MESSAGE value="G1和CMS垃圾器收集器基本区别" />
     <MESSAGE value="如何查找一个数组中出现次数是2的数，其他的出现均是1" />
@@ -1254,7 +1229,9 @@
     <MESSAGE value="如何使用阻塞队列实现消费者和生产者模式" />
     <MESSAGE value="mm_struct结构体 描述进程的地址空间" />
     <MESSAGE value="mysql mvcc 如何实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="mysql mvcc 如何实现" />
+    <MESSAGE value="最小窗口问题" />
+    <MESSAGE value="使用一个队列来模拟stack,每次加入一个元素的情景就是逆转" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用一个队列来模拟stack,每次加入一个元素的情景就是逆转" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1281,61 +1258,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SortedArray/spiralOrder54.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Linux/picture/wait_queu.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/coderlau/greedy/JumpGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/线程之间的通信.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/ThreadLocal内幕.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/linux中的进程管理.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/线程池">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/CLH锁" />
-    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/阻塞队列.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2193">
-            <caret line="129" selection-start-line="129" selection-end-line="129" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_struct/bitmap.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1537,26 +1459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Redis_learning/cluster.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="578">
-            <caret line="34" selection-start-line="34" selection-end-line="34" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/死锁的解法方案.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Concurrency/死锁.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1632,11 +1534,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Redis_learning/cluster.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="578">
+            <caret line="34" selection-start-line="34" selection-end-line="34" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/死锁的解法方案.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/goodblog.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="119">
+            <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/多线程实现死锁.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="859">
-            <caret line="211" column="16" lean-forward="true" selection-start-line="211" selection-start-column="16" selection-end-line="211" selection-end-column="16" />
+          <first_editor relative-caret-position="592">
+            <caret line="157" column="6" selection-start-line="157" selection-start-column="6" selection-end-line="157" selection-end-column="6" />
             <folding>
               <element signature="e#167#168#0" expanded="true" />
               <element signature="e#212#213#0" expanded="true" />
@@ -1646,11 +1578,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/goodblog.md">
+    <entry file="file://$PROJECT_DIR$/src/SortedArray/ReversePair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="61" column="8" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortedArray/RotateImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortedArray/maxSlidingWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortedArray/KthLargestElementinanArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortedArray/KthElementofTwoSortedArrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortedArray/FindtheDuplicateNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortedArray/MajorityElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortedArray/MyStackQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/拒绝策略.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <first_editor relative-caret-position="-2093">
+            <caret line="5" selection-start-line="5" selection-end-line="5" />
           </first_editor>
           <second_editor />
         </state>
