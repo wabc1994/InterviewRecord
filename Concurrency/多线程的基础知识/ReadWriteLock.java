@@ -4,7 +4,14 @@ import java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.sym;
 import com.sun.org.apache.xpath.internal.SourceTree;
 
-// 如何使用两个两个int类型实现一个锁
+// 如何使用两个两个int类型实现一个读写锁的问题，这是阿里面试题
+
+
+//在zhe
+
+
+
+//
 
 public class ReadWriteLock {
     // private static AtomicInteger rAtomicInteger =new AtomicInteger(0);

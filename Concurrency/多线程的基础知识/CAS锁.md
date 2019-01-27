@@ -32,6 +32,17 @@ CAS（比较并交换）是CPU指令级的操作，只有一步原子操作，�
 ** 我们平常都说CAS锁，乐观锁，严格来说并不是锁来的，而是一种**
 
 ## Java中的CAS锁机制
+
 JVM中的CAS操作是利用了处理器cpu提供的CMPXCHG指令实现的。
 
 
+一个最基本的操作就是
+
+AtomicInteger
+```java
+public  int incrementAndGet()
+{  
+   for(;;){
+   }
+}
+```

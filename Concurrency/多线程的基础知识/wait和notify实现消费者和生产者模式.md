@@ -7,7 +7,7 @@
 ** 在操作共享资源之前进行判断，如果不满足，则进行wait(),否则进行消费或者生产，进行通知通知操作情况
 notify()** 
 
-##有两种实现方式，
+## 有两种实现方式，
 
 [代码参考链接](https://github.com/wabc1994/Leetcode2/tree/master/src/concurrency)
 

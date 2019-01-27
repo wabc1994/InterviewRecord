@@ -11,13 +11,26 @@
 
 # ConcurrentHashMap 如何实现线程安全的？
 
-JDK1.7
+JDK1.7 
 
-减少锁的粒度
+**减少锁的粒度segment锁**
+
 它的思想是将物理上的一个锁，拆成逻辑上的多个锁，增加并行度，从而降低锁竞争。它的思想也是用空间来换时间；
+
 核心数据结构
 
+segments [] 数组， 默认的时候是16个节点的情况， hashEntry 每个节点, treeNode(后面转换成为)
+
+1. public V get(Object key)不涉及到锁，也就是说获得对象时没有使用锁；
+
+2. put、remove方法要使用锁，但并不一定有锁争用，原因在于ConcurrentHashMap将缓存的变量分到多个Segment，每个Segment上有一个锁，只要多个线程访问的不是一个Segment就没有锁争用，就没有堵塞，各线程用各自的锁，ConcurrentHashMap缺省情况下生成16个Segment，也就是允许16个线程并发的更新而尽量没有锁争用；
+
+
 >Segment< K,V >[] segments ,  将全部数组+链表，分成多个模块之前的情况，
+
+segment 继承了reetrantlock 所以可以充当多的功能
+
+static final class Segment<K,V> extends ReentrantLock implements Serializable
 
 ![concurrentHashMap](https://github.com/wabc1994/InterviewRecord/blob/master/Java%E5%9F%BA%E7%A1%80/%E5%9B%BE%E7%89%87/ConcurrentHashMap7.png)
 
