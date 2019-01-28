@@ -1,4 +1,10 @@
 
+# locks 与AQS 总体使用关系
+
+Reetrantlock 当中定义个sync extends AQS
+然后分为公平锁和非公平锁 nofairsync 和fairsync  这两者分别又是extends sync 
+
+
 # AbstractQueuedSynchronizer(AQS,队列同步器)
 是一个抽象类abstract class，提供了一个基于FIFO队列，可以用于构建锁或者其他相关同步装置的基础框架。
 
