@@ -61,4 +61,5 @@ TCP自身是没有机制处理粘包和拆包问题的，只能依靠外部处�
 # 参考链接
 [TCP粘包问题分析和解决（全)](https://blog.csdn.net/ljwy1234/article/details/79518090)
 
+[简单理解Socket](https://www.cnblogs.com/dolphinX/p/3460545.html)
 
