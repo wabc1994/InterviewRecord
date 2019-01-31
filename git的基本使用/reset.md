@@ -59,3 +59,5 @@ git reset --hard commit_id
 
 # 参考链接
 [git reset的三种模式soft mixed hard - u010037020的博客 - CSDN博客](https://blog.csdn.net/u010037020/article/details/54954696)
+
+[Git-撤销（回退）已经add，commit或push的提交](https://blog.csdn.net/YoungStunner/article/details/78696763)
