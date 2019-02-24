@@ -8,9 +8,9 @@ CAS的缺点：
 
 CAS虽然很高效的解决了原子操作问题，但是CAS仍然存在三大问题。
 
-循环时间长开销很大。
-只能保证一个共享变量的原子操作。
-ABA问题。
+- 循环时间长开销很大。while 或者for(;;)
+- 只能保证一个共享变量的原子操作。
+- ABA问题。
 
 >CAS says “I think V should have the value A; if it does, put B there, otherwise don’t change it but tell me I was wrong.
 
@@ -19,6 +19,7 @@ ABA问题。
 
 # 例子Atomic类
 在Atomic 原子类实现
+
 
 ```java
 public final int incrementAndGet(){
@@ -69,6 +70,7 @@ private volatile int value;
 单独看上述代码，就是如果是一个线程在该过程当中执行，
 
 # ABA 问题
+ 
  可以发现，CAS实现的过程是先取出内存中某时刻的数据，在下一时刻比较并替换，那么在这个时间差会导致数据的变化，此时就会导致出现“ABA”问题。 
  
 1. 什么是”ABA”问题？ 
@@ -78,5 +80,7 @@ private volatile int value;
  
  2. 解决
  
-使用版本号AtomicStampedReference 或者AtomicMarkedReference [E,int stamp]二元组进行标志,
+使用版本号AtomicStampedReference 或者AtomicMarkedReference [E, int stamp]二元组进行标志, E 是要改变的变量，stamp 增加的版本号变量
+
+
  

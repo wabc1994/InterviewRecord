@@ -6,7 +6,7 @@
 2.  Memcached与MySQL数据库数据一致性问题。
 3.  Memcached数据命中率低或down机，大量访问直接穿透到DB，MySQL无法支撑。
 4.  跨机房cache同步问题。
-5. memcache但是不支==持数据的持久化==，服务器关闭之后数据全部丢失
+5. memcache但是不支**持数据的持久化**，服务器关闭之后数据全部丢失,同时也不支持数据的备份操作
 
 6. Redis支持数据的持久化（RDB快照和AOF日志），可以将==内存中的数据保持在磁盘中，重启的时候可以再次加载进行使用==
 
@@ -23,18 +23,40 @@
 4. Schema free，auto-sharding等。比如目前常见的一些==文档数据库==都是支持schema-free的，直接存储json格式数据，并且支持auto-sharding等功能，比如MongoDB。
 
 ## 基本区别
+
 1. Redis不仅仅支持简单的k/v类型的数据，同时还提供list，set，zset，hash等数据结构的存储。memcache支持简单的数据类型，String。
 
 2. Redis支持数据的备份，即master-slave模式的数据备份。
 
 3. Redis支持数据的持久化，可以将内存中的数据保持在磁盘中，重启的时候可以再次加载进行使用,而Memecache把数据全部存在内存之中
 
-4. redis的速度比memcached快很多
+4. Redis的速度比memcached快很多，在这里面要介绍一个为何会快很多的情况出现
+>单线程有时候比多线程 或多进程更快，比需要考虑并发、锁，也不会增加上下文切换等开销，也即代码更加简洁，执行效率更高～
 
-5. Memcached是单进程多线程，非阻塞IO复用的网络模型；Redis使用单进程单线程的IO复用模型。
+5. Memcached是单进程多线程，非阻塞IO复用的网络模型；Redis使用单进程单线程的IO复用模型。redis当中的代码完全不考虑线程安全的问题
+
+6. Redis支持事务，而memcached不支持事务 
+
+
+## 深层次的区别
+
+1. 内存满时， Memcached 考虑丢弃，Redis 考虑 swap 进硬盘 ； 
+
+2. 网络 I/O 模型不同： Memcached 使用线程池处理每一个 pipe ， Redis 使用单线程； 
+
+
+3. 内存管理不同： Memcached 使用slab预分配的、各种固定大小的 trunk ， Redis 使用自己优化过的 malloc/free 。解决内存碎片的问题，memcached 使用固定大小的内存 
+
+4. Memcached 本身不支持分布式，需要客户端通过像一致性哈希这样的分布式算法来实现分布式存储。 Redis 支持。此外， Redis 还具备像是主从、备份等很接近关系型数据库的功能。 Redis 当中的高可用模型， 主要采用 **分布式集群+主从复制实现高可能**
+
+
+## 相同点
+
+两者都使用epoll，no-blocking io
 
 ## 背后的本质区别
-都是基于内存的key/value hash 的分布式分布式缓存
+
+都是基于内存的key/value hash 的分布式缓存
 
 
 ### 存储方式的区别
@@ -54,6 +76,8 @@ Redis使用==单线程的IO复用模型==，自己封装了一个简单的AeEven
 
 ### memcache I/0
 Memcached是多线程，非阻塞IO复用的网络模型，分为监听主线程和worker子线程，监听线程监听网络连接，接受请求后，将连接描述字pipe 传递给worker线程，进行读写IO, 网络层使用libevent封装的事件库，多线程模型可以发挥多核作用，但是引入了cache coherency和锁的问题，比如，Memcached最常用的stats 命令，实际Memcached所有操作都要对这个全局变量加锁，进行计数等工作，带来了性能损耗。
+
+我们实现的web server 
 
 ### memcache 内存管理
 Memcached使用==预分配的内存池的方式==，使用slab和大小不同的chunk来管理内存，Item根据大小选择合适的chunk存储，==内存池的方式可以省去申请/释放内存的开销，并且能减小内存碎片产生==，但这种方式也会带来一定程度上的空间浪费，并且在内存仍然有很大空间时，新的数据也可能会被剔除。

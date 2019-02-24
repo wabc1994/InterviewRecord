@@ -111,11 +111,13 @@ Spring中有两种类型的Bean，一种是普通Bean，另一种是工厂Bean�
 所以控制反转IoC(Inversion of Control)是说创建对象的控制权进行转移，以前创建对象的主动权和创建时机是由自己把控的，而现在这种权力转移到第三方，比如转移交给了IoC容器，它就是一个专门用来创建对象的工厂，你要什么对象，它就给你什么对象，有了IoC容器，依赖关系就变了，原先的依赖关系就没了，它们都依赖IoC容器了，通过IoC容器来建立它们之间的关系
 
 ## IOC的好处
-1. 
-　可维护性比较好，非常便于进行单元测试，便于调试程序和诊断故障。代码中的每一个Class都可以单独测试，彼此之间互不影响，只要保证自身的功能无误即可，这就是组件之间低耦合或者无耦合带来的好处。
+1. 可维护性比较好，非常便于进行单元测试，便于调试程序和诊断故障。代码中的每一个Class都可以单独测试，彼此之间互不影响，只要保证自身的功能无误即可，这就是组件之间低耦合或者无耦合带来的好处。
 
 [参考链接](https://blog.csdn.net/bestone0213/article/details/47424255?utm_source=blogxgwz0)
+
+
 # 参考
+
 [链接一](https://blog.csdn.net/tuxedolinux/article/details/79056162)
 
 [链接二](https://blog.csdn.net/bestone0213/article/details/47424255?utm_source=blogxgwz0)

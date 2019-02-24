@@ -55,9 +55,23 @@ git reset --hard commit_id
      git reset  --hard：彻底回退到某个版本，本地的源码也会变为上一个版本的内容，此命令 慎用！
 
 # 已经commit并且push 到远程仓库
+
 可以使用 git revert 
+
+# 可以有多重挽救措施
+
+对应的基本情况，但是同样要注意撤销对工作流程当中的三个东西的影响，撤销到什么级别
+
+1. workplace tree
+2. index(stage)
+3. HEAD(master)
 
 # 参考链接
 [git reset的三种模式soft mixed hard - u010037020的博客 - CSDN博客](https://blog.csdn.net/u010037020/article/details/54954696)
 
 [Git-撤销（回退）已经add，commit或push的提交](https://blog.csdn.net/YoungStunner/article/details/78696763)
+
+[Git 如何将改动撤销？](https://zhuanlan.zhihu.com/p/42929114)
+
+[git中reset与revert的区别](https://www.jianshu.com/p/0e1fe709dd97)
+

@@ -477,7 +477,11 @@ public Class Test{
     }
 }
 ````
-
+[synchronized的四种用法 ](https://blog.csdn.net/sinat_32588261/article/details/72880159)
+- 对象
+- 方法，不可被继承
+- 类
+- 静态方法
 ### 英文解释这部情况
 
 A thread becomes the owner of the object 's   monitor in one of the three ways:
@@ -498,4 +502,5 @@ A thread becomes the owner of the object 's   monitor in one of the three ways:
 
 【参考链接](https://blog.csdn.net/javazejian/article/details/72828483#synchronized%E5%BA%95%E5%B1%82%E8%AF%AD%E4%B9%89%E5%8E%9F%E7%90%86)
 # sychronized 锁的局限性
+
 在JDK 1.6之前，synchronized这个重量级锁其性能一直都是较为低下，虽然在1.6后，进行大量的锁优化策略（【死磕Java并发】—–深入分析synchronized的实现原理）,但是与Lock相比synchronized还是存在一些缺陷的：虽然synchronized提供了便捷性的隐式获取锁释放锁机制（基于JVM机制），但是它却缺少了获取锁与释放锁的可操作性，可中断、超时获取锁，且它为独占式在高并发场景下性能大打折扣。

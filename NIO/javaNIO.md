@@ -5,17 +5,32 @@
 
 # bio、NIO、AIO基本概念
 [看这篇论文](http://loveshisong.cn/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2016-06-25-%E5%8D%81%E5%88%86%E9%92%9F%E4%BA%86%E8%A7%A3BIO-NIO-AIO.html)
+
+
+
 # 什么叫流？
 1. 流： 代表有任何能力产出数据的数据源对象或者有能力接受数据的接受端对象
 2. 流的本质： 数据的传输，根据数据传输特性将流抽象为各种类，方便进行的直观抽象
 3. 流的作用 ：
 
+流分为两种字节流和字符流
+
+**面向流的缺陷**
+
+简单总结： 读写不够灵活,并且单方向的情况
+
+
+''
+
+
 
 # 一个io操作如下
+
 ```java
 
 ```
 # 区别
+ 
  ## 面向流和缓冲区
  
  In stream-oriented I/O, you wrote data directly to, and read data directly from, Stream objects.
@@ -26,7 +41,7 @@
  
  - 是否可以前后移动(灵活性等特点情况)
  
- - 
+ - 可以记录读取的位置
  
  ## 阻塞与非阻塞io
  1.Java IO的各种流是阻塞的。这意味着，当一个线程调用read() 或 write()时，该线程被阻塞，直到有一些数据被读取，或数据完全写入。该线程在此期间不能再干任何事情了。
@@ -37,7 +52,6 @@
  >Java NIO’s selectors allow a single thread to monitor multiple channels of input. You can register multiple channels with a selector, then use a single thread to “select” the channels that have input available for processing, or select the channels that are ready for writing. This selector mechanism makes it easy for a single thread to manage multiple channels.
  由于是非阻塞的，所以nio线程不阻塞，所以线程可以监控多个通道， 当某个通道准备好读或者写入时，选择器为线程选择一个准备好的通道。
  
-
 选择这两个方式需要注意的事项
 
 - The number of thread used to process the data.

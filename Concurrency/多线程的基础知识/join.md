@@ -64,7 +64,6 @@ public final synchronized void join(long millis)
     孩子线程操作该要操作变量
 }
 
-
 ```
 
 # 孩子线程调用wait(),真正wait()的 是主线程

@@ -52,6 +52,9 @@ For obvious reason, the epoll have to somehow "remembers" the file descriptors i
  epoll_ctl()可以向指定的epoll实例中加入或者删除文件描述符，参数op指定对fd要进行的操作， event 参数描述epoll更具体的行为。
 
 每次调用 epoll_ctl只是在往内核的数据结构中加入新的socket句柄
+
+这三个东西都是直接操作红黑树
+
 用三个宏来表示：
 - EPOLL_CTL_ADD：注册新的fd到epfd中；
 - EPOLL_CTL_MOD：修改已经注册的fd的监听事件；
@@ -73,9 +76,9 @@ struct epoll_event{
 
 # epoll_ wait
 
-> 红黑树：存储epoll_ctl新加入的socket
+> 红黑树：存储epoll_ctl新加入的socket 红黑树存储epitem结构体，查找，插入时间为O(log(N)) 
 >
-> list链表：监听准备就绪的socket 
+> list链表：存放准备就绪的socket  list_add(准备好的eptiem, list就绪队列)
 >
 > epoll文件系统
 >
@@ -127,3 +130,7 @@ selec、poll的缺陷
 
 # 参考链接
 [非常重要写的非常好](https://www.cnblogs.com/lojunren/p/3856290.html)
+
+
+# 为何epoll 当中是线程安全的概念
+[epoll线程安全](https://zhuanlan.zhihu.com/p/30937065)

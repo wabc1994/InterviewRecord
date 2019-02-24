@@ -19,4 +19,6 @@
 
 [redis当中的布隆过滤器ReBloom](https://redislabs.com/blog/rebloom-bloom-filter-datatype-redis/)
 
+# 利用bloomfilter 快速判断一个不存在的key
 
+log-structured merger tree 大量牺牲读性能，增加写性能， 查询操作先查找内存，然后再查找磁盘，导致效率底下，要查找两次，我们可以设置一个bloomfilter过滤器，类似Redis 缓存和主数据之间的关系
