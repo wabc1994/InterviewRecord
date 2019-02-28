@@ -1,7 +1,7 @@
 
-# 传统MySQL 和Memcache
-传统MySQL+ Memcached架构遇到的问题
-　　实际MySQL是适合进行==海量数据存储的==，通过Memcached将==热点数据==加载到cache，加速访问，很多公司都曾经使用过这样的架构，但随着==业务数据量的不断增加，和访问量的持续增长==，我们遇到了很多问题：
+# 传统MySQL和Memcached
+传统MySQL + Memcached架构遇到的问题
+　　实际MySQL是适合进行**海量数据存储的**，通过Memcached将**热点数据**加载到cache，加速访问，很多公司都曾经使用过这样的架构，但随着==业务数据量的不断增加，和访问量的持续增长==，我们遇到了很多问题：
 1. MySQL需要不断进行==拆库拆表==，Memcached也需不断跟着扩容，==扩容和维护==工作占据大量开发时间。
 2.  Memcached与MySQL数据库数据一致性问题。
 3.  Memcached数据命中率低或down机，大量访问直接穿透到DB，MySQL无法支撑。
@@ -10,6 +10,40 @@
 
 6. Redis支持数据的持久化（RDB快照和AOF日志），可以将==内存中的数据保持在磁盘中，重启的时候可以再次加载进行使用==
 
+
+# 关于redis和memcached 两者之间的竞争
+
+在向面试官接受可以介绍这个段子
+
+一个开发者， Mike 发布了一个开发者圈子里面发布了一个blog 直言大家都应该使用Memached 而不是redis
+
+他的观点是什么呢？
+主要基于两条
+
+1. memcached 是基于内存，完全避免了效率低效的磁盘I/O
+2. memcached是基于多线程的，利用多核CPU,每秒可以处理10万次的客户端请求
+
+
+然后redis 的作者 antirez对上述进行一一驳斥 
+
+1. redis 当中是可以关闭将缓存持久化到磁盘操作的，相反Redis提供了更多的操作选择，特别当时针对突发情况，
+2. 第二条，redis当中提供了管道化的操作，可以提供对客户端请求的处理速度，并且即是在没有使用管道化技术的条件下，
+redis每秒处理的客户端请求跟memcached 是同一个数量级的，因为在Redis等缓存数据库当多线程根本不是性能瓶颈的原因，真正的瓶颈在于网络I/O
+而，memcached 和redis 都是使用了高并发情况下的select和epoll系列的I/O复用。
+
+在驳斥了上述两条后，Redis的作者给出了他自己对这两个缓存的真正的差异的看法
+
+- memory efficiency
+- redis lRU vs memcached slab
+- smart caching，支持丰富的数据类型情况 [Lua 是一个小巧的脚本语言 - HackerVirus - 博客园](https://www.cnblogs.com/Leo_wl/p/8405661.html)
+- 持久化和主从复制备份，提供更高的安全性。
+- lua 脚本语言 与pipelining 和transaction 结合使用
+
+**相关的链接**
+
+- [Clarifications about Redis and Memcached - <antirez>](http://antirez.com/news/94)
+
+redis的
 
 # NoSQL的出现
 
@@ -82,6 +116,7 @@ Memcached是多线程，非阻塞IO复用的网络模型，分为监听主线程
 ### memcache 内存管理
 Memcached使用==预分配的内存池的方式==，使用slab和大小不同的chunk来管理内存，Item根据大小选择合适的chunk存储，==内存池的方式可以省去申请/释放内存的开销，并且能减小内存碎片产生==，但这种方式也会带来一定程度上的空间浪费，并且在内存仍然有很大空间时，新的数据也可能会被剔除。
 
-
+# 参考链接
+[缓存那些事](https://tech.meituan.com/2017/03/17/cache-about.html)
 
 
