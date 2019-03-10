@@ -6,28 +6,46 @@
 3. 不是线程安全的，如果要线程安全使用vector，或者写实复制数组CopyOnWriteArrayList()
 
 
-# 特性
-
 就是空间预分配机制，扩容为1.5倍，支持随机访问的特性(RandomAccess)，线程不是安全的(首先在单线程环境下使用)
 
-当ArrayList扩容的时候，首先会设置新的存储能力为原来的1.5倍
+当ArrayList扩容的时候，首先会设置新的存储能力为原来的1.5倍，vector容量扩容为两倍
+
+
+
+## 基本流程
+
+
+1. add(E e)
+    1. ensureCapacityInternal(size+1);
+    elementData[size++]= e
+2. ensureCapacityInternal(minCapacity)
+    1. ensureExplicitCapacity(minCapacity)
+3. ensureExplicityCapacity(minCapacity)
+    - grow(minCapacity)
+4. grow
+    - 判断与MAX_ARRAY_SIZE上限条件等情况
+
+**核心**
 
 ```java
  int newCapacity = oldCapacity + (oldCapacity >> 1);
 ```
 
+为何要采用1.5倍
+>在这里有一个疑问，为什么每次扩容处理会是 1.5 倍，而不是 2.5、3、4 倍呢？通过 google 查找，发现 1.5 倍的扩容是最好的倍数。因为一次性扩容太大(例如 2.5 倍)可能会浪费更多的内存(1.5 倍最多浪费 33%，而 2.5 被最多会浪费 60%，3.5 倍则会浪费 71%……)。但是一次性扩容太小，需要多次对数组重新分配内存，对性能消耗比较严重。所以 1.5 倍刚刚好，既能满足性能需求，也不会造成很大的内存消耗。
 底层实现是数组 ，支持随机访问的特性
 
-其实这个数组有一个长度设置，最大值为如何
+**最大容量限制**
 
 ```java
 private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8;
 ```
 
+**底层出处**
+
 ```java
 transient Object[] elementData; // non-private to simplify nested class access
 ```
-
 上述数组[]elementData 是实际存储的数组中东西
 
 1. 默认容量为10，当程序指定的minCapacity 小于默认容量10的时候，容量直接定为10
@@ -37,6 +55,66 @@ minCapacity <=  newCapacity <= MAX_ARRAY_SIZE
 
 要满足上述的请求，minCapacity 代表需要的最小长度(需要的)
 
+
+**modCount++**
+
+主要是为了机制的实现情况的fast-fail 为了解决多线程的问题，当一个线程打算修改一个集合的结构，而另一个线程正在进行遍历该集合，那么久会抛出异常的情况，
+
+
+初步知道fail-fast产生的原因就在于程序在对 collection 进行迭代时，某个线程对该 collection 在结构上对其做了修改，这时迭代器就会抛出 ConcurrentModificationException 异常信息，从而产生 fail-fast。
+>当方法检测到对象的并发修改，但不允许这种修改时就抛出该异常。
+
+
+**改进**
+
+modCount++ 下面的fast-fail机制是有问题的，所以后面出现了改进方案就有了写时复制数组CopyOnwrite
+
+**minCapacity**
+
+
+
+## 源码实现
+
+size代表没有进行扩容之前数组的已有元素大小，size+1就是minCapacity代表我们需要的最少大小，至少要有这么大
+
+1. add(E e)
+
+```java
+public boolean add(E e) {
+        ensureCapacityInternal(size + 1);  // Increments modCount!!
+        elementData[size++] = e;
+        return true;
+    }
+```
+
+
+2. ensureCapacityInternal(int minCapacity) 确保参数对了就可以了
+
+```java
+ private void ensureCapacityInternal(int minCapacity) {
+    
+    // 如果elementData是通过调用默认方法的实现的， 
+        if (elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA) {
+            minCapacity = Math.max(DEFAULT_CAPACITY, minCapacity);
+        }
+
+        ensureExplicitCapacity(minCapacity);
+```  
+
+3. ensureExplicitCapacity()  
+```java
+     private void ensureExplicitCapacity(int minCapacity) {
+           //
+            modCount++;
+     
+            // overflow-conscious code
+            if (minCapacity - elementData.length > 0)
+                grow(minCapacity);
+        }
+
+```
+
+4. grow方法
 ```java
 private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8;
 //最大数组最大
@@ -55,11 +133,27 @@ private void grow(int minCapacity) {
     
     if (newCapacity - minCapacity < 0)
         newCapacity = minCapacity;
+    //hugaCapacity
     if (newCapacity - MAX_ARRAY_SIZE > 0)
         newCapacity = hugeCapacity(minCapacity);
     // minCapacity is usually close to size, so this is a win:
     elementData = Arrays.copyOf(elementData, newCapacity);
 }
+```
+
+5. 确保新参数不会达到上限的情况
+
+newCapacity大于ArrayList的所允许的最大容量,处理
+
+```java
+   private static int hugeCapacity(int minCapacity) {
+       if (minCapacity < 0) // overflow, 不符合要求
+           throw new OutOfMemoryError();
+       //
+       return (minCapacity > MAX_ARRAY_SIZE) ?
+           Integer.MAX_VALUE :
+           MAX_ARRAY_SIZE;
+   }
 ```
 
 ## 扩容过程
@@ -74,16 +168,7 @@ private void grow(int minCapacity) {
 
 接下看才查看hugeCapacity(minCapacity )
 
-```java
-private static int hugeCapacity(int minCapacity) {
-    if (minCapacity < 0) // overflow, 不符合要求
-        throw new OutOfMemoryError();
-    //
-    return (minCapacity > MAX_ARRAY_SIZE) ?
-        Integer.MAX_VALUE :
-        MAX_ARRAY_SIZE;
-}
-```
+
 
 # 与LinkedList
 
@@ -100,4 +185,8 @@ private static int hugeCapacity(int minCapacity) {
 
 ### 为何在设计到大量的删除和插入操作，ArrayList的效率会远远比LinkedList 差很多的情况？
 
- 因为ArrayList是使用数组实现的,若要从数组中删除或插入某一个对象，需要移动后段的数组元素，从而会重新调整索引顺序,调整索引顺序会消耗一定的时间，所以速度上就会比LinkedList要慢许多. 相反,LinkedList是使用链表实现的,若要从链表中删除或插入某一个对象,只需要改变前后对象的引用即可
+因为ArrayList是使用数组实现的,若要从数组中删除或插入某一个对象，需要移动后段的数组元素，从而会重新调整索引顺序,调整索引顺序会消耗一定的时间，所以速度上就会比LinkedList要慢许多. 相反,LinkedList是使用链表实现的,若要从链表中删除或插入某一个对象,只需要改变前后对象的引用即可
+
+# 参考链接
+
+[ArrayList - Java 提高篇 - 极客学院Wiki](http://wiki.jikexueyuan.com/project/java-enhancement/java-twentyone.html)
