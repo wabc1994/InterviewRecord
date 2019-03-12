@@ -2,34 +2,32 @@
 
 innoDB：
 
-（1）具有事务(commit)、回滚(rollback)和崩溃修复能力(crash recovery capabilities)的事务安全(transaction-safe (ACID compliant))型表。
+- 具有事务(commit)、回滚(rollback)和崩溃修复能力(crash recovery capabilities)的事务安全(transaction-safe (ACID compliant))型表。
+- 支持外键，支持外键有什么作用？
+> 跟数据库的范式设计一样，将一个表拆分为两个表，主要为了保证数据的完整性和一致性状态；如果不设置外键，将一张复杂的表拆分成为两张表，数据库会显得很冗余
 
-（2）支持外键。
-
-（3）InnoDB 中不保存表的具体行数，也就是说，执行select count(*) from table时，InnoDB要扫描一遍整个表来计算有多少行。注意的是，当count(*)语句包含 where条件时，两种表的操作是一样的。
-
-（4）对于AUTO_INCREMENT类型的字段，InnoDB中必须包含只有该字段的索引。 自增字段类型，
-
-（5）DiELETE FROM table时，InnoDB不会重新建立表，而是一行一行的删除。
+- InnoDB 中不保存表的具体行数，也就是说，执行select count(*) from table时，InnoDB要扫描一遍整个表来计算有多少行。注意的是，当count(*)语句包含 where条件时，两种表的操作是一样的。
+- 对于AUTO_INCREMENT类型的字段，InnoDB中必须包含只有该字段的索引。 自增字段类型，
+- DiELETE FROM table时，InnoDB不会重新建立表，而是一行一行的删除。
 
 
 
 MyISAM：
 
-（1）不支持事务操作。
+- 不支持事务操作。
 
-（2）不支持外键。
+- 不支持外键。
 
-（3）MyISAM保存表的具体行数，执行select count(*) from table时只要简单的读出保存好的行数即可。
+- MyISAM保存表的具体行数，执行select count(*) from table时只要简单的读出保存好的行数即可。
 
-（4）对于AUTO_INCREMENT类型的字段，在MyISAM表中，可以和其他字段一起建立联合索引。
-
-（5）MyISAM存储引擎的读锁和写锁是互斥的，读写操作是串行的。那么，一个进程请求某个MyISAM表的读锁，同时另一个进程也请求同一表的写锁，MySQL如何处理呢？
+- 对于AUTO_INCREMENT类型的字段，在MyISAM表中，可以和其他字段一起建立联合索引。
+ 
+- MyISAM存储引擎的读锁和写锁是互斥的，读写操作是串行的。那么，一个进程请求某个MyISAM表的读锁，同时另一个进程也请求同一表的写锁，MySQL如何处理呢？
 >答案是写进程先获得锁。不仅如此，即使读请求先到锁等待队列，写请求后到，写锁也会插到读锁请求之前！这是因为MySQL认为写请求一般比读请求要重要。这也正是MyISAM表不太适合于有大量更新操作和查询操作应用的原因，因为，大量的更新操作会造成查询操作很难获得读锁，从而可能永远阻塞。这种情况有时可能会变得非常糟糕！
 
 myisam是有读锁和写锁(2个锁都是表级别锁)。
 
-       MySQL表级锁有两种模式：表共享读锁（Table Read Lock）和表独占写锁（Table Write Lock）。
+     MySQL表级锁有两种模式：表共享读锁（Table Read Lock）和表独占写锁（Table Write Lock）。
 
 # 具体使用
 什么意思呢，就是说对MyISAM表进行读操作时，它不会阻塞其他用户对同一表的读请求，但会阻塞对同一表的写操作；而对MyISAM表的写操作，则会阻塞其他用户对同一表的读和写操作。
