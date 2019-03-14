@@ -172,9 +172,32 @@ newCapacity大于ArrayList的所允许的最大容量,处理
 
 # 与LinkedList
 
-底层实现是链表，所以ArrayList的区别本质上就是数组和链表的本质区别
+底层实现是双向循环链表，所以ArrayList的区别本质上就是数组和链表的本质区别
 
 数组支持随机访问的特性(查询性能比较好)， 但是如果是删除和插入(分为在中间插入，和在数组后面插入)， 如果是在中间插入，就要涉及到数组的大量移动，时间复杂度就比较高
+
+
+
+**双向循环链表**
+
+```java
+transient int size = 0;
+ 
+    /**
+     * Pointer to first node.
+     * Invariant: (first == null && last == null) ||
+     *            (first.prev == null && first.item != null)
+     */
+    transient Node<E> first;
+ 
+    /**
+     * Pointer to last node.
+     * Invariant: (first == null && last == null) ||
+     *            (last.next == null && last.item != null)
+     */
+    transient Node<E> last;
+
+```
 
 数组的大量移动主要涉及到两个操作 
 
@@ -185,7 +208,10 @@ newCapacity大于ArrayList的所允许的最大容量,处理
 
 ### 为何在设计到大量的删除和插入操作，ArrayList的效率会远远比LinkedList 差很多的情况？
 
-因为ArrayList是使用数组实现的,若要从数组中删除或插入某一个对象，需要移动后段的数组元素，从而会重新调整索引顺序,调整索引顺序会消耗一定的时间，所以速度上就会比LinkedList要慢许多. 相反,LinkedList是使用链表实现的,若要从链表中删除或插入某一个对象,只需要改变前后对象的引用即可
+因为ArrayList是使用数组实现的,若要从数组中删除或插入某一个对象，需要移动后段的数组元素，从而会重新调整索引顺序,
+调整索引顺序会消耗一定的时间，所以速度上就会比LinkedList要慢许多. 
+
+相反,LinkedList是使用链表实现的,若要从链表中删除或插入某一个对象,只需要改变前后对象的引用即可
 
 # 参考链接
 
