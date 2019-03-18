@@ -53,7 +53,7 @@ static int indexFor(int h, int length) {
 在这里JDK1.7是做了四次的Hash 扰动函数
 
 ```java
- h ^= k.hashCode();
+    h ^= k.hashCode();
     h ^= (h >>> 20) ^ (h >>> 12);
     return h ^ (h >>> 7) ^ (h >>> 4)
 ```
@@ -82,7 +82,7 @@ static final int hash(Object key) {
 > 在JDK1.8的实现中，优化了高位运算的算法，通过hashCode()的高16位异或低16位实现的：(h = k.hashCode()) ^ (h >>> 16)，主要是从速度、功效、质量来考虑的。以上方法得到的int的hash值，然后再通过`h & (table.length -1)`来得到该对象在数据中保存的位置。
 
 
-
+[全网把Map中的hash()分析的最透彻的文章-HollisChuang's Blog](https://www.hollischuang.com/archives/2091)
 
 
 # 源码解读
