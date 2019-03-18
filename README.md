@@ -11,8 +11,12 @@
 [Redis、memcached分布式缓存](https://github.com/wabc1994/InterviewRecord/tree/master/Redis_learning)
 
 
-## 操作系统
+## Linux系统
+操作系统的话，主要是分为计算机操作系统和Linux平台来复习吧
 - [Linux内核](https://github.com/wabc1994/InterviewRecord/tree/master/Linux)
+
+
+## 操作系统基础复习
 
 
 ## 工具GIT
@@ -28,3 +32,10 @@
 1. [Java虚拟机](https://github.com/wabc1994/InterviewRecord/tree/master/JVM)
 2. [集合类](https://github.com/wabc1994/InterviewRecord/tree/master/Java%E5%9F%BA%E7%A1%80/%E9%9B%86%E5%90%88%E7%B1%BB%E6%83%85%E5%86%B5%E7%AE%80%E4%BB%8B)
 3. [并发之多线程](https://github.com/wabc1994/InterviewRecord/tree/master/Concurrency/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
+4. [常见描述题目总结]()
+
+
+
+## 面试经历总结
+
+- [总目录](https://github.com/wabc1994/InterviewRecord/tree/master/InterviewHistory)
