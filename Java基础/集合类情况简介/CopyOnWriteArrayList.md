@@ -1,6 +1,11 @@
 # CopyOnWriteArrayList
 使用CopyOnWriteArrayList可以线程安全地遍历，因为如果另外一个线程在遍历的时候修改List的话，实际上会拷贝出一个新的List上修改，而不影响当前正在被遍历的List
+
+读多写少的并发场景
+
 ## 缺点
+
+
 缺点：
 
 - 耗内存（集合复制）
@@ -26,6 +31,7 @@ add(),remove()等操作都是利用ReetrantLock锁来实现的基本功能情况
 **add()源码**
 
 同一个时间只有一个线程能够进行add()操作,只能进行一份复制
+
 
 ```java
 /**
