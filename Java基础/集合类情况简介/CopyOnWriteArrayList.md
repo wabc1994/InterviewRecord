@@ -3,6 +3,8 @@
 
 读多写少的并发场景
 
+CopyOnWrite容器即写时复制的容器。通俗的理解是当我们往一个容器添加元素的时候，不直接往当前容器添加，而是先将当前容器进行Copy，复制出一个新的容器，然后新的容器里添加元素，添加完元素之后，**再将原容器的引用指向新的容器**
+
 ## 缺点
 
 
@@ -33,6 +35,11 @@ add(),remove()等操作都是利用ReetrantLock锁来实现的基本功能情况
 同一个时间只有一个线程能够进行add()操作,只能进行一份复制
 
 
+为何需要使用ReetrantLock 主要是为
+>可以发现在添加的时候是需要加锁的，否则多线程写的时候会Copy出N个副本出来
+
+reetrantLock 是为了保证任何时候只可能有一份在进行copy出来的情况
+
 ```java
 /**
      * Appends the specified element to the end of this list.
@@ -56,6 +63,8 @@ add(),remove()等操作都是利用ReetrantLock锁来实现的基本功能情况
     }
 ```
 
+
+复制数组采用的是Arrays.copyOf
 
 **remove源码**
 
@@ -97,10 +106,14 @@ public E remove(int index) {
 
 
 # Vector 
-vector是ArrayList 的线程安全版本，利用synchronized关键字实现的，效率比较低，但是vector同样存在一个问题就是
+vector是ArrayList 的线程安全版本，利用synchronized关键字实现的，效率比较低，但是vector同样存在一个问题就是遍历不安全，同样会抛出ConcurrentModificationException异常
 
 **同样无法解决安全遍历的问题**
 >为什么线程安全的Vector也不能线程安全地遍历呢？其实道理也很简单，看Vector源码可以发现它的很多方法都加上了synchronized来进行线程同步，例如add()、remove()、set()、get()，但是Vector内部的synchronized方法无法控制到遍历操作，所以即使是线程安全的Vector也无法做到线程安全地遍历。
+
+# CopyOnwriteArrayList如何解决安全遍历的问题
+
+使用CopyOnWriteArrayList可以线程安全地遍历，因为如果另外一个线程在遍历的时候修改List的话，实际上会拷贝出一个新的List上修改，而不影响当前正在被遍历的List。
 
 # 参考链接
 [Java中的CopyOnWriteArrayList ](https://juejin.im/post/5aaa2ba8f265da239530b69e)
