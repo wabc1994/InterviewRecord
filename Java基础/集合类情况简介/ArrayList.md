@@ -11,6 +11,11 @@
 当ArrayList扩容的时候，首先会设置新的存储能力为原来的1.5倍，vector容量扩容为两倍
 
 
+1. 面试回答要点
+    - 扩容机制
+    - fail-fast机制（ 快速失败机制) 多线程并发修改异常 modCount
+    - 线程安全性等问题
+    - 基础特性，数据结构
 
 ## 基本流程
 
@@ -170,6 +175,29 @@ newCapacity大于ArrayList的所允许的最大容量,处理
 
 
 
+# 快速失败机制fast-fail机制
+使用迭代器的时候会出现这个问题，就是迭代器类内部又一个ExpectmodCount变量,在调用构造函数初始化该变量的时候
+
+就让集合类的Arraylist对象的modCount =expectmodCount
+
+迭代器每次往下面走的话都要进行一个判断的情况
+
+```java
+final Entry<K,V> nextEntry() {
+            if (modCount != expectedModCount)
+                throw new ConcurrentModificationException();
+```
+
+在迭代过程中，判断 modCount 跟 expectedModCount 是否相等，如果不相等就表示已经有其他线程修改了,就会抛出快速失败机制等情况
+
+
+
+# 如何解决fail-fast机制问题
+
+1. 在遍历的过程当中所有涉及到改变modCount值的地方全部都得synchronized或者直接使用Collections.synchronizedList, 这样可以解决。但是不推荐，因为增删造成的同步锁会可能阻塞遍历操作
+
+2. 方案二推荐使用CopyOnwriteArrayList 来替换ArrayList,
+
 # 与LinkedList
 
 底层实现是双向循环链表，所以ArrayList的区别本质上就是数组和链表的本质区别
@@ -186,7 +214,7 @@ transient int size = 0;
     /**
      * Pointer to first node.
      * Invariant: (first == null && last == null) ||
-     *            (first.prev == null && first.item != null)
+ *            (first.prev == null && first.item != null)
      */
     transient Node<E> first;
  
