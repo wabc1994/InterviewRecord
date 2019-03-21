@@ -10,6 +10,7 @@ Lock 和ReadWriteLock是两个接口，其中3是对2的继承接口
 2. java.util.concurrent.locks.ReadWriteLock
 
 3. java.util.concurrent.locks.ReentrantReadWriteLock
+  
    默认是非公平模式
 
   - readLock() 返回一个读锁
