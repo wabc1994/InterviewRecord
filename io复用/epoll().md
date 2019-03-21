@@ -51,7 +51,7 @@ For obvious reason, the epoll have to somehow "remembers" the file descriptors i
 
  epoll_ctl()可以向指定的epoll实例中加入或者删除文件描述符，参数op指定对fd要进行的操作， event 参数描述epoll更具体的行为。
 
-每次调用 epoll_ctl只是在往内核的数据结构中加入新的socket句柄
+每次调用 epoll_ctl只是在往内核的数据结构中加入新的socket句柄，每一个socket fd 被封装成为epitem
 
 这三个东西都是直接操作红黑树
 
