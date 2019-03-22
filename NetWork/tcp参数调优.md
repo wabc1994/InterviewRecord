@@ -37,3 +37,7 @@ tcp_keepalive_intvl/:75
 探测消息发送的频率，乘以tcp_keepalive_probes就得到对于从开始探测以来没有响应的连接杀除的时间。默认值为75秒，
 也就是没有活动的连接将在**大约11分钟**以后将被丢弃。(对于普通应用来说,这个值有一些偏大,可以根据需要改小.特别是web类服务器需要改小该值,
 **15是个比较合适的值。**
+
+![](https://github.com/wabc1994/InterviewRecord/blob/master/NetWork/pic/tcp:ip%20%E5%8F%82%E6%95%B0%E8%B0%83%E4%BC%98.png)
+
+![](https://github.com/wabc1994/InterviewRecord/blob/master/NetWork/pic/tcp%E8%BF%9E%E6%8E%A5%E5%8F%82%E6%95%B0%E8%B0%83%E4%BC%98.png)
