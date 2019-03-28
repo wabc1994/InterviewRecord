@@ -143,6 +143,28 @@ HashTable容器使用**synchronized**来保证线程安全，但是在线程竞�
 >treeBin这个类并不负责包装用户的key、value信息，而是包装的很多TreeNode节点。它代替了TreeNode的根节点，也就是说在实际的ConcurrentHashMap“数组”中，存放的是TreeBin对象，而不是TreeNode对象，这是与HashMap的区别。另外这个类还带有了读写锁。
 
 
+
+### 大量用用volatile保证内存可见性问题
+
+1. sizeClt
+2. baseCount
+3. transient volatile Node<K,V>[] table;
+4. private transient volatile int transferIndex;
+
+
+
+>table、Node.val和Node.next都是被volatile关键字所修饰的。
+
+
+```java
+static class Node<K,V> implements Map.Entry<K,V> {
+        final int hash;
+        final K key;
+        volatile V val;
+        volatile Node<K,V> next;
+```
+
+
 ### 1. Node 源码分析
 
 1. value和next 都设置为volatile 同步
@@ -165,7 +187,7 @@ class Node<K,V> implements Map.Entry<K,V> {
         }
 
 }
-       Node<K,V> find(int h,Object k){
+    Node<K,V> find(int h,Object k){
     Node<K,V> e=this;
     if(k!=null){
         do{
@@ -709,6 +731,8 @@ sizeClt主要是表明有几个线程正在进行扩容操作，我们主要通�
 3. 使用3个CAS操作来确保node的一些操作的原子性，这种方式代替了锁。实质上put,set,get
 
 4. sizeCtl的不同值来代表不同含义，起到了控制的作用。
+
+5. 大量使用volatile来保证内存可见性
 
 # 源码阅读
 [jdk1.8ConcurrentHashMap](https://blog.csdn.net/fjse51/article/details/55260493)
