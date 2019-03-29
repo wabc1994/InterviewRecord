@@ -22,6 +22,74 @@
 
 [java内存泄漏与内存溢出](https://www.cnblogs.com/panxuejun/p/5883044.html)
 
+关于内存泄漏增加几条
+1. 不合理使用ThreadLocal与线程池，解决方案是将remove放在finanlly语句之后
+2. 没有正确的书写equals和hashcode()
+
+
+**错误方式**
+```java
+public class Person {
+    public String name;
+     
+    public Person(String name) {
+        this.name = name;
+    }
+}
+
+public void givenMap_whenEqualsAndHashCodeNotOverridden_thenMemoryLeak() {
+    Map<Person, Integer> map = new HashMap<>();
+    for(int i=0; i<100; i++) {
+        map.put(new Person("jon"), 1);
+    }
+    //是错误的情况
+    Assert.assertFalse(map.size() == 1);
+}
+```
+
+**正确方式书写**
+
+```java
+public class Person {
+    public String name;
+     
+    public Person(String name) {
+        this.name = name;
+    }
+     
+    @Override
+    public boolean equals(Object o) {
+        if (o == this) return true;
+        if (!(o instanceof Person)) {
+            return false;
+        }
+        Person person = (Person) o;
+        return person.name.equals(name);
+    }
+     
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + name.hashCode();
+        return result;
+    }
+}
+````
+
+```java
+@Test
+public void givenMap_whenEqualsAndHashCodeNotOverridden_thenMemoryLeak() {
+    Map<Person, Integer> map = new HashMap<>();
+    for(int i=0; i<2; i++) {
+        map.put(new Person("jon"), 1);
+    }
+    //是正确的
+    Assert.assertTrue(map.size() == 1);
+}
+```
+
+[Understanding Memory Leaks in Java](https://www.baeldung.com/java-memory-leaks)
+
 ## 内存泄漏和内存溢出的关系，不是唯一因素
 内存泄露是内存溢出的一种诱因，
 
@@ -36,6 +104,7 @@
 3、jmap -dump:live,format=b,file=xxx.xxx [pid]，然后利用MAT工具分析是否存在内存泄漏等等。
 
 # Java运行参数设置
+
 Heap Size 最大最好不要超过可用物理内存的80％。建议将-Xms和-Xmx选项设置为相同，而-Xmn为1/4的-Xmx值。
 
 
