@@ -52,6 +52,9 @@
  >Java NIO’s selectors allow a single thread to monitor multiple channels of input. You can register multiple channels with a selector, then use a single thread to “select” the channels that have input available for processing, or select the channels that are ready for writing. This selector mechanism makes it easy for a single thread to manage multiple channels.
  由于是非阻塞的，所以nio线程不阻塞，所以线程可以监控多个通道， 当某个通道准备好读或者写入时，选择器为线程选择一个准备好的通道。
  
+ 
+NIO 是利用了单线程轮询事件的机制，通过高效地定位就绪的Channel，来决定做什么，仅仅select阶段是阻塞的。
+ 
 选择这两个方式需要注意的事项
 
 - The number of thread used to process the data.

@@ -56,7 +56,7 @@ show slave status\G
 
 可以参考下面两个链接
 
-[](https://blog.csdn.net/chagaostu/article/details/47685329)
+[参考链接](https://blog.csdn.net/chagaostu/article/details/47685329)
 
 ## 主从复制的优势
 

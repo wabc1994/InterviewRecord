@@ -36,3 +36,9 @@ static主要声明为该变量属于整个类所有，可以通过类名不用�
 在Java当中的继承当中，private方法是不被继承的
 
 如果类中只有private的构造方法，那么此类不可以被继承。
+
+## final与finalize的区别
+
+finalize()是Object 固有方法，调用System.gc()的时候执行,
+
+[(7条消息)System.gc()与Object.finalize()的区别](https://blog.csdn.net/vernonzheng/article/details/8042820)

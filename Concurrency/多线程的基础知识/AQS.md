@@ -1,11 +1,24 @@
 
 # locks 与AQS 总体使用关系
 
+1. Reetrantlock的特点
+    - 可重入锁
+    - 可中断锁
+    - 与条件变量condition 配合使用
+    - 支持公平锁和非公平锁
+    - 读写锁分类
+
 Reetrantlock 当中定义个sync extends AQS
+
 然后分为公平锁和非公平锁 nofairsync 和fairsync  这两者分别又是extends sync 
 
 
+1. lock,trylock(), trylock(time)  最终是调用aquires， 然后通过CAS操作来改变这个state变量
+
+2. 当前线程调用unlock（）会调用unsafe类里面的park和unpark, native方法，实质上就是调用c语言当中的pthread_mutex_lock，调用该接口后就进入操作系统内核部分
+
 # AbstractQueuedSynchronizer(AQS,队列同步器)
+
 是一个抽象类abstract class，提供了一个基于FIFO队列，可以用于构建锁或者其他相关同步装置的基础框架。
 
 该同步器（以下简称同步器）利用了一个int来表示状态，期望它能够成为实现大部分同步需求的基础。
@@ -14,8 +27,8 @@ Reetrantlock 当中定义个sync extends AQS
 
 然而多线程环境中对状态的操纵必须确保原子性，因此子类对于状态的把握，需要使用这个同步器提供的以下三个方法对状态进行操作：
 
-1. state
-2. 内置的FIFO队列，带头双向循环链表，每个链表节点时内部封装一个线程
+1. state 代表锁的状态
+2. 内置的FIFO队列，带头双向循环链表，每个链表节点时内部封装一个线程，代表正在等待的线程
 3. Node 主要包括四个pre，next waitStatus和thread
 
 这个类的基本属性
@@ -40,6 +53,7 @@ ublic abstract class AbstractQueuedSynchronizer
      */
     private volatile int state; //state>=0
     // =0表示这个锁目前是没有线程锁住，state 
+    // 0 代表当前线程是持有锁的情况
 }
 
 ```
@@ -97,6 +111,11 @@ static final Node EXCLUSIVE =null;
 
 [CHL队列的节点](https://my.oschina.net/oxf1992/blog/837368)
 
+
+## addWaiter(Node mode
+addWaiter方法就是将当前无法获得锁的线程包装成为一个Node 添加到队列尾巴这种情况 
+
+
 # Lock 与AbstractQueuedSynchronizer
 LOCK的实现类其实都是构建在AbstractQueuedSynchronizer上，这是每个Lock实现类都持有自己**内部类Sync的实例**，而这个Sync就是继承AbstractQueuedSynchronizer(AQS)。为何要实现不同的Sync呢？这和每种Lock用途相关。另外还有AQS的State机制
 
@@ -134,6 +153,7 @@ enq(node);
 
 }
 ```
+
 在等待队列尾部添加一个线程，
 
 ```java
@@ -158,6 +178,8 @@ private Node enq(final Node node){
    		}
 }
 ```
+
+
 # 如何自定义同步类器
 下面就是如何使用同步类器，一个类只需要在内部定义一个stactic 类extends AbstractQueueSynchronizer即可
 
@@ -193,7 +215,7 @@ public class Mutex {
     public void unlock() {
         sync.release(0);
     }
-
+}
 ```
 
 [AbstractQueuedSynchronizer by Using a Simple Mutex Example](https://hackernoon.com/brief-introduction-to-abstractqueuedsynchronizer-by-using-a-simple-mutex-example-2f2bc9aa3c54)

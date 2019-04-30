@@ -69,7 +69,7 @@ vmalloc()函数适用于大块内存的申请环境中;但是它申请的内存�
 
 
  # 参考链接
- [stackoverflow](https://stackoverflow.com/questions/116343/what-is-the-difference-between-vmalloc-and-kmalloc)
+[stackoverflow](https://stackoverflow.com/questions/116343/what-is-the-difference-between-vmalloc-and-kmalloc)
 
 
 

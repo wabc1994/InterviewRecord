@@ -19,7 +19,7 @@
 
 其余部分我在另一篇也写了一些，直接贴链接了
 
-[](https://github.com/wabc1994/InterviewRecord/blob/master/Redis_learning/redis内存模型.md)
+[内存管理](https://github.com/wabc1994/InterviewRecord/blob/master/Redis_learning/redis内存模型.md)
 
 # 源码解读
 - zmalloc(size_t size)
