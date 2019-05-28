@@ -16,6 +16,6 @@ buffer pool log buffer都是在内存当中的
 ## 两种查询
 1. 普通select语句，一致非锁定读，也可以称为快照读，其实就是普通的读取即普通SELECT语句。快照读是其实说白了就是MVCC,乐观锁，不加读的机制，
 
-2. select.... for update关系 加排他锁的机制，分为表锁和行锁
+2. select.... for update关系 加排他锁的机制，分为表锁和行锁,行锁被
 
 [一条SQL查询是如何执行的](https://blog.csdn.net/megustas_jjc/article/details/84380108)

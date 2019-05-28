@@ -5,57 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cf9666f-d4a9-4c54-bba7-4f84a283f5a0" name="Default" comment="innodb当中的数据到底是如何进行存储的？">
-      <change afterPath="$PROJECT_DIR$/JVM/调优/JVM调优的目标.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Linux/VFS/一次IO操作.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Linux/inode.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Linux/系统调用.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NIO/设计模式在io当中的应用.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NetWork/滑动窗口.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Redis_learning/常见面试题总结.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_struct/图的最短路径算法.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/SQL查询.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/索引.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/io复用/常见面试.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/分布式系统学习/常见面试题.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/checkpoint.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/AQS.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/AQS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/ConcurrentHashMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/ConcurrentHashMap.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/Executors.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/Executors.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/synchronized原理.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/synchronized原理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concurrency/多线程的基础知识/死锁的解法方案.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/多线程的基础知识/死锁的解法方案.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concurrency/面试当中如何说.md" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/面试当中如何说.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Error/Java的异常体系.md" beforeDir="false" afterPath="$PROJECT_DIR$/Error/Java的异常体系.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Error/src/ExceptionHandling.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterviewHistory/2019_3_05.md" beforeDir="false" afterPath="$PROJECT_DIR$/InterviewHistory/2019_3_05.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterviewHistory/2019_3_19网易二面.md" beforeDir="false" afterPath="$PROJECT_DIR$/InterviewHistory/2019_3_19网易二面.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterviewHistory/3.19蚂蚁金服一面.md" beforeDir="false" afterPath="$PROJECT_DIR$/InterviewHistory/3.19蚂蚁金服一面.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JVM/java内存泄漏" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JVM/jvm内存模型.md" beforeDir="false" afterPath="$PROJECT_DIR$/JVM/jvm内存模型.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JVM/垃圾收集器.md" beforeDir="false" afterPath="$PROJECT_DIR$/JVM/垃圾收集器.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JVM/调优/参数设置.md" beforeDir="false" afterPath="$PROJECT_DIR$/JVM/调优/参数设置.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JVM/面试题总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/JVM/面试题总结.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java基础/关键字/final.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java基础/关键字/final.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java基础/关键字/synchronized.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java基础/关键字/synchronized.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java基础/参看链接.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java基础/参看链接.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java基础/集合类情况简介/Unsafe.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java基础/集合类情况简介/Unsafe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java基础/集合类情况简介/面试总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java基础/集合类情况简介/面试总结.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linux/clone和fork和vfork区别.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/clone和fork和vfork区别.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linux/vmalloc和kmalloc.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/vmalloc和kmalloc.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linux/多线程和多进程的区别.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/多线程和多进程的区别.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NIO/javaNIO.md" beforeDir="false" afterPath="$PROJECT_DIR$/NIO/javaNIO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NIO/核心数据结构.md" beforeDir="false" afterPath="$PROJECT_DIR$/NIO/核心数据结构.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetWork/HTTP常用的状态码.md" beforeDir="false" afterPath="$PROJECT_DIR$/NetWork/HTTP常用的状态码.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetWork/connect.md" beforeDir="false" afterPath="$PROJECT_DIR$/NetWork/connect.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OS/内存管理.md" beforeDir="false" afterPath="$PROJECT_DIR$/OS/内存管理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Redis_learning/MySQL主从复制实现.md" beforeDir="false" afterPath="$PROJECT_DIR$/Redis_learning/MySQL主从复制实现.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Redis_learning/redis内存管理.md" beforeDir="false" afterPath="$PROJECT_DIR$/Redis_learning/redis内存管理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/binlog和redolog.md" beforeDir="false" afterPath="$PROJECT_DIR$/database/binlog和redolog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/io复用/epoll水平触发和边缘触发" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/bean生命周期.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring/bean生命周期.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/位运算.md" beforeDir="false" afterPath="$PROJECT_DIR$/写代码中的基础思想/位运算.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/归并思想.md" beforeDir="false" afterPath="$PROJECT_DIR$/写代码中的基础思想/归并思想.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/树.md" beforeDir="false" afterPath="$PROJECT_DIR$/写代码中的基础思想/树.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/写代码中的基础思想/桶排序的思想.md" beforeDir="false" afterPath="$PROJECT_DIR$/写代码中的基础思想/桶排序的思想.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/SQL查询.md" beforeDir="false" afterPath="$PROJECT_DIR$/database/SQL查询.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/索引.md" beforeDir="false" afterPath="$PROJECT_DIR$/database/索引.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,151 +20,9 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="194114429">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="41" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="5" />
-          <entry key="project.open.time.12" value="3" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.14" value="3" />
-          <entry key="project.open.time.16" value="3" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.20" value="3" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.22" value="3" />
-          <entry key="project.open.time.26" value="1" />
-          <entry key="project.open.time.27" value="1" />
-          <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.30" value="3" />
-          <entry key="project.open.time.33" value="1" />
-          <entry key="project.open.time.34" value="2" />
-          <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.37" value="1" />
-          <entry key="project.open.time.38" value="3" />
-          <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.40" value="3" />
-          <entry key="project.open.time.41" value="1" />
-          <entry key="project.open.time.43" value="1" />
-          <entry key="project.open.time.45" value="3" />
-          <entry key="project.open.time.46" value="1" />
-          <entry key="project.open.time.47" value="1" />
-          <entry key="project.open.time.48" value="1" />
-          <entry key="project.open.time.53" value="2" />
-          <entry key="project.open.time.7" value="2" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="62" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="AQS" value="1" />
-          <entry key="CAS锁" value="1" />
-          <entry key="CLH锁" value="1" />
-          <entry key="ConcurrentHashMap" value="1" />
-          <entry key="CountDownLatch" value="1" />
-          <entry key="Hashmap2" value="1" />
-          <entry key="Linux下端口排查" value="2" />
-          <entry key="Linux中内存结构" value="3" />
-          <entry key="LongCommonSubstring" value="3" />
-          <entry key="MD" value="2" />
-          <entry key="ThreadLocal" value="1" />
-          <entry key="bean" value="1" />
-          <entry key="c" value="1" />
-          <entry key="cc20fd975d8b5228bf13e4a110b4f7b3d351f8c9" value="1" />
-          <entry key="cf8bc2d1a91dcc2adf44ae23b402f0ca1c8e17b5" value="1" />
-          <entry key="class" value="5" />
-          <entry key="deadlock" value="2" />
-          <entry key="epoll水平触发和边缘触发" value="3" />
-          <entry key="gc具体怎么执行" value="1" />
-          <entry key="h" value="1" />
-          <entry key="iml" value="5" />
-          <entry key="java" value="277" />
-          <entry key="java内存泄漏" value="3" />
-          <entry key="java注解" value="4" />
-          <entry key="jpeg" value="16" />
-          <entry key="jpg" value="22" />
-          <entry key="kafka" value="1" />
-          <entry key="lsof" value="3" />
-          <entry key="md" value="1854" />
-          <entry key="nio和bio" value="1" />
-          <entry key="png" value="92" />
-          <entry key="reactor模式" value="1" />
-          <entry key="redblacktree" value="1" />
-          <entry key="redisI:O" value="1" />
-          <entry key="redis字符串" value="1" />
-          <entry key="redis缓存问题" value="1" />
-          <entry key="redis过期策略" value="2" />
-          <entry key="redis高可用" value="2" />
-          <entry key="sed" value="3" />
-          <entry key="select_epoll_poll" value="1" />
-          <entry key="txt" value="1" />
-          <entry key="volatile" value="2" />
-          <entry key="webp" value="1" />
-          <entry key="xml" value="8" />
-          <entry key="二分查找" value="2" />
-          <entry key="分布式的要求" value="1" />
-          <entry key="分布式系统的提出" value="2" />
-          <entry key="分段和分页" value="5" />
-          <entry key="垃圾收集" value="1" />
-          <entry key="快慢指针" value="2" />
-          <entry key="快速排序" value="2" />
-          <entry key="指令重排序" value="1" />
-          <entry key="查找" value="1" />
-          <entry key="消息队列" value="1" />
-          <entry key="系统性能查看" value="4" />
-          <entry key="线程池" value="3" />
-          <entry key="线程的实现方式" value="3" />
-          <entry key="美团消息队列" value="1" />
-          <entry key="进程调度" value="2" />
-          <entry key="进程调度pdf" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="C++" value="2" />
-          <entry key="CLASS" value="5" />
-          <entry key="IDEA_MODULE" value="5" />
-          <entry key="Image" value="131" />
-          <entry key="JAVA" value="278" />
-          <entry key="Markdown" value="1856" />
-          <entry key="PLAIN_TEXT" value="83" />
-          <entry key="XML" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="CLH锁" value="3" />
-          <entry key="epoll水平触发和边缘触发" value="1" />
-          <entry key="java" value="41167" />
-          <entry key="md" value="152785" />
-          <entry key="redblacktree" value="1" />
-          <entry key="sed" value="6" />
-          <entry key="txt" value="9859" />
-          <entry key="二分查找" value="1" />
-          <entry key="指令重排序" value="5" />
-          <entry key="进程调度" value="66" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="41710" />
-          <entry key="Markdown" value="152242" />
-          <entry key="PLAIN_TEXT" value="9942" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.spring.boot.mvc.usages" />
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.spring.boot.run.usages" />
-    </session>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Leetcode2">
@@ -220,22 +31,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/MySQL主从复制.md">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/索引.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/binlog和redolog.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="272">
-                <caret line="16" column="39" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="39" />
+              <first_editor relative-caret-position="51">
+                <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -243,11 +44,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Linux/vmalloc和kmalloc.md">
+        <entry file="file://$PROJECT_DIR$/database/索引的作用.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1206">
-                <caret line="71" selection-start-line="71" selection-end-line="71" />
+              <first_editor relative-caret-position="493">
+                <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
               </first_editor>
               <second_editor />
             </state>
@@ -258,8 +59,8 @@
         <entry file="file://$PROJECT_DIR$/database/SQL查询.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="221">
-                <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+              <first_editor relative-caret-position="306">
+                <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
               </first_editor>
               <second_editor />
             </state>
@@ -267,11 +68,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/索引.md">
+        <entry file="file://$PROJECT_DIR$/database/SQL.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="34">
-                <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+              <first_editor relative-caret-position="296">
+                <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               </first_editor>
               <second_editor />
             </state>
@@ -279,7 +80,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Linux/进程调度算法.md">
+        <entry file="file://$PROJECT_DIR$/database/checkpoint.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="289">
+                <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Concurrency/volatile.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-1761" />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Concurrency/面试当中如何说.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="359">
+                <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/锁机制大总结.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor />
@@ -289,48 +124,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Linux/系统调用.md">
+        <entry file="file://$PROJECT_DIR$/Concurrency/死锁.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="68">
-                <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Java基础/参看链接.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="341">
-                <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NetWork/connect.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="323">
-                <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Linux/inode.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="85">
-                <caret line="5" column="29" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="29" />
-              </first_editor>
+              <first_editor />
               <second_editor />
             </state>
           </provider>
@@ -364,7 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/NetWork/tcp参数调优.md" />
         <option value="$PROJECT_DIR$/NIO/javaNIO.md" />
         <option value="$PROJECT_DIR$/Concurrency/多线程的基础知识/线程池.md" />
         <option value="$PROJECT_DIR$/JVM/CMS回答要点.md" />
@@ -399,9 +195,7 @@
         <option value="$PROJECT_DIR$/io复用/水平触发和边缘触发.md" />
         <option value="$PROJECT_DIR$/io复用/常见面试.md" />
         <option value="$PROJECT_DIR$/Java基础/集合类情况简介/面试总结.md" />
-        <option value="$PROJECT_DIR$/database/SQL查询.md" />
         <option value="$PROJECT_DIR$/Concurrency/volatile.md" />
-        <option value="$PROJECT_DIR$/Concurrency/面试当中如何说.md" />
         <option value="$PROJECT_DIR$/Java基础/集合类情况简介/Hash扰动函数.md" />
         <option value="$PROJECT_DIR$/Java基础/集合类情况简介/Unsafe.md" />
         <option value="$PROJECT_DIR$/Redis_learning/MySQL主从复制实现.md" />
@@ -412,23 +206,23 @@
         <option value="$PROJECT_DIR$/Linux/VFS/一次IO操作.md" />
         <option value="$PROJECT_DIR$/Linux/inode.md" />
         <option value="$PROJECT_DIR$/InterviewHistory/2019_3_05.md" />
-        <option value="$PROJECT_DIR$/database/索引.md" />
         <option value="$PROJECT_DIR$/Linux/系统调用.md" />
         <option value="$PROJECT_DIR$/Java基础/参看链接.md" />
+        <option value="$PROJECT_DIR$/database/checkpoint.md" />
+        <option value="$PROJECT_DIR$/Concurrency/面试当中如何说.md" />
+        <option value="$PROJECT_DIR$/database/SQL查询.md" />
+        <option value="$PROJECT_DIR$/database/索引.md" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand />
       <select />
     </treeState>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="-1440" />
@@ -476,7 +270,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -487,12 +280,17 @@
             <path>
               <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
-              <item name="Java基础" type="462c0819:PsiDirectoryNode" />
+              <item name="collections" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
-              <item name="Linux" type="462c0819:PsiDirectoryNode" />
+              <item name="Concurrency" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode2" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Leetcode2" type="b2602c69:ProjectViewProjectNode" />
@@ -522,16 +320,21 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="minst&#9;RUN_CONFIGURATION&#9;MinStack&#10;Reactor&#9;FILE&#9;file:///Users/coderlau/IdeaProjects/Leetcode2/io复用/设计模式/Reactor模式.md&#10;Con&#9;FILE&#9;file:///Users/coderlau/IdeaProjects/Leetcode2/Java基础/集合类情况简介/ConcurrentHashMap.md" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555312660349" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556616139779" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Tree" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -556,33 +359,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Cucumber java.All Features in: VFS">
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <method />
-    </configuration>
     <configuration name="KthLargestElementinanArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SortedArray.KthLargestElementinanArray" />
       <module name="leetcode2" />
@@ -654,6 +430,7 @@
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
@@ -694,7 +471,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
@@ -791,13 +569,9 @@
       <workItem from="1554518131031" duration="10327000" />
       <workItem from="1554622628817" duration="3210000" />
       <workItem from="1554857343089" duration="21548000" />
-    </task>
-    <task id="LOCAL-00286" summary="增加了圆点环的问题">
-      <created>1553168855277</created>
-      <option name="number" value="00286" />
-      <option name="presentableId" value="LOCAL-00286" />
-      <option name="project" value="LOCAL" />
-      <updated>1553168855277</updated>
+      <workItem from="1556587253652" duration="2522000" />
+      <workItem from="1556616392395" duration="1795000" />
+      <workItem from="1558919978795" duration="3968000" />
     </task>
     <task id="LOCAL-00287" summary="spring bean的声明周期">
       <created>1553168899970</created>
@@ -1135,7 +909,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555033910367</updated>
     </task>
-    <option name="localTasksCounter" value="335" />
+    <task id="LOCAL-00335" summary="面试当中volatile该回答">
+      <created>1558922925639</created>
+      <option name="number" value="00335" />
+      <option name="presentableId" value="LOCAL-00335" />
+      <option name="project" value="LOCAL" />
+      <updated>1558922925640</updated>
+    </task>
+    <option name="localTasksCounter" value="336" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1144,7 +925,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1125489000" />
+    <option name="totallyTimeSpent" value="1133774000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1157,9 +938,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1440" y="37" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49859154" visible="true" weight="0.14377682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49859154" visible="true" weight="0.1502146" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1167,7 +947,7 @@
       <window_info id="Favorites" order="5" sideWeight="0.50140846" side_tool="true" weight="0.13559322" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Nl-Palette" order="7" />
-      <window_info anchor="bottom" id="JProfiler" />
+      <window_info anchor="bottom" id="Docker" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4985694" weight="0.32961586" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49284694" weight="0.24287485" />
@@ -1175,13 +955,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4995015" weight="0.3295562" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.48404786" weight="0.33828998" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.48404786" visible="true" weight="0.32218093" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.51595217" side_tool="true" weight="0.22001888" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49601197" weight="0.26628897" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4888393" weight="0.055762082" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.3290938" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="JProfiler" order="14" />
+      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1257,12 +1039,22 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="数据库当中的存储过程流程" />
     <MESSAGE value="数据库当中的数据是如何存储的" />
     <MESSAGE value="Integer里面的缓存和AtomicInteger的底层实现" />
     <MESSAGE value="分布式session的问题 如何解决不同服务器上面一台客户端的访问请求" />
@@ -1287,7 +1079,8 @@
     <MESSAGE value="volatie底层的实现原理" />
     <MESSAGE value="LinkedBlockingQueue是如源码阅读过程?" />
     <MESSAGE value="内存以及缓存的基本关系" />
-    <option name="LAST_COMMIT_MESSAGE" value="内存以及缓存的基本关系" />
+    <MESSAGE value="面试当中volatile该回答" />
+    <option name="LAST_COMMIT_MESSAGE" value="面试当中volatile该回答" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1304,9 +1097,6 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1314,27 +1104,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Linux/picture/kmem_cache.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Linux/picture/slab2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Linux/picture/wait_queu.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Linux/picture/伙伴关系示意图.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Linux/picture/伙伴系统关系.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Linux/picture/双链表表示该中结构.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Linux/picture/几种地址的管理机制.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Linux/picture/进程的内存布局.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1607,26 +1376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetWork/connect.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="323">
-            <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Linux/vmalloc和kmalloc.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1206">
-            <caret line="71" selection-start-line="71" selection-end-line="71" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/MySQL主从复制.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1645,21 +1394,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/SQL查询.md">
+    <entry file="file://$PROJECT_DIR$/Linux/vmalloc和kmalloc.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="221">
-            <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/索引.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <first_editor relative-caret-position="1207">
+            <caret line="71" selection-start-line="71" selection-end-line="71" />
           </first_editor>
           <second_editor />
         </state>
@@ -1669,16 +1408,6 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Linux/inode.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="5" column="29" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="29" />
-          </first_editor>
           <second_editor />
         </state>
       </provider>
@@ -1696,8 +1425,112 @@
     <entry file="file://$PROJECT_DIR$/Java基础/参看链接.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="341">
+          <first_editor relative-caret-position="1581">
             <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetWork/connect.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="323">
+            <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linux/inode.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="29" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrency/volatile.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1761" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrency/死锁.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrency/面试当中如何说.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="359">
+            <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/锁机制大总结.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/索引的作用.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="493">
+            <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/SQL.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="296">
+            <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/SQL查询.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/checkpoint.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="289">
+            <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/索引.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="51">
+            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           </first_editor>
           <second_editor />
         </state>
