@@ -5,6 +5,11 @@
 
 3. 不是线程安全的，如果要线程安全使用vector，或者写实复制数组CopyOnWriteArrayList()
 
+4. 要讲解下vector和CopyOnWriteArrayList() 两者区别情况
+
+    - vector是synchronized实现同步，CopyOnWriteArrayList() 是reetrantLock加 写时复制技术实现
+    
+[Java Vector线程安全?](https://blog.csdn.net/zlp1992/article/details/50433778)
 
 就是空间预分配机制，扩容为1.5倍，支持随机访问的特性(RandomAccess)，线程不是安全的(首先在单线程环境下使用)
 
@@ -37,7 +42,11 @@
 ```
 
 为何要采用1.5倍
->在这里有一个疑问，为什么每次扩容处理会是 1.5 倍，而不是 2.5、3、4 倍呢？通过 google 查找，发现 1.5 倍的扩容是最好的倍数。因为一次性扩容太大(例如 2.5 倍)可能会浪费更多的内存(1.5 倍最多浪费 33%，而 2.5 被最多会浪费 60%，3.5 倍则会浪费 71%……)。但是一次性扩容太小，需要多次对数组重新分配内存，对性能消耗比较严重。所以 1.5 倍刚刚好，既能满足性能需求，也不会造成很大的内存消耗。
+>在这里有一个疑问，为什么每次扩容处理会是 1.5 倍，而不是 2.5、3、4 倍呢？
+
+- 通过 google 查找，发现 1.5 倍的扩容是最好的倍数。因为一次性扩容太大(例如 2.5 倍)可能会浪费更多的内存(1.5 倍最多浪费 33%，而 2.5 被最多会浪费 60%，3.5 倍则会浪费 71%……)。
+
+- 但是一次性扩容太小，需要多次对数组重新分配内存，对性能消耗比较严重。所以 1.5 倍刚刚好，既能满足性能需求，也不会造成很大的内存消耗。
 底层实现是数组 ，支持随机访问的特性
 
 **最大容量限制**
@@ -243,4 +252,4 @@ transient int size = 0;
 
 # 参考链接
 
-[ArrayList - Java 提高篇 - 极客学院Wiki](http://wiki.jikexueyuan.com/project/java-enhancement/java-twentyone.html)
+[ArrayList](http://wiki.jikexueyuan.com/project/java-enhancement/java-twentyone.html)
