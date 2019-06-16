@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cf9666f-d4a9-4c54-bba7-4f84a283f5a0" name="Default" comment="一条SQL执行得慢的原因">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterviewHistory/2019.3.15.md" beforeDir="false" afterPath="$PROJECT_DIR$/InterviewHistory/2019.3.15.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linux/Linux_OS/Daemon.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/Linux_OS/Daemon.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linux/Linux中的锁机制.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/Linux中的锁机制.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linux/TLB.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/TLB.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linux/进程的的地址空间.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/进程的的地址空间.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/io复用/常见面试.md" beforeDir="false" afterPath="$PROJECT_DIR$/io复用/常见面试.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/io复用/涉及到的数据结构.md" beforeDir="false" afterPath="$PROJECT_DIR$/io复用/涉及到的数据结构.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io复用/面试中该如何说.md" beforeDir="false" afterPath="$PROJECT_DIR$/io复用/面试中该如何说.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,16 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/io复用/epoll(二).md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/io复用/EPOLL 源码解析.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -80,12 +64,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/io复用/涉及到的数据结构.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="102">
-                <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+              <first_editor relative-caret-position="246">
+                <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/io复用/面试中该如何说.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="34">
+                <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
               </first_editor>
               <second_editor />
             </state>
@@ -174,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Linux/协程.md" />
         <option value="$PROJECT_DIR$/database/数据库设计方面的题目.md" />
         <option value="$PROJECT_DIR$/NetWork/滑动窗口.md" />
         <option value="$PROJECT_DIR$/database/binlog和redolog.md" />
@@ -225,6 +220,7 @@
         <option value="$PROJECT_DIR$/Linux/Linux中的锁机制.md" />
         <option value="$PROJECT_DIR$/io复用/常见面试.md" />
         <option value="$PROJECT_DIR$/io复用/涉及到的数据结构.md" />
+        <option value="$PROJECT_DIR$/io复用/面试中该如何说.md" />
       </list>
     </option>
   </component>
@@ -390,6 +386,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -633,7 +630,7 @@
       <workItem from="1559613218196" duration="1150000" />
       <workItem from="1559655170678" duration="567000" />
       <workItem from="1559663116552" duration="55000" />
-      <workItem from="1559974066950" duration="9706000" />
+      <workItem from="1559974066950" duration="10702000" />
     </task>
     <task id="LOCAL-00289" summary="如何对比选择几种I/O模式比较重要">
       <created>1553176673553</created>
@@ -987,7 +984,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1155870000" />
+    <option name="totallyTimeSpent" value="1156866000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1167,14 +1164,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/拒绝策略.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-163" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Concurrency/多线程的基础知识/操作系统是如何实现锁的.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1591,8 +1580,18 @@
     <entry file="file://$PROJECT_DIR$/io复用/涉及到的数据结构.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="102">
-            <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <first_editor relative-caret-position="246">
+            <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/io复用/面试中该如何说.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="34">
+            <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
