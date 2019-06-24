@@ -52,7 +52,15 @@
 
 
 
-// 不自定义容器类了
+简化版本的代码体
+
+class consumer 动作的声明
+```java 
+
+
+
+```
+
 
 
 ```java
@@ -108,8 +116,12 @@ class Producer extends Thread
                     }
                 }
 
+                
 class Consumer extends Thread {
+    // 共享资源
     private Queue<Integer> queue; 
+    // maxSize这个数据其实只对生产者其作用
+    // 0 其实就是消费者限制的因素
     private int maxSize;
     public Consumer(Queue<Integer> queue, int maxSize, String name)
     {   
@@ -118,13 +130,14 @@ class Consumer extends Thread {
         this.maxSize = maxSize; 
     } 
     @Override
+    // 消费者该做的事情，操作共享资源
      public void run() 
     {
         while (true) 
         { 
             synchronized (queue) 
                { 
-                   // 不满足条件
+                   // 不满足条件，先调用wait()函数
                   while (queue.isEmpty())
                   { 
                       System.out.println("Queue is empty," + "Consumer thread is waiting" + " for producer thread to put something in queue"); 
@@ -147,6 +160,81 @@ class Consumer extends Thread {
 
 
 
+也可以将生产者线程和消费者线程抽象为一个， 封装成为方法
+
+```java
+
+public class Threadexample
+{
+    public static void main(String [] args){
+        final Pc pc =new Pc();
+    }
+    Thread t1=new Thread(new Runnable() {
+       
+        @Override
+        public void run(){
+            try{
+                pc.produce();
+            }
+            catch(InternalError e){
+                e.printStackTrace();
+            }
+            
+        }
+    });
+  
+   Thread t2 = new Thread(new Runnable() 
+            { 
+                @Override
+                public void run() 
+                { 
+                    try
+                    { 
+                        pc.consume(); 
+                    } 
+                    catch(InterruptedException e) 
+                    { 
+                        e.printStackTrace(); 
+                    } 
+                } 
+            }); 
+   
+      class Pc{
+          LinkedList<Integer> list = new LinkedList<>();
+          int capacity =2;
+          public void produce() throws InterruptedException{
+              int value =0;
+              while(true){
+                  synchronized (list){
+                      while(list.size()==capacity){
+                          wait();
+                          System.out.println(""Producer produced-"+value)
+                          list.add(value++);
+                          notifyAll();
+                          Thread.sleep(1000);
+                );
+                      }
+                  }
+              }
+          }
+          public void consumer() throws InterruptedException{
+              while(true){
+                  synchronized (list){
+                      while(list.size()==0)
+                          wait();
+                    
+                      int val = list.removeFirst();
+                        System.out.println(val);
+                        notifyAll();
+                        Thread.sleep(1000);
+                      
+                  }
+              }
+          }
+      }
+}
+
+```
 
 
 # 阻塞队列
@@ -301,6 +389,7 @@ public class ProducerConsumerWithBlockingQueue {
         producerThread.join();
         consumerThread.start();
         }
+     }
 ```
 
 # 使用ReetranLock 实现生成者和消费者问题
@@ -337,7 +426,7 @@ class SelfQueue{
         }
     } 
 
-    public int consume(){  
+    public void consume(){  
         int m = 0;
         try {
             lock.lock();
