@@ -60,7 +60,18 @@ class consumer 动作的声明
 
 先判断不满足条件的，然后进行等待，然后再在满足条件的前提条件下面进行 notifyAll()方法的情况 
 
-
+while(true)
+{
+        synchronized(锁住同步资源)
+        {
+        
+        while(不满足条件) {
+         wait() 方法
+         
+         
+        }
+        notify()
+}
 
 ```
 
@@ -93,6 +104,8 @@ class Producer extends Thread
      public void run() { 
         //一直生产
         while (true) { 
+            
+            // synchronized锁机制和和while 条件判断的顺序关系，我们统一使用
             synchronized (queue) 
             { 
                 // 
