@@ -73,6 +73,9 @@ while(true)
         notify()
 }
 
+
+其中while循环可以放在多个地方
+
 ```
 
 
