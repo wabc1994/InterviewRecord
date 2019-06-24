@@ -58,6 +58,9 @@ class consumer 动作的声明
 ```java 
 
 
+先判断不满足条件的，然后进行等待，然后再在满足条件的前提条件下面进行 notifyAll()方法的情况 
+
+
 
 ```
 
@@ -157,8 +160,6 @@ class Consumer extends Thread {
 } 
 
 ```
-
-
 
 也可以将生产者线程和消费者线程抽象为一个， 封装成为方法
 
@@ -395,6 +396,13 @@ public class ProducerConsumerWithBlockingQueue {
 # 使用ReetranLock 实现生成者和消费者问题
 
 
+其实reetrantlock 编写生产者和消费者同synchronized一样，只是将synchronzie改成lock 和unlock ,并且通过两个条件进行
+
+同样因为使用了try方法，所以
+
+- notfull 
+- notempty.await 
+
 ## 仓库容器类
 
 负责同步类代码编写
@@ -414,6 +422,7 @@ class SelfQueue{
             // 不满足条件就一直等待
             while(max == ProdLine.size()){
                 System.out.println("存储量达到上限，请等待");
+                // 不满条件所以要等待
                 notfull.await();
             }
             // 满足条件就进行改变
@@ -428,13 +437,15 @@ class SelfQueue{
 
     public void consume(){  
         int m = 0;
+        
         try {
             lock.lock();
             while(ProdLine.size() == 0){
                 System.out.println("队列是空的，请稍候");
+                // notempty 要等待
                 notempty.await();
             }
-            m = ProdLine.removeFirst();
+             m = ProdLine.removeFirst();
              notfull.signal(); 
                     } catch (InterruptedException e) {
                         e.printStackTrace();
@@ -461,7 +472,7 @@ class Producer implements Runnable{
     }
 
     public void run() {
-        // 消费的容量大于仓库容量，不进行代码同步控制
+      // 消费的容量大于仓库容量，不进行代码同步控制 大于5 
       for (int i = 0; i < 10; i++) {
             Random random = new Random();
             int ProdRandom=random.nextInt(10);
@@ -474,6 +485,7 @@ class Producer implements Runnable{
 ```
 
 ## 消费者
+
 ```java
 //消费者
 class Consumer implements Runnable{
@@ -484,7 +496,7 @@ class Consumer implements Runnable{
     }
 
     public void run() {
-        // 不断进行消费
+        // 不断进行消费， 让其他资源的锁进行控制即可
       while(true) {
               System.out.println("Consumed: "+ selfqueue.consume());
       }
